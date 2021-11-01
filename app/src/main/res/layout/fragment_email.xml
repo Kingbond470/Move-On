@@ -72,7 +72,7 @@
         android:textSize="14sp"
         android:textStyle="normal" />
 
-    <com.google.android.material.button.MaterialButton
+    <Button
         android:id="@+id/btnLoginWithEmailContinue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -99,7 +99,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/etSignupPhoneNumberLayout"
+        android:layout_below="@+id/etSignupPasswordLayout"
         android:layout_marginHorizontal="18dp"
         android:layout_marginTop="28dp"
         android:layout_marginBottom="14dp"
