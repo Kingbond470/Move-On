@@ -1,14 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black_app"
     tools:context=".ui.login.SignUpFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/tvSignupHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="122dp"
+        android:fontFamily="@font/roboto"
+        android:text="Welcome to MoveOn"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="normal" />
 
-</FrameLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etSignupFullNameLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSignupHeading"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="14dp"
+        android:background="@color/button_bg_color"
+        android:hint="Enter your e-mail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSignUpFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:maxLength="20"
+            android:paddingVertical="17dp"
+            android:text="Enter your full name"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etSignupPhoneNumberLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etSignupFullNameLayout"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="14dp"
+        android:background="@color/button_bg_color"
+        android:hint="Enter your mobile number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSignUpPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:paddingVertical="17dp"
+            android:text="Enter your mobile number"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etSignupPasswordLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etSignupPhoneNumberLayout"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="14dp"
+        android:background="@color/button_bg_color"
+        android:hint="Enter your mobile number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSignUpPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:paddingVertical="17dp"
+            android:text="Enter your password"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etSignupConfirmPasswordLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etSignupPhoneNumberLayout"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="14dp"
+        android:background="@color/button_bg_color"
+        android:hint="Enter your mobile number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSignUpConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:paddingVertical="17dp"
+            android:text="Confirm password"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvAgreeSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etSignupConfirmPasswordLayout"
+        android:layout_marginVertical="14dp"
+        android:layout_marginLeft="18dp"
+        android:fontFamily="@font/roboto"
+        android:text="By continuing I agree to the "
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tvAgreeSignUpContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etSignupConfirmPasswordLayout"
+        android:layout_marginVertical="14dp"
+        android:layout_marginRight="18dp"
+        android:layout_toRightOf="@+id/tvAgreeSignUp"
+        android:fontFamily="@font/roboto"
+        android:maxLines="2"
+        android:text="terms conditions and privacy policy"
+        android:textColor="@color/blue_light"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSignUpContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginVertical="18dp"
+        android:background="@color/button_bg_color"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/roboto"
+        android:maxLines="1"
+        android:paddingHorizontal="60dp"
+        android:paddingVertical="18dp"
+        android:text="Continue"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+
+</RelativeLayout>
