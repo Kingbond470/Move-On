@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F1F1F"
+    tools:context=".ui.packageandmovers.fragMov.housecategory.HouseCategory">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19.5dp"
+            android:layout_marginTop="22.5dp"
+            android:src="@drawable/ic_vector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="35dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Select House Size"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Relative"
+            android:layout_below="@id/backArrow"
+            android:layout_marginTop="40dp"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/RK1"
+                android:layout_width="wrap_content"
+                android:layout_height="114dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="#1F1F1F">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="114dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="19dp"
+                        android:src="@drawable/house" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="77dp"
+                        android:layout_marginTop="25dp"
+                        android:text="1 RK/ Studio"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:id="@+id/rk1Select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="242dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="18dp"
+                        android:backgroundTint="#1E54B7"
+                        android:text="Select"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="26.62dp"
+                        android:layout_marginTop="82.12dp"
+                        android:src="@drawable/ic_vector__sofa_" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="48dp"
+                        android:layout_marginTop="81dp"
+                        android:text="10 Items approx"
+                        android:textColor="#CBCBCB"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="143dp"
+                        android:layout_marginTop="80.63dp"
+                        android:layout_marginEnd="252dp"
+                        android:src="@drawable/ic_vector__hallmark_" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_group"
+                        android:layout_marginStart="202dp"
+                        android:layout_marginTop="81dp"
+                        android:layout_marginEnd="197dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="225dp"
+                        android:layout_marginTop="81dp"
+                        android:layout_marginEnd="25dp"
+                        android:text="5 Cartons (2ft ✕ 1.5ft ✕ 1.5ft)"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/BHK1"
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_height="114dp"
+                android:layout_below="@+id/RK1"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#1F1F1F">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="114dp"
+                    >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="19dp"
+                    android:src="@drawable/house" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="77dp"
+                    android:layout_marginTop="25dp"
+                    android:text="1 BHK/ Standard"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/bhk1Select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="243dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="18dp"
+                    android:backgroundTint="#1E54B7"
+                    android:text="Select"
+                    android:textColor="@color/white" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="26.62dp"
+                        android:layout_marginTop="82.12dp"
+                        android:src="@drawable/ic_vector__sofa_" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="48dp"
+                        android:layout_marginTop="81dp"
+                        android:text="18 Items approx"
+                        android:textColor="#CBCBCB"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="143dp"
+                        android:layout_marginTop="80.63dp"
+                        android:layout_marginEnd="252dp"
+                        android:src="@drawable/ic_vector__hallmark_" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_group"
+                        android:layout_marginStart="202dp"
+                        android:layout_marginTop="81dp"
+                        android:layout_marginEnd="197dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="225dp"
+                        android:layout_marginTop="81dp"
+                        android:layout_marginEnd="25dp"
+                        android:lineHeight="100dp"
+                        android:text="15 Cartons (2ft ✕ 1.5ft ✕ 1.5ft)"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/BHK2"
+                android:layout_width="wrap_content"
+                android:layout_height="114dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/BHK1"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#1F1F1F">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="114dp"
+                    >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="19dp"
+                    android:src="@drawable/house" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="77dp"
+                    android:layout_marginTop="25dp"
+                    android:text="1 RK/ Studio"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/bhk2Select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="243dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="18dp"
+                    android:backgroundTint="#1E54B7"
+                    android:text="Select"
+                    android:textColor="@color/white" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="26.62dp"
+                        android:layout_marginTop="82.12dp"
+                        android:src="@drawable/ic_vector__sofa_" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="48dp"
+                        android:layout_marginTop="81dp"
+                        android:text="30 Items approx"
+                        android:textColor="#CBCBCB"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="143dp"
+                        android:layout_marginTop="80.63dp"
+                        android:layout_marginEnd="252dp"
+                        android:src="@drawable/ic_vector__hallmark_" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_group"
+                        android:layout_marginStart="202dp"
+                        android:layout_marginTop="81dp"
+                        android:layout_marginEnd="197dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="225dp"
+                        android:layout_marginTop="81dp"
+                        android:layout_marginEnd="25dp"
+                        android:lineHeight="100dp"
+                        android:text="30 Cartons (2ft ✕ 1.5ft ✕ 1.5ft)"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/BHK3"
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_height="114dp"
+                android:layout_below="@id/BHK2"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#1F1F1F">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="114dp"
+                    >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="19dp"
+                    android:src="@drawable/house" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="77dp"
+                    android:layout_marginTop="25dp"
+                    android:text="1 RK/ Studio"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/bhk3Select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="243dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:backgroundTint="#1E54B7"
+                    android:text="Select"
+                    android:textColor="@color/white" />
+
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="26.62dp"
+                        android:layout_marginTop="82.12dp"
+                        android:src="@drawable/ic_vector__sofa_" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="48dp"
+                        android:layout_marginTop="81dp"
+                        android:text="33 Items approx"
+                        android:textColor="#CBCBCB"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="143dp"
+                        android:layout_marginTop="80.63dp"
+                        android:layout_marginEnd="252dp"
+                        android:src="@drawable/ic_vector__hallmark_" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_group"
+                        android:layout_marginStart="202dp"
+                        android:layout_marginTop="81dp"
+                        android:layout_marginEnd="197dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="225dp"
+                        android:layout_marginTop="81dp"
+                        android:layout_marginEnd="25dp"
+                        android:lineHeight="100dp"
+                        android:text="35 Cartons (2ft ✕ 1.5ft ✕ 1.5ft)"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Relative"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="18dp"
+            android:backgroundTint="#1E54B7"
+            android:text="Continue"
+            android:id="@+id/categoryBtn"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

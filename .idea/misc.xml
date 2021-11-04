@@ -3,7 +3,32 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/buttonshapewhitebg.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_appbg.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_email.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_lock_white.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_moveon.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_google_maps.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_login2.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_map.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_splash_screen.xml" value="0.22" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_email.xml" value="0.22" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_password.xml" value="0.25" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_sign_up.xml" value="0.25" />
+        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/drawable/blue_box.xml" value="0.1" />
+        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/drawable/ic_component_44.xml" value="0.2601851851851852" />
+        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/drawable/roundbox.xml" value="0.13425925925925927" />
+        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout-v28/fragment_house_category.xml" value="0.23324275362318841" />
+        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/activity_main.xml" value="0.12183383991894631" />
+        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/fragment_coast_page.xml" value="0.23324275362318841" />
+        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/fragment_confirm_page.xml" value="0.1875" />
+        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/fragment_house_category.xml" value="0.2" />
+        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/fragment_house_size.xml" value="0.18659420289855072" />
+        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/fragment_item_list.xml" value="0.264" />
       </map>
     </option>
   </component>

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141414"
+    android:orientation="vertical"
+    tools:context=".ui.packageandmovers.fragMov.itemList.ItemList">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19.5dp"
+            android:layout_marginTop="22.5dp"
+            android:src="@drawable/ic_vector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="55dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Select House Size"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/headingstatic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/backArrow"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="112dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="start"
+            android:text="Select the items you have at your home"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/headingstatic"
+            android:backgroundTint="#141414">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/Matress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="27dp"
+                    android:background="@drawable/blue_box" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cot with mattress"
+                    android:textColor="@color/white"
+                    android:layout_toEndOf="@id/Matress"
+                    android:layout_marginTop="27dp"
+                    android:textSize="16dp"
+                    android:layout_marginStart="12dp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/Shoe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="219dp"
+                    android:layout_marginTop="27dp"
+                    android:background="@drawable/blue_box" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginEnd="64dp"
+                    android:layout_toEndOf="@id/Shoe"
+                    android:lineHeight="1dp"
+                    android:text="Rack"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+                <CheckBox
+                    android:id="@+id/Almirah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="21dp"
+                    android:layout_below="@id/Matress"
+                    android:layout_marginTop="27dp"
+                    android:background="@drawable/blue_box" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Almirah"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/Matress"
+                    android:layout_toEndOf="@id/Almirah"
+                    android:layout_marginTop="27dp"
+                    android:textSize="16dp"
+                    android:layout_marginStart="12dp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/Fridge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Shoe"
+                    android:layout_marginStart="219dp"
+                    android:layout_marginTop="27dp"
+                    android:background="@drawable/blue_box" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fridge"
+                    android:layout_below="@id/Shoe"
+                    android:textColor="@color/white"
+                    android:layout_toEndOf="@id/Shoe"
+                    android:layout_marginTop="27dp"
+                    android:textSize="16dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="64dp"
+                    android:lineHeight="1dp"
+                    />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card1"
+            android:backgroundTint="#141414">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/Chair"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="27dp"
+                    android:background="@drawable/blue_box" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chairs"
+                    android:textColor="@color/white"
+                    android:layout_toEndOf="@id/Chair"
+                    android:layout_marginTop="27dp"
+                    android:textSize="16dp"
+                    android:layout_marginStart="12dp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/WashingMachine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="219dp"
+                    android:layout_marginTop="27dp"
+                    android:background="@drawable/blue_box" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginEnd="64dp"
+                    android:layout_toEndOf="@id/WashingMachine"
+                    android:text="TV"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+                <CheckBox
+                    android:id="@+id/Sofa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="21dp"
+                    android:layout_below="@id/Chair"
+                    android:layout_marginTop="27dp"
+                    android:background="@drawable/blue_box" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sofa"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/Chair"
+                    android:layout_toEndOf="@id/Sofa"
+                    android:layout_marginTop="27dp"
+                    android:textSize="16dp"
+                    android:layout_marginStart="12dp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/GasStove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/WashingMachine"
+                    android:layout_marginStart="219dp"
+                    android:layout_marginTop="27dp"
+                    android:background="@drawable/blue_box" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/WashingMachine"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginEnd="64dp"
+                    android:layout_toEndOf="@id/GasStove"
+                    android:lineHeight="1dp"
+                    android:text="Stove"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card2"
+            android:backgroundTint="#141414">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/Table"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="27dp"
+                    android:background="@drawable/blue_box" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Table"
+                    android:textColor="@color/white"
+                    android:layout_toEndOf="@id/Table"
+                    android:layout_marginTop="27dp"
+                    android:textSize="16dp"
+                    android:layout_marginStart="12dp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/Cyclinder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="219dp"
+                    android:layout_marginTop="27dp"
+                    android:background="@drawable/blue_box" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginEnd="64dp"
+                    android:layout_toEndOf="@id/Cyclinder"
+                    android:text="Cyclinder"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+                <CheckBox
+                    android:id="@+id/Purifier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="21dp"
+                    android:layout_below="@id/Table"
+                    android:layout_marginTop="27dp"
+                    android:background="@drawable/blue_box" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sofa"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/Table"
+                    android:layout_toEndOf="@id/Purifier"
+                    android:layout_marginTop="27dp"
+                    android:textSize="16dp"
+                    android:layout_marginStart="12dp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/bed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Cyclinder"
+                    android:layout_marginStart="219dp"
+                    android:layout_marginTop="27dp"
+                    android:background="@drawable/blue_box" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bed"
+                    android:layout_below="@id/Cyclinder"
+                    android:textColor="@color/white"
+                    android:layout_toEndOf="@id/bed"
+                    android:layout_marginTop="27dp"
+                    android:textSize="16dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="64dp"
+                    android:lineHeight="1dp"
+                    />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <CheckBox
+            android:id="@+id/specific"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_below="@id/card3"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/blue_box" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card3"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="27dp"
+            android:layout_toEndOf="@id/specific"
+            android:text="No Specific"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/specific"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="135dp"
+            android:layout_marginEnd="18dp"
+            android:backgroundTint="#1E54B7"
+            android:id="@+id/itemBtn"
+            android:text="Continue" />
+
+    </RelativeLayout>
+</LinearLayout>
