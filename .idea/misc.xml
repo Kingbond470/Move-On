@@ -7,13 +7,14 @@
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/buttonshapewhitebg.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_appbg.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_button_bg.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_editext_background.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_email.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_google_logo.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_lock_white.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_login_password_logo.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_moveon.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_signup_india.xml" value="0.2203125" />
-        <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_email_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_email_login.xml" value="0.18" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_google_maps.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_login2.xml" value="0.20416666666666666" />
@@ -22,8 +23,8 @@
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_splash_screen.xml" value="0.22" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_email.xml" value="0.22" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_login.xml" value="0.20416666666666666" />
-        <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_password.xml" value="0.2" />
-        <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_sign_up.xml" value="0.18" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_password.xml" value="0.25" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_sign_up.xml" value="0.1" />
       </map>
     </option>
   </component>

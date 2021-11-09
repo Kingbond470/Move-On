@@ -6,10 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".ui.login.EmailLoginActivity">
 
+    <!--    <androidx.fragment.app.FragmentContainerView-->
+    <!--        android:id="@+id/containerEmailLogin"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:background="@color/black_app" />-->
+
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/containerEmailLogin"
+        android:id="@+id/nav_host_login"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/black_app" />
-
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_login" />
 </RelativeLayout>

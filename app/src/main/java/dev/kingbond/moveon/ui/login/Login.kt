@@ -31,6 +31,13 @@ class Login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        // sign in and sign up with email
+        btnLoginWithEmail.setOnClickListener {
+            val intent = Intent(this, EmailLoginActivity::class.java)
+            startActivity(intent)
+            //finish()
+        }
+
 
         // setCurrentFragment(LoginFragment())
         // sign in with email
@@ -105,12 +112,12 @@ class Login : AppCompatActivity() {
             }
     }
 
-    fun setCurrentFragment(fragment: Fragment) =
-        supportFragmentManager.beginTransaction().apply {
-            replace(R.id.fragmentContainer, fragment)
-            addToBackStack("")
-            commit()
-        }
+//    fun setCurrentFragment(fragment: Fragment) =
+//        supportFragmentManager.beginTransaction().apply {
+//            replace(R.id.fragmentContainer, fragment)
+//            addToBackStack("")
+//            commit()
+//        }
 
 
 }
