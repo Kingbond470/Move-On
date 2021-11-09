@@ -7,7 +7,4 @@
     android:background="@color/black_app"
     tools:context=".ui.login.LoginFragment">
 
-
-
-
 </RelativeLayout>

@@ -6,12 +6,22 @@
     android:background="@color/black_app"
     tools:context=".ui.login.SignUpFragment">
 
+
+    <ImageView
+        android:id="@+id/ivSignUpGoogleLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/ic_welcome" />
+
     <TextView
         android:id="@+id/tvSignupHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/ivSignUpGoogleLogo"
         android:layout_marginHorizontal="18dp"
-        android:layout_marginTop="122dp"
         android:fontFamily="@font/roboto"
         android:text="Welcome to MoveOn"
         android:textColor="@color/white"
@@ -44,37 +54,69 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/etSignupPhoneNumberLayout"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    <LinearLayout
+        android:id="@+id/etPhoneNumberLinearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/etSignupFullNameLayout"
         android:layout_marginHorizontal="18dp"
         android:layout_marginTop="28dp"
         android:layout_marginBottom="14dp"
-        android:background="@color/button_bg_color"
-        android:hint="Enter your mobile number">
+        android:orientation="horizontal"
+        android:weightSum="2">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etSignUpPhoneNumber"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/roboto"
-            android:paddingVertical="17dp"
-            android:text="Enter your mobile number"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:textStyle="normal" />
+            android:layout_marginRight="8dp"
+            android:background="@color/button_bg_color"
+            android:orientation="horizontal"
+            android:paddingHorizontal="15dp">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="17dp"
+                android:paddingRight="17dp"
+                android:src="@drawable/ic_signup_india" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="17dp"
+                android:src="@drawable/ic_bottom_arrow" />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etSignupPhoneNumberLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.9"
+            android:background="@color/button_bg_color"
+            android:hint="Enter your mobile number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etSignUpPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:paddingVertical="17dp"
+                android:text="Enter your mobile number"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etSignupPasswordLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/etSignupPhoneNumberLayout"
+        android:layout_below="@+id/etPhoneNumberLinearLayout"
         android:layout_marginHorizontal="18dp"
         android:layout_marginTop="28dp"
         android:layout_marginBottom="14dp"
@@ -85,6 +127,7 @@
             android:id="@+id/etSignUpPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_password_eye"
             android:fontFamily="@font/roboto"
             android:paddingVertical="17dp"
             android:text="Enter your password"
@@ -110,6 +153,7 @@
             android:id="@+id/etSignUpConfirmPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_password_eye_close"
             android:fontFamily="@font/roboto"
             android:paddingVertical="17dp"
             android:text="Confirm password"
@@ -154,7 +198,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginHorizontal="18dp"
         android:layout_marginVertical="18dp"
-        android:background="@color/button_bg_color"
+        android:background="@drawable/ic_button_bg"
         android:drawablePadding="15dp"
         android:fontFamily="@font/roboto"
         android:maxLines="1"
