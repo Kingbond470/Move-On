@@ -1,5 +1,7 @@
 package dev.kingbond.moveon.ui.login
 
+import android.graphics.Color
+import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
 import android.util.Patterns
 import androidx.fragment.app.Fragment
@@ -7,6 +9,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
+import androidx.core.widget.doAfterTextChanged
+import androidx.core.widget.doOnTextChanged
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import dev.kingbond.moveon.R
@@ -37,11 +41,29 @@ class EmailFragment : Fragment(R.layout.fragment_email) {
             Navigation.findNavController(view).navigate(R.id.action_emailFragment_to_signUpFragment)
         }
 
+        // to change the background color of button
+        etLoginEmail.doAfterTextChanged {
+            if (isValidEmail(etLoginEmail.text.trim().toString())) {
+                // btnLoginWithEmailContinue.setBackgroundColor(Color.parseColor("#1E54B7"))
+                val gradientDrawable = GradientDrawable()
+                gradientDrawable.setColor(Color.parseColor("#1E54B7"))
+                gradientDrawable.cornerRadius = 12F
+                btnLoginWithEmailContinue.setBackgroundDrawable(gradientDrawable)
+            } else {
+                val gradientDrawable = GradientDrawable()
+                gradientDrawable.setStroke(5, Color.parseColor("#1E54B7"))
+                gradientDrawable.cornerRadius = 12F
+                btnLoginWithEmailContinue.setBackgroundDrawable(gradientDrawable)
+            }
+        }
+
         // if email is valid : continue to password
         btnLoginWithEmailContinue.setOnClickListener {
             var email = etLoginEmail.text.trim().toString()
 
             if (isValidEmail(email)) {
+
+
                 Navigation.findNavController(view)
                     .navigate(R.id.action_emailFragment_to_passwordFragment)
 
