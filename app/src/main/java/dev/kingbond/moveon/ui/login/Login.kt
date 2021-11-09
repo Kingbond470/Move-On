@@ -15,7 +15,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import dev.kingbond.moveon.MainActivity
 import dev.kingbond.moveon.R
-import kotlinx.android.synthetic.main.activity_login2.*
+import kotlinx.android.synthetic.main.activity_login.*
 
 class Login : AppCompatActivity() {
 
@@ -29,10 +29,10 @@ class Login : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login2)
+        setContentView(R.layout.activity_login)
 
 
-       // setCurrentFragment(LoginFragment())
+        // setCurrentFragment(LoginFragment())
         // sign in with email
 //        btnLoginWithEmail.setOnClickListener {
 ////            startActivity(Intent(this, SignUpFragment::class.java))
@@ -62,7 +62,8 @@ class Login : AppCompatActivity() {
         val signInIntent = googleSignInClient.signInIntent
         startActivityForResult(signInIntent, RC_SIGN_IN)
     }
-//
+
+    //
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
@@ -104,7 +105,7 @@ class Login : AppCompatActivity() {
             }
     }
 
-     fun setCurrentFragment(fragment: Fragment) =
+    fun setCurrentFragment(fragment: Fragment) =
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.fragmentContainer, fragment)
             addToBackStack("")
