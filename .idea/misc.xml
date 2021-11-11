@@ -9,6 +9,8 @@
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/blood_group_selector.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/blood_group_text_color.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/buttonshapewhitebg.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/coupon_tab_bg.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/coupons_custom_bg.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/edit_profile_bg.xml" value="0.20555555555555555" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/edit_profile_et_bg.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/gender_text_color.xml" value="0.2203125" />
@@ -28,6 +30,7 @@
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/rb_not_selected.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/rb_selected.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/rb_selector.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_coupons.xml" value="0.25" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_edit_profile.xml" value="0.22" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_email_login.xml" value="0.18" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_google_maps.xml" value="0.20416666666666666" />
