@@ -4,6 +4,19 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/saini/OneDrive/Desktop/PlayStoreApps/Move-On/app/src/main/res/drawable/button_continue.xml" value="0.2203125" />
+        <entry key="..\:/Users/saini/OneDrive/Desktop/PlayStoreApps/Move-On/app/src/main/res/drawable/grey_800_bg.xml" value="0.2203125" />
+        <entry key="..\:/Users/saini/OneDrive/Desktop/PlayStoreApps/Move-On/app/src/main/res/drawable/ic_arrow_left.xml" value="0.2203125" />
+        <entry key="..\:/Users/saini/OneDrive/Desktop/PlayStoreApps/Move-On/app/src/main/res/layout/activity_array_adapter.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/saini/OneDrive/Desktop/PlayStoreApps/Move-On/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/saini/OneDrive/Desktop/PlayStoreApps/Move-On/app/src/main/res/layout/activity_wh_details.xml" value="0.22" />
+        <entry key="..\:/Users/saini/OneDrive/Desktop/PlayStoreApps/Move-On/app/src/main/res/layout/activity_wh_estimated_cost.xml" value="0.16394927536231885" />
+        <entry key="..\:/Users/saini/OneDrive/Desktop/PlayStoreApps/Move-On/app/src/main/res/layout/activity_wh_personal_details.xml" value="0.22" />
+        <entry key="..\:/Users/saini/OneDrive/Desktop/PlayStoreApps/Move-On/app/src/main/res/layout/activity_wh_type_ware_house.xml" value="0.16847826086956522" />
+        <entry key="..\:/Users/saini/OneDrive/Desktop/PlayStoreApps/Move-On/app/src/main/res/layout/fragment_blank.xml" value="0.16394927536231885" />
+        <entry key="..\:/Users/saini/OneDrive/Desktop/PlayStoreApps/Move-On/app/src/main/res/layout/fragment_dummy.xml" value="0.1" />
+        <entry key="..\:/Users/saini/OneDrive/Desktop/PlayStoreApps/Move-On/app/src/main/res/layout/fragment_swipe.xml" value="0.1" />
+        <entry key="..\:/Users/saini/OneDrive/Desktop/PlayStoreApps/Move-On/app/src/main/res/layout/items_list.xml" value="0.1816123188405797" />
       </map>
     </option>
   </component>

@@ -1,3 +1,636 @@
 <resources>
     <string name="app_name">moveon</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="type">
+        <item>Household</item>
+        <item>Vehiles</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="type_warehouse">
+        <item>Andaman and Nicobar</item>
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chandigarh</item>
+        <item>Chhattisgarh</item>
+        <item>Dadra and Nagar Haveli</item>
+        <item>Daman and Diu</item>
+        <item>Delhi</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Lakshadweep</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Orissa</item>
+        <item>Pondicherry</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Tripura</item>
+        <item>Uttar Pradesh</item>
+        <item>Uttaranchal</item>
+        <item>West Bengal</item>
+
+    </string-array>
+
+    <string-array name="city_list">
+        <item>Adilabad</item>
+        <item>Agra</item>
+        <item>Ahmedabad</item>
+        <item>Ahmednagar</item>
+        <item>Ajitgarh(Mohali)</item>
+        <item>Ajmer</item>
+        <item>Akola</item>
+        <item>Alappuzha</item>
+        <item>Aligarh</item>
+        <item>Alirajpur</item>
+        <item>Allahabad</item>
+        <item>Almora</item>
+        <item>Alwar</item>
+        <item>Ambala</item>
+        <item>Ambedkar Nagar</item>
+        <item>Amravati</item>
+        <item>Amreli district</item>
+        <item>Amritsar</item>
+        <item>Anand</item>
+        <item>Anantapur</item>
+        <item>Anantnag</item>
+        <item>Angul</item>
+        <item>Anjaw</item>
+        <item>Anuppur</item>
+        <item>Araria</item>
+        <item>Ariyalur</item>
+        <item>Arwal</item>
+        <item>Ashok Nagar</item>
+        <item>Auraiya</item>
+        <item>Aurangabad</item>
+        <item>Azamgarh</item>
+        <item>Badgam</item>
+        <item>Bagalkot</item>
+        <item>Bageshwar</item>
+        <item>Bagpat</item>
+        <item>Baksa</item>
+        <item>Balaghat</item>
+        <item>Balasore</item>
+        <item>Ballia</item>
+        <item>Balrampur</item>
+
+    </string-array>
+
 </resources>
+
+    <!--    Andaman and Nicobar Islands (union territory)-->
+    <!--    Port Blair-->
+    <!--    Andhra Pradesh-->
+    <!--    Adoni-->
+    <!--    Amaravati-->
+    <!--    Anantapur-->
+    <!--    Chandragiri-->
+    <!--    Chittoor-->
+    <!--    Dowlaiswaram-->
+    <!--    Eluru-->
+    <!--    Guntur-->
+    <!--    Kadapa-->
+    <!--    Kakinada-->
+    <!--    Kurnool-->
+    <!--    Machilipatnam-->
+    <!--    Nagarjunakoṇḍa-->
+    <!--    Rajahmundry-->
+    <!--    Srikakulam-->
+    <!--    Tirupati-->
+    <!--    Vijayawada-->
+    <!--    Visakhapatnam-->
+    <!--    Vizianagaram-->
+    <!--    Yemmiganur-->
+    <!--    Arunachal Pradesh-->
+    <!--    Itanagar-->
+    <!--    Assam-->
+    <!--    Dhuburi-->
+    <!--    Dibrugarh-->
+    <!--    Dispur-->
+    <!--    Guwahati-->
+    <!--    Jorhat-->
+    <!--    Nagaon-->
+    <!--    Sibsagar-->
+    <!--    Silchar-->
+    <!--    Tezpur-->
+    <!--    Tinsukia-->
+    <!--    Bihar-->
+    <!--    Ara-->
+    <!--    Baruni-->
+    <!--    Begusarai-->
+    <!--    Bettiah-->
+    <!--    Bhagalpur-->
+    <!--    Bihar Sharif-->
+    <!--    Bodh Gaya-->
+    <!--    Buxar-->
+    <!--    Chapra-->
+    <!--    Darbhanga-->
+    <!--    Dehri-->
+    <!--    Dinapur Nizamat-->
+    <!--    Gaya-->
+    <!--    Hajipur-->
+    <!--    Jamalpur-->
+    <!--    Katihar-->
+    <!--    Madhubani-->
+    <!--    Motihari-->
+    <!--    Munger-->
+    <!--    Muzaffarpur-->
+    <!--    Patna-->
+    <!--    Purnia-->
+    <!--    Pusa-->
+    <!--    Saharsa-->
+    <!--    Samastipur-->
+    <!--    Sasaram-->
+    <!--    Sitamarhi-->
+    <!--    Siwan-->
+    <!--    Chandigarh (union territory)-->
+    <!--    Chandigarh-->
+    <!--    Chhattisgarh-->
+    <!--    Ambikapur-->
+    <!--    Bhilai-->
+    <!--    Bilaspur-->
+    <!--    Dhamtari-->
+    <!--    Durg-->
+    <!--    Jagdalpur-->
+    <!--    Raipur-->
+    <!--    Rajnandgaon-->
+    <!--    Dadra and Nagar Haveli (union territory)-->
+    <!--    Silvassa-->
+    <!--    Daman and Diu (union territory)-->
+    <!--    Daman-->
+    <!--    Diu-->
+    <!--    Delhi (national capital territory)-->
+    <!--    Delhi-->
+    <!--    New Delhi-->
+    <!--    Goa-->
+    <!--    Madgaon-->
+    <!--    Panaji-->
+    <!--    Gujarat-->
+    <!--    Ahmadabad-->
+    <!--    Amreli-->
+    <!--    Bharuch-->
+    <!--    Bhavnagar-->
+    <!--    Bhuj-->
+    <!--    Dwarka-->
+    <!--    Gandhinagar-->
+    <!--    Godhra-->
+    <!--    Jamnagar-->
+    <!--    Junagadh-->
+    <!--    Kandla-->
+    <!--    Khambhat-->
+    <!--    Kheda-->
+    <!--    Mahesana-->
+    <!--    Morvi-->
+    <!--    Nadiad-->
+    <!--    Navsari-->
+    <!--    Okha-->
+    <!--    Palanpur-->
+    <!--    Patan-->
+    <!--    Porbandar-->
+    <!--    Rajkot-->
+    <!--    Surat-->
+    <!--    Surendranagar-->
+    <!--    Valsad-->
+    <!--    Veraval-->
+    <!--    Haryana-->
+    <!--    Ambala-->
+    <!--    Bhiwani-->
+    <!--    Chandigarh-->
+    <!--    Faridabad-->
+    <!--    Firozpur Jhirka-->
+    <!--    Gurgaon-->
+    <!--    Hansi-->
+    <!--    Hisar-->
+    <!--    Jind-->
+    <!--    Kaithal-->
+    <!--    Karnal-->
+    <!--    Kurukshetra-->
+    <!--    Panipat-->
+    <!--    Pehowa-->
+    <!--    Rewari-->
+    <!--    Rohtak-->
+    <!--    Sirsa-->
+    <!--    Sonipat-->
+    <!--    Himachal Pradesh-->
+    <!--    Bilaspur-->
+    <!--    Chamba-->
+    <!--    Dalhousie-->
+    <!--    Dharmshala-->
+    <!--    Hamirpur-->
+    <!--    Kangra-->
+    <!--    Kullu-->
+    <!--    Mandi-->
+    <!--    Nahan-->
+    <!--    Shimla-->
+    <!--    Una-->
+    <!--    Jammu and Kashmir (union territory)-->
+    <!--    Anantnag-->
+    <!--    Baramula-->
+    <!--    Doda-->
+    <!--    Gulmarg-->
+    <!--    Jammu-->
+    <!--    Kathua-->
+    <!--    Punch-->
+    <!--    Rajauri-->
+    <!--    Srinagar-->
+    <!--    Udhampur-->
+    <!--    Jharkhand-->
+    <!--    Bokaro-->
+    <!--    Chaibasa-->
+    <!--    Deoghar-->
+    <!--    Dhanbad-->
+    <!--    Dumka-->
+    <!--    Giridih-->
+    <!--    Hazaribag-->
+    <!--    Jamshedpur-->
+    <!--    Jharia-->
+    <!--    Rajmahal-->
+    <!--    Ranchi-->
+    <!--    Saraikela-->
+    <!--    Karnataka-->
+    <!--    Badami-->
+    <!--    Ballari-->
+    <!--    Bangalore-->
+    <!--    Belgavi-->
+    <!--    Bhadravati-->
+    <!--    Bidar-->
+    <!--    Chikkamagaluru-->
+    <!--    Chitradurga-->
+    <!--    Davangere-->
+    <!--    Halebid-->
+    <!--    Hassan-->
+    <!--    Hubballi-Dharwad-->
+    <!--    Kalaburagi-->
+    <!--    Kolar-->
+    <!--    Madikeri-->
+    <!--    Mandya-->
+    <!--    Mangaluru-->
+    <!--    Mysuru-->
+    <!--    Raichur-->
+    <!--    Shivamogga-->
+    <!--    Shravanabelagola-->
+    <!--    Shrirangapattana-->
+    <!--    Tumkuru-->
+    <!--    Kerala-->
+    <!--    Alappuzha-->
+    <!--    Badagara-->
+    <!--    Idukki-->
+    <!--    Kannur-->
+    <!--    Kochi-->
+    <!--    Kollam-->
+    <!--    Kottayam-->
+    <!--    Kozhikode-->
+    <!--    Mattancheri-->
+    <!--    Palakkad-->
+    <!--    Thalassery-->
+    <!--    Thiruvananthapuram-->
+    <!--    Thrissur-->
+    <!--    Ladakh (union territory)-->
+    <!--    Kargil-->
+    <!--    Leh-->
+    <!--    Madhya Pradesh-->
+    <!--    Balaghat-->
+    <!--    Barwani-->
+    <!--    Betul-->
+    <!--    Bharhut-->
+    <!--    Bhind-->
+    <!--    Bhojpur-->
+    <!--    Bhopal-->
+    <!--    Burhanpur-->
+    <!--    Chhatarpur-->
+    <!--    Chhindwara-->
+    <!--    Damoh-->
+    <!--    Datia-->
+    <!--    Dewas-->
+    <!--    Dhar-->
+    <!--    Guna-->
+    <!--    Gwalior-->
+    <!--    Hoshangabad-->
+    <!--    Indore-->
+    <!--    Itarsi-->
+    <!--    Jabalpur-->
+    <!--    Jhabua-->
+    <!--    Khajuraho-->
+    <!--    Khandwa-->
+    <!--    Khargon-->
+    <!--    Maheshwar-->
+    <!--    Mandla-->
+    <!--    Mandsaur-->
+    <!--    Mhow-->
+    <!--    Morena-->
+    <!--    Murwara-->
+    <!--    Narsimhapur-->
+    <!--    Narsinghgarh-->
+    <!--    Narwar-->
+    <!--    Neemuch-->
+    <!--    Nowgong-->
+    <!--    Orchha-->
+    <!--    Panna-->
+    <!--    Raisen-->
+    <!--    Rajgarh-->
+    <!--    Ratlam-->
+    <!--    Rewa-->
+    <!--    Sagar-->
+    <!--    Sarangpur-->
+    <!--    Satna-->
+    <!--    Sehore-->
+    <!--    Seoni-->
+    <!--    Shahdol-->
+    <!--    Shajapur-->
+    <!--    Sheopur-->
+    <!--    Shivpuri-->
+    <!--    Ujjain-->
+    <!--    Vidisha-->
+    <!--    Maharashtra-->
+    <!--    Ahmadnagar-->
+    <!--    Akola-->
+    <!--    Amravati-->
+    <!--    Aurangabad-->
+    <!--    Bhandara-->
+    <!--    Bhusawal-->
+    <!--    Bid-->
+    <!--    Buldana-->
+    <!--    Chandrapur-->
+    <!--    Daulatabad-->
+    <!--    Dhule-->
+    <!--    Jalgaon-->
+    <!--    Kalyan-->
+    <!--    Karli-->
+    <!--    Kolhapur-->
+    <!--    Mahabaleshwar-->
+    <!--    Malegaon-->
+    <!--    Matheran-->
+    <!--    Mumbai-->
+    <!--    Nagpur-->
+    <!--    Nanded-->
+    <!--    Nashik-->
+    <!--    Osmanabad-->
+    <!--    Pandharpur-->
+    <!--    Parbhani-->
+    <!--    Pune-->
+    <!--    Ratnagiri-->
+    <!--    Sangli-->
+    <!--    Satara-->
+    <!--    Sevagram-->
+    <!--    Solapur-->
+    <!--    Thane-->
+    <!--    Ulhasnagar-->
+    <!--    Vasai-Virar-->
+    <!--    Wardha-->
+    <!--    Yavatmal-->
+    <!--    Manipur-->
+    <!--    Imphal-->
+    <!--    Meghalaya-->
+    <!--    Cherrapunji-->
+    <!--    Shillong-->
+    <!--    Mizoram-->
+    <!--    Aizawl-->
+    <!--    Lunglei-->
+    <!--    Nagaland-->
+    <!--    Kohima-->
+    <!--    Mon-->
+    <!--    Phek-->
+    <!--    Wokha-->
+    <!--    Zunheboto-->
+    <!--    Odisha-->
+    <!--    Balangir-->
+    <!--    Baleshwar-->
+    <!--    Baripada-->
+    <!--    Bhubaneshwar-->
+    <!--    Brahmapur-->
+    <!--    Cuttack-->
+    <!--    Dhenkanal-->
+    <!--    Keonjhar-->
+    <!--    Konark-->
+    <!--    Koraput-->
+    <!--    Paradip-->
+    <!--    Phulabani-->
+    <!--    Puri-->
+    <!--    Sambalpur-->
+    <!--    Udayagiri-->
+    <!--    Puducherry (union territory)-->
+    <!--    Karaikal-->
+    <!--    Mahe-->
+    <!--    Puducherry-->
+    <!--    Yanam-->
+    <!--    Punjab-->
+    <!--    Amritsar-->
+    <!--    Batala-->
+    <!--    Chandigarh-->
+    <!--    Faridkot-->
+    <!--    Firozpur-->
+    <!--    Gurdaspur-->
+    <!--    Hoshiarpur-->
+    <!--    Jalandhar-->
+    <!--    Kapurthala-->
+    <!--    Ludhiana-->
+    <!--    Nabha-->
+    <!--    Patiala-->
+    <!--    Rupnagar-->
+    <!--    Sangrur-->
+    <!--    Rajasthan-->
+    <!--    Abu-->
+    <!--    Ajmer-->
+    <!--    Alwar-->
+    <!--    Amer-->
+    <!--    Barmer-->
+    <!--    Beawar-->
+    <!--    Bharatpur-->
+    <!--    Bhilwara-->
+    <!--    Bikaner-->
+    <!--    Bundi-->
+    <!--    Chittaurgarh-->
+    <!--    Churu-->
+    <!--    Dhaulpur-->
+    <!--    Dungarpur-->
+    <!--    Ganganagar-->
+    <!--    Hanumangarh-->
+    <!--    Jaipur-->
+    <!--    Jaisalmer-->
+    <!--    Jalor-->
+    <!--    Jhalawar-->
+    <!--    Jhunjhunu-->
+    <!--    Jodhpur-->
+    <!--    Kishangarh-->
+    <!--    Kota-->
+    <!--    Merta-->
+    <!--    Nagaur-->
+    <!--    Nathdwara-->
+    <!--    Pali-->
+    <!--    Phalodi-->
+    <!--    Pushkar-->
+    <!--    Sawai Madhopur-->
+    <!--    Shahpura-->
+    <!--    Sikar-->
+    <!--    Sirohi-->
+    <!--    Tonk-->
+    <!--    Udaipur-->
+    <!--    Sikkim-->
+    <!--    Gangtok-->
+    <!--    Gyalsing-->
+    <!--    Lachung-->
+    <!--    Mangan-->
+    <!--    Tamil Nadu-->
+    <!--    Arcot-->
+    <!--    Chengalpattu-->
+    <!--    Chennai-->
+    <!--    Chidambaram-->
+    <!--    Coimbatore-->
+    <!--    Cuddalore-->
+    <!--    Dharmapuri-->
+    <!--    Dindigul-->
+    <!--    Erode-->
+    <!--    Kanchipuram-->
+    <!--    Kanniyakumari-->
+    <!--    Kodaikanal-->
+    <!--    Kumbakonam-->
+    <!--    Madurai-->
+    <!--    Mamallapuram-->
+    <!--    Nagappattinam-->
+    <!--    Nagercoil-->
+    <!--    Palayankottai-->
+    <!--    Pudukkottai-->
+    <!--    Rajapalaiyam-->
+    <!--    Ramanathapuram-->
+    <!--    Salem-->
+    <!--    Thanjavur-->
+    <!--    Tiruchchirappalli-->
+    <!--    Tirunelveli-->
+    <!--    Tiruppur-->
+    <!--    Tuticorin-->
+    <!--    Udhagamandalam-->
+    <!--    Vellore-->
+    <!--    Telangana-->
+    <!--    Hyderabad-->
+    <!--    Karimnagar-->
+    <!--    Khammam-->
+    <!--    Mahbubnagar-->
+    <!--    Nizamabad-->
+    <!--    Sangareddi-->
+    <!--    Warangal-->
+    <!--    Tripura-->
+    <!--    Agartala-->
+    <!--    Uttar Pradesh-->
+    <!--    Agra-->
+    <!--    Aligarh-->
+    <!--    Amroha-->
+    <!--    Ayodhya-->
+    <!--    Azamgarh-->
+    <!--    Bahraich-->
+    <!--    Ballia-->
+    <!--    Banda-->
+    <!--    Bara Banki-->
+    <!--    Bareilly-->
+    <!--    Basti-->
+    <!--    Bijnor-->
+    <!--    Bithur-->
+    <!--    Budaun-->
+    <!--    Bulandshahr-->
+    <!--    Deoria-->
+    <!--    Etah-->
+    <!--    Etawah-->
+    <!--    Faizabad-->
+    <!--    Farrukhabad-cum-Fatehgarh-->
+    <!--    Fatehpur-->
+    <!--    Fatehpur Sikri-->
+    <!--    Ghaziabad-->
+    <!--    Ghazipur-->
+    <!--    Gonda-->
+    <!--    Gorakhpur-->
+    <!--    Hamirpur-->
+    <!--    Hardoi-->
+    <!--    Hathras-->
+    <!--    Jalaun-->
+    <!--    Jaunpur-->
+    <!--    Jhansi-->
+    <!--    Kannauj-->
+    <!--    Kanpur-->
+    <!--    Lakhimpur-->
+    <!--    Lalitpur-->
+    <!--    Lucknow-->
+    <!--    Mainpuri-->
+    <!--    Mathura-->
+    <!--    Meerut-->
+    <!--    Mirzapur-Vindhyachal-->
+    <!--    Moradabad-->
+    <!--    Muzaffarnagar-->
+    <!--    Partapgarh-->
+    <!--    Pilibhit-->
+    <!--    Prayagraj-->
+    <!--    Rae Bareli-->
+    <!--    Rampur-->
+    <!--    Saharanpur-->
+    <!--    Sambhal-->
+    <!--    Shahjahanpur-->
+    <!--    Sitapur-->
+    <!--    Sultanpur-->
+    <!--    Tehri-->
+    <!--    Varanasi-->
+    <!--    Uttarakhand-->
+    <!--    Almora-->
+    <!--    Dehra Dun-->
+    <!--    Haridwar-->
+    <!--    Mussoorie-->
+    <!--    Nainital-->
+    <!--    Pithoragarh-->
+    <!--    West Bengal-->
+    <!--    Alipore-->
+    <!--    Alipur Duar-->
+    <!--    Asansol-->
+    <!--    Baharampur-->
+    <!--    Bally-->
+    <!--    Balurghat-->
+    <!--    Bankura-->
+    <!--    Baranagar-->
+    <!--    Barasat-->
+    <!--    Barrackpore-->
+    <!--    Basirhat-->
+    <!--    Bhatpara-->
+    <!--    Bishnupur-->
+    <!--    Budge Budge-->
+    <!--    Burdwan-->
+    <!--    Chandernagore-->
+    <!--    Darjiling-->
+    <!--    Diamond Harbour-->
+    <!--    Dum Dum-->
+    <!--    Durgapur-->
+    <!--    Halisahar-->
+    <!--    Haora-->
+    <!--    Hugli-->
+    <!--    Ingraj Bazar-->
+    <!--    Jalpaiguri-->
+    <!--    Kalimpong-->
+    <!--    Kamarhati-->
+    <!--    Kanchrapara-->
+    <!--    Kharagpur-->
+    <!--    Koch Bihar-->
+    <!--    Kolkata-->
+    <!--    Krishnanagar-->
+    <!--    Malda-->
+    <!--    Midnapore-->
+    <!--    Murshidabad-->
+    <!--    Navadwip-->
+    <!--    Palashi-->
+    <!--    Panihati-->
+    <!--    Purulia-->
+    <!--    Raiganj-->
+    <!--    Santipur-->
+    <!--    Shantiniketan-->
+    <!--    Shrirampur-->
+    <!--    Siliguri-->
+    <!--    Siuri-->
+    <!--    Tamluk-->
+    <!--    Titagarh-->

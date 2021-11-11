@@ -10,14 +10,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Moveon">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.warehouses.whEstimatedCostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.warehouses.whTypeWareHouse"
             android:exported="true">
+
+        </activity>
+        <activity android:name = ".ui.warehouses.whDetailsActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".ui.warehouses.whPersonalDetailsActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

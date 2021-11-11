@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141414"
+    android:orientation="vertical"
+    tools:context=".ui.warehouses.whPersonalDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#141414">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_arrow_left"
+                android:padding="10dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="35dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text=" WareHouse Facility"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="292dp"
+        android:layout_height="225dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/download_warehouse_pic1"
+
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/grey_800_bg"
+        android:hint="Enter your full name"
+        android:paddingStart="18dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/grey_800_bg"
+        android:hint="Enter your mobile number"
+        android:inputType="phone"
+        android:paddingStart="18dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/grey_800_bg"
+        android:hint="Enter your e-mail"
+        android:paddingStart="18dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:backgroundTint="#1E54B7"
+            android:padding="10dp"
+            android:id="@+id/btnpersonaldetail"
+            android:textSize="18sp"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="bottom"
+            android:text="Continue"
+            android:textAllCaps="false"
+
+
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
