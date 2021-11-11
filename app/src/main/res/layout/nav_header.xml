@@ -36,6 +36,10 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto"
         android:text="masai@gmail.com"
+        android:drawableRight="@drawable/ic_menu_edit"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/blue_light"
+        android:layout_gravity="center"
         android:textColor="@color/white"
         android:textSize="14sp" />
 
