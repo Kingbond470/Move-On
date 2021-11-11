@@ -12,6 +12,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationView
 import dev.kingbond.moveon.ui.about.AboutFragment
+import dev.kingbond.moveon.ui.coupons.CouponsActivity
 import dev.kingbond.moveon.ui.help.HelpFragment
 import dev.kingbond.moveon.ui.profile.EditProfileActivity
 import dev.kingbond.moveon.ui.settings.SettingsFragment
@@ -60,6 +61,10 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_help ->
                     replaceFragment(HelpFragment(), it.title.toString())
 
+                R.id.nav_coupons -> {
+                    val intent = Intent(this, CouponsActivity::class.java)
+                    startActivity(intent)
+                }
 
             }
             true
