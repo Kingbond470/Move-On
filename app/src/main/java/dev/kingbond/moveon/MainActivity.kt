@@ -46,8 +46,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
-
         navView.setNavigationItemSelectedListener {
 
             it.isChecked = true

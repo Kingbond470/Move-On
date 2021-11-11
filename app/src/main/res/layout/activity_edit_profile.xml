@@ -116,7 +116,8 @@
                     android:layout_marginBottom="5dp"
                     android:layout_toRightOf="@id/flProfileImage"
                     android:text="Name*"
-                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/white"
                     android:textSize="13sp" />
 
                 <EditText
@@ -129,7 +130,8 @@
                     android:background="@drawable/edit_profile_et_bg"
                     android:padding="5dp"
                     android:singleLine="true"
-                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/white"
                     android:textSize="15sp" />
 
             </RelativeLayout>
@@ -140,7 +142,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
                 android:text="Gender*"
-                android:textColor="@color/black"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/white"
                 android:textSize="13sp" />
 
             <RadioGroup
@@ -157,6 +160,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
                     android:background="@drawable/rb_selector"
                     android:button="@color/transparent"
                     android:drawableLeft="@drawable/gender_man_removebg"
@@ -180,6 +184,7 @@
                     android:paddingVertical="5dp"
                     android:paddingLeft="5dp"
                     android:text="Female"
+                    android:fontFamily="@font/roboto"
                     android:textColor="@drawable/gender_text_color" />
 
                 <RadioButton
@@ -196,6 +201,7 @@
                     android:paddingVertical="5dp"
                     android:paddingLeft="5dp"
                     android:text="Others"
+                    android:fontFamily="@font/roboto"
                     android:textColor="@drawable/gender_text_color" />
 
 
@@ -208,7 +214,8 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="5dp"
                 android:text="Age*"
-                android:textColor="@color/black"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/white"
                 android:textSize="13sp" />
 
             <EditText
@@ -220,7 +227,8 @@
                 android:maxLength="2"
                 android:padding="5dp"
                 android:singleLine="true"
-                android:textColor="@color/black"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/white"
                 android:textSize="15sp" />
 
             <TextView
@@ -230,7 +238,8 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="5dp"
                 android:text="Relation"
-                android:textColor="@color/black"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/white"
                 android:textSize="13sp" />
 
             <EditText
@@ -242,7 +251,8 @@
                 android:padding="5dp"
                 android:singleLine="true"
                 android:text="Self"
-                android:textColor="@color/black"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/white"
                 android:textSize="15sp" />
 
             <TextView
@@ -252,7 +262,8 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="5dp"
                 android:text="Email (Work)"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto"
                 android:textSize="13sp" />
 
             <EditText
@@ -263,7 +274,8 @@
                 android:hint="Optional"
                 android:padding="5dp"
                 android:singleLine="true"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto"
                 android:textSize="15sp" />
 
             <TextView
@@ -273,7 +285,8 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="5dp"
                 android:text="Email (Personal)"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto"
                 android:textSize="13sp" />
 
             <EditText
@@ -284,7 +297,8 @@
                 android:hint="Optional"
                 android:padding="5dp"
                 android:singleLine="true"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto"
                 android:textSize="15sp" />
 
             <LinearLayout
@@ -307,7 +321,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:text="Height (in cm)"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/roboto"
                         android:textSize="13sp" />
 
                     <EditText
@@ -319,7 +334,8 @@
                         android:inputType="number"
                         android:padding="5dp"
                         android:singleLine="true"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/roboto"
                         android:textSize="15sp" />
 
                 </LinearLayout>
@@ -338,7 +354,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:text="Weight (in kg)"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/roboto"
                         android:textSize="13sp" />
 
                     <EditText
@@ -350,7 +367,8 @@
                         android:padding="5dp"
                         android:inputType="number"
                         android:singleLine="true"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/roboto"
                         android:textSize="15sp" />
 
                 </LinearLayout>
@@ -365,7 +383,8 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="5dp"
                 android:text="Blood Group"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto"
                 android:textSize="13sp" />
 
             <HorizontalScrollView
@@ -499,6 +518,7 @@
                 android:buttonTint="#2C72C1"
                 android:textSize="15sp"
                 android:fontFamily="@font/roboto"
+                android:textColor="@color/white"
                 android:text="@string/check_box_string" />
 
 
@@ -513,10 +533,11 @@
                     android:id="@+id/btnSave"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@color/orange"
+                    android:background="@color/blue_500"
                     android:paddingHorizontal="80dp"
                     android:paddingVertical="10dp"
                     android:text="Save"
+                    android:fontFamily="@font/roboto"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
