@@ -4,7 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/blood_group_not_selected.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/blood_group_selected.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/blood_group_selector.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/blood_group_text_color.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/buttonshapewhitebg.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/edit_profile_bg.xml" value="0.20555555555555555" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/edit_profile_et_bg.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/gender_text_color.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_appbg.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_back_arrow.xml" value="0.20555555555555555" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_bottom_arrow.xml" value="0.1287037037037037" />
@@ -18,6 +25,10 @@
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_menu_edit.xml" value="0.20555555555555555" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_moveon.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_signup_india.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/rb_not_selected.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/rb_selected.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/rb_selector.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_edit_profile.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_email_login.xml" value="0.18" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_google_maps.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_login.xml" value="0.2" />
@@ -27,7 +38,7 @@
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_splash_screen.xml" value="0.22" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_about.xml" value="0.1" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_email.xml" value="0.22" />
-        <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_help.xml" value="0.18" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_help.xml" value="0.25" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_login.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_password.xml" value="0.18" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_settings.xml" value="0.1" />

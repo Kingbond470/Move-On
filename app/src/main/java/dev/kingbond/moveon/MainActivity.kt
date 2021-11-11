@@ -1,8 +1,11 @@
 package dev.kingbond.moveon
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.View
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
@@ -10,7 +13,9 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationView
 import dev.kingbond.moveon.ui.about.AboutFragment
 import dev.kingbond.moveon.ui.help.HelpFragment
+import dev.kingbond.moveon.ui.profile.EditProfileActivity
 import dev.kingbond.moveon.ui.settings.SettingsFragment
+import kotlinx.android.synthetic.main.nav_header.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,6 +38,16 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
 
+        // to access the view from header in Navigation View
+        val header: View = navView.getHeaderView(0)
+        val ibEdit: ImageButton = header.findViewById(R.id.ibEditProfile)
+        ibEdit.setOnClickListener {
+            val intent = Intent(this, EditProfileActivity::class.java)
+            startActivity(intent)
+        }
+
+
+
         navView.setNavigationItemSelectedListener {
 
             it.isChecked = true
@@ -46,6 +61,7 @@ class MainActivity : AppCompatActivity() {
 
                 R.id.nav_help ->
                     replaceFragment(HelpFragment(), it.title.toString())
+
 
             }
             true

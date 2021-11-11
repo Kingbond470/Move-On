@@ -10,31 +10,29 @@
         android:supportsRtl="true"
         android:theme="@style/NoActionBarTheme">
         <activity
+            android:name=".ui.profile.EditProfileActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.login.EmailLoginActivity"
             android:exported="true"
             android:theme="@style/MaterialTheme"
-            android:windowSoftInputMode="adjustResize">
-
-        </activity>
+            android:windowSoftInputMode="adjustResize"></activity>
         <activity
             android:name=".ui.login.Login"
             android:exported="true" />
         <activity
             android:name=".ui.splash.SplashScreenActivity"
             android:exported="true">
-
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:theme="@style/Theme.MoveonHome"
-            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MoveonHome"></activity>
 
         <meta-data
             android:name="preloaded_fonts"

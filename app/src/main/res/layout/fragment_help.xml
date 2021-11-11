@@ -8,7 +8,6 @@
     tools:context=".ui.help.HelpFragment">
 
 
-
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_marginTop="10dp"

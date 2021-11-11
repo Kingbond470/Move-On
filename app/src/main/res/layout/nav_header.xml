@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_centerHorizontal="true"
     android:background="#121212"
     android:gravity="center_horizontal"
@@ -15,9 +15,9 @@
         android:layout_height="80dp"
         android:layout_marginTop="80dp"
         android:scaleType="centerCrop"
-        app:civ_border_width="2dp"
+        android:src="@drawable/user_photo"
         app:civ_border_color="@color/white"
-        android:src="@drawable/user_photo" />
+        app:civ_border_width="2dp" />
 
     <TextView
         android:id="@+id/tvUsername"
@@ -25,23 +25,41 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto"
         android:gravity="center_horizontal"
+        android:padding="5dp"
         android:paddingTop="8dp"
         android:text="Name"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto"
-        android:text="masai@gmail.com"
-        android:drawableRight="@drawable/ic_menu_edit"
-        android:drawablePadding="10dp"
-        android:drawableTint="@color/blue_light"
-        android:layout_gravity="center"
-        android:textColor="@color/white"
-        android:textSize="14sp" />
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvEditProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/roboto"
+            android:padding="5dp"
+            android:text="masai@gmail.com"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/ibEditProfile"
+            android:layout_marginLeft="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_menu_edit"
+            android:backgroundTint="@color/blue"
+            android:padding="5dp" />
+
+    </LinearLayout>
 
     <View
         android:layout_width="match_parent"
