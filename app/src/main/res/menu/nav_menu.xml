@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_your_bookings"
+        android:icon="@drawable/ic_menu_your_bookings"
+        android:title="Your Bookings" />
+
+    <item
+        android:id="@+id/nav_payment"
+        android:icon="@drawable/ic_menu_payment"
+        android:title="Payment" />
+
+    <item
+        android:id="@+id/nav_coupons"
+        android:icon="@drawable/ic_menu_coupons"
+        android:title="Coupons" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_menu_settings"
+        android:title="Settings" />
+
+    <item
+        android:id="@+id/nav_help"
+        android:icon="@drawable/ic_menu_help"
+        android:title="Help" />
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@drawable/ic_menu_about"
+        android:title="About" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_menu_logout"
+        android:title="Logout" />
+</menu>
