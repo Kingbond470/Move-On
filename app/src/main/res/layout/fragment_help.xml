@@ -1,14 +1,539 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black_app"
     tools:context=".ui.help.HelpFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Help" />
 
-</FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black_app"
+                    android:padding="15dp"
+                    android:text="Help and Contact"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black_app"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="10dp"
+                        app:cardBackgroundColor="#E4141414">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp">
+
+                            <ImageView
+                                android:id="@+id/iv_warning"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_above="@id/operations"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:src="@drawable/ic_warning"
+                                android:scaleType="centerCrop"/>
+
+                            <TextView
+                                android:id="@+id/tv_dear_customer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_toRightOf="@+id/iv_warning"
+                                android:lines="3"
+                                android:paddingLeft="10dp"
+                                android:text="Dear Customer,\nDue to the unprecedented spike of COVID-19 cases across the country, our COntact Centre"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/operations"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_dear_customer"
+                                android:lines="1"
+                                android:text="operations have been impacted."
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/we_are"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_dear_customer"
+                                android:layout_toRightOf="@id/operations"
+                                android:lines="1"
+                                android:text=" We are therefore"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:id="@+id/compelled"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/operations"
+                                android:lines="1"
+                                android:text="compelled to halt our operations till the situation"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/normalizes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/compelled"
+                                android:lines="1"
+                                android:text="normalizes."
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/however"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/compelled"
+                                android:layout_toRightOf="@+id/normalizes"
+                                android:lines="1"
+                                android:text=" However, we would continue to provide"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/support_for"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/normalizes"
+                                android:lines="1"
+                                android:text="support for your concerns over Emails."
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/Though"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/support_for"
+                                android:layout_marginVertical="20dp"
+                                android:lines="4"
+                                android:text="Though our endeavor would be to respond as quickly as\npossible, but please do allow us to revert in 24-48 hours.\nFor any further assistance please feel free to reach out to\nus via below mentioned options."
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/dipatch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/Though"
+                                android:lines="1"
+                                android:text="Dispatch of orders from our end as well as Deliveries"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/have"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/dipatch"
+                                android:lines="3"
+                                android:text="have also been severly hampered during the last few weeks and may continue for some more time. As such, we seek your cooperation in alowing us time extensions."
+                                android:textColor="@color/white" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="20dp"
+                        android:backgroundTint="@color/white"
+                        android:elevation="2dp"
+                        app:cardBackgroundColor="#E4141414"
+                        app:cardCornerRadius="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="#E4141414"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:id="@+id/iv_manage_your_order"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_warning"
+                                android:layout_margin="10dp" />
+
+                            <TextView
+                                android:id="@+id/tv_manage_order"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@id/iv_manage_your_order"
+                                android:text="COVID Vaccination"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="20dp"
+                        android:backgroundTint="@color/white"
+                        android:elevation="2dp"
+                        app:cardBackgroundColor="#E4141414"
+                        app:cardCornerRadius="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="#E4141414"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_warning"
+                                android:layout_margin="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="COVID Vaccination"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="20dp"
+                        android:backgroundTint="@color/white"
+                        android:elevation="2dp"
+                        app:cardBackgroundColor="#E4141414"
+                        app:cardCornerRadius="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="#E4141414"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_warning"
+                                android:layout_margin="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="COVID Vaccination"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="20dp"
+                        android:backgroundTint="@color/white"
+                        android:elevation="2dp"
+                        app:cardBackgroundColor="#E4141414"
+                        app:cardCornerRadius="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="#E4141414"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_warning"
+                                android:layout_margin="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="COVID Vaccination"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="20dp"
+                        android:backgroundTint="@color/white"
+                        android:elevation="2dp"
+                        app:cardBackgroundColor="#E4141414"
+                        app:cardCornerRadius="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="#E4141414"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_warning"
+                                android:layout_margin="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="COVID Vaccination"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="20dp"
+                        android:backgroundTint="@color/white"
+                        android:elevation="2dp"
+                        app:cardBackgroundColor="#E4141414"
+                        app:cardCornerRadius="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="#E4141414"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_warning"
+                                android:layout_margin="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="COVID Vaccination"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="20dp"
+                        android:backgroundTint="@color/white"
+                        android:elevation="2dp"
+                        app:cardBackgroundColor="#E4141414"
+                        app:cardCornerRadius="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="#E4141414"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_warning"
+                                android:layout_margin="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="COVID Vaccination"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="20dp"
+                        android:backgroundTint="@color/white"
+                        android:elevation="2dp"
+                        app:cardBackgroundColor="#E4141414"
+                        app:cardCornerRadius="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="#E4141414"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_warning"
+                                android:layout_margin="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="COVID Vaccination"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:elevation="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="100dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="2dp"
+                android:clickable="true"
+                android:elevation="20dp"
+                app:cardCornerRadius="100dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/virtual_assistant" />
+
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

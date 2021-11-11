@@ -6,6 +6,7 @@
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/buttonshapewhitebg.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_appbg.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_back_arrow.xml" value="0.20555555555555555" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_bottom_arrow.xml" value="0.1287037037037037" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_button_bg.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_editext_background.xml" value="0.2203125" />
@@ -26,7 +27,7 @@
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_splash_screen.xml" value="0.22" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_about.xml" value="0.1" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_email.xml" value="0.22" />
-        <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_help.xml" value="0.1" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_help.xml" value="0.18" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_login.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_password.xml" value="0.18" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_settings.xml" value="0.1" />
