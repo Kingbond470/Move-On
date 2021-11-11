@@ -42,6 +42,9 @@ class whTypeWareHouse : AppCompatActivity(), AdapterView.OnItemSelectedListener 
                     launchFragment()
                 }
 
+
+
+
                 else -> { // Note the block
 
                 }

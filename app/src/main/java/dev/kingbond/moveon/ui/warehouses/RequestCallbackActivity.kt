@@ -4,19 +4,19 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import dev.kingbond.moveon.R
+import dev.kingbond.moveon.databinding.ActivityRequestCallbackBinding
 import dev.kingbond.moveon.databinding.ActivityWhEstimatedCostBinding
-import kotlinx.android.synthetic.main.activity_wh_estimated_cost.*
 
-class whEstimatedCostActivity : AppCompatActivity() {
-    private lateinit var binding :ActivityWhEstimatedCostBinding
+class RequestCallbackActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityRequestCallbackBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityWhEstimatedCostBinding.inflate(layoutInflater)
+        binding = ActivityRequestCallbackBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        binding.btnRequestCallback.setOnClickListener {
-            val intent = Intent(applicationContext, RequestCallbackActivity::class.java)
+        binding.btnDone.setOnClickListener {
+            val intent = Intent(applicationContext, whOrdersActivity::class.java)
             startActivity(intent)
         }
+
     }
 }

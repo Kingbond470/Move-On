@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#141414"
+    android:layout_height="match_parent"
+    tools:context=".ui.warehouses.RequestCallbackActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#141414">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_arrow_left"
+                android:padding="10dp"
+
+                />
+        </androidx.appcompat.widget.Toolbar>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="42dp"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_marginTop="28dp"
+        android:text="We received callback request "
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="28dp"
+        android:layout_marginHorizontal="53dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_callbacksvg"
+        android:padding="10dp"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/grey_800_bg"
+        android:layout_marginHorizontal="18dp"
+        android:backgroundTint="#10462D"
+        android:orientation="vertical"
+        android:layout_marginTop="79dp"
+        android:layout_height="wrap_content">
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="26dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="We will call you back within 4 hours to give  you an exact quote regarding cost of shifting."
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Thank you for choosing us"
+            android:id="@+id/tvFeatures1"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#1E54B7"
+        android:padding="10dp"
+
+        android:text="Done"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

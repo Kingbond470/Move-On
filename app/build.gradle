@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
     id 'kotlin-android-extensions'
 }
 
@@ -39,6 +40,24 @@ android {
 }
 
 dependencies {
+
+//   ViewModel and LiveData
+//    def arch_version = '2.4.0-beta01'
+    def arch_version = '2.2.0-alpha01'
+
+    implementation "androidx.lifecycle:lifecycle-extensions:$arch_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$arch_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$arch_version"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$arch_version"
+
+
+//Room
+    implementation 'androidx.room:room-ktx:2.3.0'
+    kapt 'androidx.room:room-compiler:2.3.0'
+    def anko_version = '0.10.0'
+    //Anko
+    implementation "org.jetbrains.anko:anko-commons:$anko_version"
+
     implementation 'com.airbnb.android:lottie:3.2.0'
 
 
