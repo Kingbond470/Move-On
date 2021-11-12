@@ -3,6 +3,7 @@ package dev.kingbond.moveon.ui.warehouses
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.*
 import dev.kingbond.moveon.R
@@ -34,8 +35,11 @@ class whTypeWareHouse : AppCompatActivity(), AdapterView.OnItemSelectedListener 
             launchFragment()
         }
             val item = parent?.getItemAtPosition(position).toString()
+        Toast.makeText(applicationContext, "item", Toast.LENGTH_SHORT).show()
+           Log.d("TAG", item)
             when (item) {
                 "Household" ->{
+                //    Toast.makeText(applicationContext, "item", Toast.LENGTH_SHORT).show()
                     launchFragment()
                 }
                 "Vehiles" ->{

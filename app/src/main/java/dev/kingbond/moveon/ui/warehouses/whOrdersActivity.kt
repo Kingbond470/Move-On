@@ -2,9 +2,12 @@ package dev.kingbond.moveon.ui.warehouses
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.LinearLayoutManager
 import dev.kingbond.moveon.Repository.WareHouseRepo
 import dev.kingbond.moveon.databinding.ActivityWhOrdersBinding
+import dev.kingbond.moveon.ui.warehouses.adapter.WareHouseAdapter
 import dev.kingbond.moveon.ui.warehouses.models.WareHouseDao
 import dev.kingbond.moveon.ui.warehouses.models.WareHouseEntity
 import dev.kingbond.moveon.ui.warehouses.models.WareHouseRoomDatabse
@@ -12,12 +15,17 @@ import dev.kingbond.moveon.viewmodels.WareHouseViewmodel
 import dev.kingbond.moveon.viewmodels.WareHouseViewmodelFactory
 
 class whOrdersActivity : AppCompatActivity() {
-
+//Binding
     private lateinit var binding : ActivityWhOrdersBinding
-
+//Mvvm
     private lateinit var roomDb : WareHouseRoomDatabse
     private lateinit var wareHouseDao: WareHouseDao
     private lateinit var viewmodel: WareHouseViewmodel
+    //Adapter
+    lateinit var wareHouseAdapter: WareHouseAdapter
+  private val warehouselist = mutableListOf<WareHouseEntity>()
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,5 +50,20 @@ class whOrdersActivity : AppCompatActivity() {
             viewmodel.addWareHouse(ware)
 
         }
+
+
+        wareHouseAdapter = WareHouseAdapter(warehouselist as ArrayList<WareHouseEntity>)
+        binding.rvRecyclerView.layoutManager = LinearLayoutManager(this)
+        binding.rvRecyclerView.adapter = wareHouseAdapter
+
+        viewmodel.getAllWareHouse().observe(this, Observer {
+            warehouselist.clear()
+            warehouselist.addAll(it)
+            wareHouseAdapter.notifyDataSetChanged()
+        })
+
+
+
+
     }
 }

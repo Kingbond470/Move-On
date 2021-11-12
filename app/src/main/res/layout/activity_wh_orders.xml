@@ -15,4 +15,12 @@
         android:text="add WareHouse"
         android:layout_marginHorizontal="23dp"/>
 
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rvRecyclerView"
+        android:layout_height="match_parent"
+
+        />
+
 </LinearLayout>
