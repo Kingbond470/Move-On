@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/black_app"
     tools:context=".ui.settings.SettingsProfileFragment">
 
@@ -20,15 +20,13 @@
             android:fitsSystemWindows="true"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-            <!--            <include layout="@layout/edit_profile_parallax" />-->
-
             <com.google.android.material.appbar.CollapsingToolbarLayout
                 android:id="@+id/collapsing_toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:minHeight="50dp"
                 android:background="@color/black_app"
                 android:fitsSystemWindows="true"
+                android:minHeight="50dp"
                 app:contentScrim="@color/green"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
@@ -137,7 +135,7 @@
                             android:layout_centerHorizontal="true"
                             android:layout_marginVertical="5dp"
                             android:fontFamily="@font/roboto_light"
-                            android:text="0"
+                            android:text="5"
                             android:textColor="@color/white"
                             android:textSize="13sp"
                             android:textStyle="bold" />
@@ -166,7 +164,7 @@
                             android:layout_centerHorizontal="true"
                             android:layout_marginVertical="5dp"
                             android:fontFamily="@font/roboto_light"
-                            android:text="0"
+                            android:text="3"
                             android:textColor="@color/white"
                             android:textSize="13sp"
                             android:textStyle="bold" />
@@ -195,7 +193,7 @@
                             android:layout_centerHorizontal="true"
                             android:layout_marginVertical="5dp"
                             android:fontFamily="@font/roboto_light"
-                            android:text="0"
+                            android:text="1"
                             android:textColor="@color/white"
                             android:textSize="13sp"
                             android:textStyle="bold" />
@@ -214,10 +212,20 @@
 
                 </LinearLayout>
 
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/llProfileFollowers"
+                    android:src="@drawable/ic_edit_email"
+                    android:id="@+id/ivSettingsProfile"
+                    />
+
                 <TextView
+                    android:id="@+id/tvRecentActivityEditProfile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/llProfileFollowers"
+                    android:layout_below="@id/ivSettingsProfile"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="550dp"
@@ -237,9 +245,12 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/transparent"
-        android:layout_alignParentTop="true">
+        android:layout_alignParentTop="true"
+        android:id="@+id/framelayout_settings"
+        android:background="@color/transparent">
 
 
     </FrameLayout>
+
+
 </RelativeLayout>
