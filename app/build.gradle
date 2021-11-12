@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
 }
 
 android {
@@ -55,5 +56,19 @@ dependencies {
     // Kotlin
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+
+
+    //livedata
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+
+
+    //nav
+    implementation 'androidx.core:core-ktx:1.7.0'
+
+
+    //googlepay
+    implementation 'com.google.android.gms:play-services-wallet:16.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:24.1.1'
 
 }

@@ -20,6 +20,9 @@
         android:name="dev.kingbond.moveon.ui.packageandmovers.fragMov.housecategory.HouseCategory"
         android:label="fragment_house_category"
         tools:layout="@layout/fragment_house_category" >
+        <argument
+            android:name=""
+            />
         <action
             android:id="@+id/action_houseCategory_to_itemList"
             app:destination="@id/itemList" />

@@ -39,14 +39,14 @@
 
         <pl.droidsonroids.gif.GifImageButton
             android:id="@+id/igf"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/heading"
-            android:layout_marginStart="74dp"
+            android:layout_marginStart="78dp"
             android:layout_marginTop="68dp"
-            android:layout_marginEnd="74dp"
-            android:background="@drawable/roundbox"
-            android:src="@drawable/ic_component_44" />
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/ic_component_44"
+             />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -65,14 +65,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/greenheading"
-            android:layout_marginTop="80dp"
-            android:layout_alignParentEnd="true"
             android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             android:layout_marginStart="18dp"
+            android:layout_marginTop="80dp"
             android:layout_marginEnd="18dp"
-            android:text="Done"
             android:backgroundTint="#1E54B7"
-            />
+            android:textColor="@color/white"
+            android:text="Done" />
 
     </RelativeLayout>
 

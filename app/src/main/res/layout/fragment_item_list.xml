@@ -99,12 +99,13 @@
                     android:text="Rack"
                     android:textColor="@color/white"
                     android:textSize="14dp" />
+
                 <CheckBox
                     android:id="@+id/Almirah"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="21dp"
                     android:layout_below="@id/Matress"
+                    android:layout_marginStart="21dp"
                     android:layout_marginTop="27dp"
                     android:background="@drawable/blue_box" />
                 <TextView
@@ -127,19 +128,19 @@
                     android:layout_marginStart="219dp"
                     android:layout_marginTop="27dp"
                     android:background="@drawable/blue_box" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Fridge"
                     android:layout_below="@id/Shoe"
-                    android:textColor="@color/white"
-                    android:layout_toEndOf="@id/Shoe"
-                    android:layout_marginTop="27dp"
-                    android:textSize="16dp"
                     android:layout_marginStart="12dp"
+                    android:layout_marginTop="27dp"
                     android:layout_marginEnd="64dp"
+                    android:layout_toEndOf="@id/Shoe"
                     android:lineHeight="1dp"
-                    />
+                    android:text="Fridge"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
 
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
@@ -162,16 +163,16 @@
                     android:layout_marginStart="21dp"
                     android:layout_marginTop="27dp"
                     android:background="@drawable/blue_box" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_toEndOf="@id/Chair"
                     android:text="Chairs"
                     android:textColor="@color/white"
-                    android:layout_toEndOf="@id/Chair"
-                    android:layout_marginTop="27dp"
-                    android:textSize="16dp"
-                    android:layout_marginStart="12dp"
-                    />
+                    android:textSize="16dp" />
 
                 <CheckBox
                     android:id="@+id/WashingMachine"
@@ -191,12 +192,13 @@
                     android:text="TV"
                     android:textColor="@color/white"
                     android:textSize="16dp" />
+
                 <CheckBox
                     android:id="@+id/Sofa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="21dp"
                     android:layout_below="@id/Chair"
+                    android:layout_marginStart="21dp"
                     android:layout_marginTop="27dp"
                     android:background="@drawable/blue_box" />
                 <TextView
@@ -254,16 +256,16 @@
                     android:layout_marginStart="21dp"
                     android:layout_marginTop="27dp"
                     android:background="@drawable/blue_box" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_toEndOf="@id/Table"
                     android:text="Table"
                     android:textColor="@color/white"
-                    android:layout_toEndOf="@id/Table"
-                    android:layout_marginTop="27dp"
-                    android:textSize="16dp"
-                    android:layout_marginStart="12dp"
-                    />
+                    android:textSize="16dp" />
 
                 <CheckBox
                     android:id="@+id/Cyclinder"
@@ -283,25 +285,26 @@
                     android:text="Cyclinder"
                     android:textColor="@color/white"
                     android:textSize="15dp" />
+
                 <CheckBox
                     android:id="@+id/Purifier"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="21dp"
                     android:layout_below="@id/Table"
+                    android:layout_marginStart="21dp"
                     android:layout_marginTop="27dp"
                     android:background="@drawable/blue_box" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sofa"
-                    android:textColor="@color/white"
                     android:layout_below="@id/Table"
-                    android:layout_toEndOf="@id/Purifier"
-                    android:layout_marginTop="27dp"
-                    android:textSize="16dp"
                     android:layout_marginStart="12dp"
-                    />
+                    android:layout_marginTop="27dp"
+                    android:layout_toEndOf="@id/Purifier"
+                    android:text="Purifier"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
 
                 <CheckBox
                     android:id="@+id/bed"
@@ -311,19 +314,19 @@
                     android:layout_marginStart="219dp"
                     android:layout_marginTop="27dp"
                     android:background="@drawable/blue_box" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bed"
                     android:layout_below="@id/Cyclinder"
-                    android:textColor="@color/white"
-                    android:layout_toEndOf="@id/bed"
-                    android:layout_marginTop="27dp"
-                    android:textSize="16dp"
                     android:layout_marginStart="12dp"
+                    android:layout_marginTop="27dp"
                     android:layout_marginEnd="64dp"
+                    android:layout_toEndOf="@id/bed"
                     android:lineHeight="1dp"
-                    />
+                    android:text="Bed"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
 
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
@@ -349,6 +352,7 @@
             android:textSize="16dp" />
 
         <Button
+            android:id="@+id/itemBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/specific"
@@ -358,7 +362,7 @@
             android:layout_marginTop="135dp"
             android:layout_marginEnd="18dp"
             android:backgroundTint="#1E54B7"
-            android:id="@+id/itemBtn"
+            android:textColor="@color/white"
             android:text="Continue" />
 
     </RelativeLayout>

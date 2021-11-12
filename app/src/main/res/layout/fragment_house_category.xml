@@ -19,6 +19,7 @@
 
         <TextView
             android:layout_width="wrap_content"
+            android:id="@+id/si"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
@@ -62,6 +63,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="77dp"
+                        android:id="@+id/rk"
                         android:layout_marginTop="25dp"
                         android:text="1 RK/ Studio"
                         android:textColor="@color/white"
@@ -149,27 +151,28 @@
                     android:layout_marginTop="19dp"
                     android:src="@drawable/house" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="77dp"
-                    android:layout_marginTop="25dp"
-                    android:text="1 BHK/ Standard"
-                    android:textColor="@color/white"
-                    android:textSize="18dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="77dp"
+                        android:id="@+id/b1"
+                        android:layout_marginTop="25dp"
+                        android:text="1 BHK/ Standard"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
 
-                <Button
-                    android:id="@+id/bhk1Select"
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="243dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="18dp"
-                    android:backgroundTint="#1E54B7"
-                    android:text="Select"
-                    android:textColor="@color/white" />
+                    <Button
+                        android:id="@+id/bhk1Select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="243dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="18dp"
+                        android:backgroundTint="#1E54B7"
+                        android:text="Select"
+                        android:textColor="@color/white" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -241,27 +244,27 @@
                     android:layout_marginTop="19dp"
                     android:src="@drawable/house" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="77dp"
-                    android:layout_marginTop="25dp"
-                    android:text="1 RK/ Studio"
-                    android:textColor="@color/white"
-                    android:textSize="18dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="77dp"
+                        android:layout_marginTop="25dp"
+                        android:text="2 BHK/ Standard"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
 
-                <Button
-                    android:id="@+id/bhk2Select"
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:layout_marginStart="243dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="18dp"
-                    android:backgroundTint="#1E54B7"
-                    android:text="Select"
-                    android:textColor="@color/white" />
+                    <Button
+                        android:id="@+id/bhk2Select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="243dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="18dp"
+                        android:backgroundTint="#1E54B7"
+                        android:text="Select"
+                        android:textColor="@color/white" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -334,27 +337,27 @@
                     android:layout_marginTop="19dp"
                     android:src="@drawable/house" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="77dp"
-                    android:layout_marginTop="25dp"
-                    android:text="1 RK/ Studio"
-                    android:textColor="@color/white"
-                    android:textSize="18dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="77dp"
+                        android:layout_marginTop="25dp"
+                        android:text="3 BHK/ Standard"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
 
-                <Button
-                    android:id="@+id/bhk3Select"
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:layout_marginStart="243dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="18dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentStart="true"
-                    android:backgroundTint="#1E54B7"
-                    android:text="Select"
-                    android:textColor="@color/white" />
+                    <Button
+                        android:id="@+id/bhk3Select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="243dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="18dp"
+                        android:backgroundTint="#1E54B7"
+                        android:text="Select"
+                        android:textColor="@color/white" />
 
 
 
