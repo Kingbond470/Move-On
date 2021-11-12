@@ -15,8 +15,6 @@ class CouponsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_coupons)
-
-
         launchCouponFragment()
 
         coupon_btn.setOnClickListener {
