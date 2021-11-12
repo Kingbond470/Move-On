@@ -1,14 +1,214 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black_app"
+    android:orientation="vertical"
     tools:context=".ui.coupons.CoinFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:fontFamily="@font/roboto"
+                android:text="Frequently Asked Questions"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/q_no1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/question_bg"
+                android:drawableRight="@drawable/arrow_down_icon"
+                android:fontFamily="@font/roboto"
+                android:padding="10dp"
+                android:text="What is Move On coins ?"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/ans_no1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:background="#AAE9F1"
+                android:fontFamily="@font/roboto"
+                android:padding="10dp"
+                android:text="@string/answer1"
+                android:textColor="#000000"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/q_no2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/question_bg"
+                android:drawableRight="@drawable/arrow_down_icon"
+                android:fontFamily="@font/roboto"
+                android:padding="10dp"
+                android:text="How do I earn Move On coins ?"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/ans_no2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:background="#AAE9F1"
+                android:fontFamily="@font/roboto"
+                android:padding="10dp"
+                android:text="@string/answer2"
+                android:textColor="#000000"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/q_no3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/question_bg"
+                android:drawableRight="@drawable/arrow_down_icon"
+                android:fontFamily="@font/roboto"
+                android:padding="10dp"
+                android:text="How do I use Move On coins ?"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/ans_no3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:background="#AAE9F1"
+                android:fontFamily="@font/roboto"
+                android:padding="10dp"
+                android:text="@string/answer3"
+                android:textColor="#000000"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/q_no4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/question_bg"
+                android:drawableRight="@drawable/arrow_down_icon"
+                android:fontFamily="@font/roboto"
+                android:padding="10dp"
+                android:text="How many Move On coins can I use per Transaction ?"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/ans_no4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:background="#AAE9F1"
+                android:fontFamily="@font/roboto"
+                android:padding="10dp"
+                android:text="@string/answer1"
+                android:textColor="#000000"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/q_no5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/question_bg"
+                android:drawableRight="@drawable/arrow_down_icon"
+                android:fontFamily="@font/roboto"
+                android:padding="10dp"
+                android:text="Cancellation &amp; Refund of Move On coins."
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/ans_no5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:background="#AAE9F1"
+                android:fontFamily="@font/roboto"
+                android:padding="10dp"
+                android:text="@string/answer5"
+                android:textColor="#000000"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/q_no6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/question_bg"
+                android:drawableRight="@drawable/arrow_down_icon"
+                android:fontFamily="@font/roboto"
+                android:padding="10dp"
+                android:text="How do I permanently delete my Move On account ?"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/ans_no6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:background="#AAE9F1"
+                android:fontFamily="@font/roboto"
+                android:padding="10dp"
+                android:text="@string/answer6"
+                android:textColor="#000000"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/q_no7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/question_bg"
+                android:drawableRight="@drawable/arrow_down_icon"
+                android:fontFamily="@font/roboto"
+                android:padding="10dp"
+                android:text="On what services can I use my Move On coins ?"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/ans_no7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:background="#AAE9F1"
+                android:fontFamily="@font/roboto"
+                android:padding="10dp"
+                android:text="@string/answer1"
+                android:textColor="#000000"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
