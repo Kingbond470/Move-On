@@ -42,6 +42,7 @@
                     android:id="@+id/vehicleName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
                     android:text="Tata Ace"
                     android:textColor="@color/white"
                     android:textSize="19sp"
@@ -51,6 +52,7 @@
                     android:id="@+id/vehicleTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
                     android:text="12 min"
                     android:textColor="@color/white"
                     android:textSize="13sp" />
@@ -62,6 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
+                android:paddingRight="5dp"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -75,6 +78,7 @@
                     android:id="@+id/vehiclePrice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
                     android:text="₹ 811.76"
                     android:textColor="@color/white"
                     android:textSize="19sp" />
@@ -100,6 +104,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
+                    android:fontFamily="@font/roboto"
                     android:text="Add Labour"
                     android:textColor="@color/white"
                     android:textSize="19sp" />
@@ -130,6 +135,7 @@
                         android:id="@+id/tvLabour"
                         android:layout_width="60dp"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
                         android:text="0"
                         android:textAlignment="center"
                         android:textColor="@color/white"
@@ -172,6 +178,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginHorizontal="10dp"
                         android:layout_toEndOf="@id/imageViewCash"
+                        android:fontFamily="@font/roboto"
                         android:text="Cash"
                         android:textColor="@color/white"
                         android:textSize="18sp" />
@@ -197,6 +204,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="#1E54B7"
+                        android:fontFamily="@font/roboto"
                         android:padding="15dp"
                         android:text="Book Tata Ace"
                         android:textAlignment="center"
