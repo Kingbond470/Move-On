@@ -14,4 +14,6 @@ class WareHouseViewmodel(val wareHouseRepo: WareHouseRepo):ViewModel() {
     fun getAllWareHouse(): LiveData<List<WareHouseEntity>> {
         return wareHouseRepo.getAllWareHouse()
     }
+
+
 }

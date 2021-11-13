@@ -4,9 +4,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import dev.kingbond.moveon.databinding.ItemLayoutWarehouseBinding
+import dev.kingbond.moveon.ui.warehouses.ItemClickListener
 import dev.kingbond.moveon.ui.warehouses.models.WareHouseEntity
 
-class WareHouseAdapter(val list: ArrayList<WareHouseEntity>):
+class WareHouseAdapter(val list: ArrayList<WareHouseEntity>,  val itemClickListener: ItemClickListener):
     RecyclerView.Adapter<WarehouseViewHolder>() {
 
 
@@ -14,7 +15,7 @@ class WareHouseAdapter(val list: ArrayList<WareHouseEntity>):
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): WarehouseViewHolder {
         val binding =ItemLayoutWarehouseBinding.inflate(LayoutInflater.from(parent.context),parent,false)
-        return WarehouseViewHolder(binding)
+        return WarehouseViewHolder(binding,itemClickListener)
     }
 
     override fun onBindViewHolder(holder: WarehouseViewHolder, position: Int) {

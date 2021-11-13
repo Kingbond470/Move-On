@@ -30,12 +30,12 @@ class Swipe : Fragment() {
             setBackgroundColor(param1 ?: Color.RED)
 
             findViewById<LottieAnimationView>(R.id.lottieAnimationView).setAnimation(
-                param2 ?: R.raw.mountain
+                param2 ?: R.raw.orderdelivered
             )
             findViewById<LottieAnimationView>(R.id.lottieAnimationView).repeatCount =
                 LottieDrawable.INFINITE
             findViewById<LottieAnimationView>(R.id.lottieAnimationView).repeatMode =
-                LottieDrawable.REVERSE
+                LottieDrawable.RESTART
             findViewById<LottieAnimationView>(R.id.lottieAnimationView).playAnimation()
 
             findViewById<TextView>(R.id.fragment_textview).text =

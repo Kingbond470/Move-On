@@ -52,16 +52,15 @@
             android:layout_height="wrap_content">
 
 
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="13dp"
                 android:layout_marginEnd="35dp"
+                android:layout_marginBottom="12dp"
                 android:fontFamily="@font/roboto_medium"
                 android:text="Estimateed Cost"
-                android:layout_marginTop="13dp"
-                android:layout_marginBottom="12dp"
-                android:layout_marginStart="12dp"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
             <TextView
@@ -96,15 +95,16 @@
                 android:layout_marginStart="12dp"
                 android:textColor="@color/white"
                 android:textSize="14sp" />
+
             <TextView
+                android:id="@+id/tvTimePeriod"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/roboto_medium"
-                android:text="Time period"
-                android:layout_marginTop="10dp"
-                android:id="@+id/tvTimePeriod"
                 android:layout_below="@id/tvServiceType"
                 android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Time period"
                 android:textColor="@color/white"
                 android:textSize="14sp" />
             <TextView
@@ -169,16 +169,15 @@
             android:layout_height="wrap_content">
 
 
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginVertical="13dp"
+                android:layout_marginStart="12dp"
                 android:layout_marginEnd="35dp"
+                android:drawableEnd="@drawable/ic_downarrow"
                 android:fontFamily="@font/roboto_medium"
                 android:text="Your Contact  information"
-                android:layout_marginStart="12dp"
-                android:layout_marginVertical="13dp"
-               android:drawableEnd="@drawable/ic_downarrow"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
 

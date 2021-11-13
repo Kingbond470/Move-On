@@ -7,13 +7,13 @@ import com.example.liquidswipedemo.CustomPagerAdapter
 import com.jem.liquidswipe.clippathprovider.LiquidSwipeClipPathProvider
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class OnboadingActivity : AppCompatActivity() {
 
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_onboarding)
         viewpager.adapter = CustomFragmentPagerAdapter(supportFragmentManager)
 
 

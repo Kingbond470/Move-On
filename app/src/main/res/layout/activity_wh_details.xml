@@ -57,30 +57,30 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="35dp"
         android:fontFamily="@font/roboto_medium"
-        android:text="Select Details"
+        android:text="Select State"
         android:textColor="@color/white"
         android:textSize="16dp" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/menu"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="match_parent"
-        android:background="@color/white"
-        app:hintAnimationEnabled="false"
-        app:boxBackgroundMode="filled"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="35dp"
-        android:hint="Select City"
-        >
-        <AutoCompleteTextView
-            android:id="@+id/drop_item"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/menu"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:inputType="none" />
+            android:background="@color/white"
+            app:hintAnimationEnabled="false"
+            app:boxBackgroundMode="filled"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="35dp"
+            android:hint="Select State"
+            >
+            <AutoCompleteTextView
+                android:id="@+id/drop_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="none" />
 
-    </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:layout_width="match_parent"
@@ -89,7 +89,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="35dp"
         android:fontFamily="@font/roboto_medium"
-        android:text="Pickup Location"
+        android:text="Select City"
         android:textColor="@color/white"
         android:textSize="16dp" />
 
@@ -97,15 +97,15 @@
         android:id="@+id/menu2"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
-        android:background="@color/white"
-        app:hintAnimationEnabled="false"
-        app:boxBackgroundMode="filled"
         android:layout_height="wrap_content"
         android:layout_marginStart="18dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="35dp"
-        android:hint="Pickup location.."
-        >
+        android:background="@color/white"
+        android:hint="Select City"
+        app:boxBackgroundMode="filled"
+        app:hintAnimationEnabled="false">
+
         <AutoCompleteTextView
             android:id="@+id/drop_item2"
             android:layout_width="match_parent"
@@ -126,20 +126,20 @@
         android:textSize="16dp" />
 
 
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_marginHorizontal="18dp"
         android:layout_height="wrap_content"
-        >
+        android:layout_marginHorizontal="18dp"
+        android:orientation="horizontal">
+
         <LinearLayout
             android:layout_width="0dp"
-            android:orientation="vertical"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
 
             >
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -152,27 +152,27 @@
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvFrom"
-                android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="dd/mm/yyyy"
-                android:padding="10dp"
-                android:textSize="15sp"
-                android:textColor="@color/white"
-                android:background="@drawable/grey_800_bg"
                 android:layout_marginTop="24dp"
-                />
+                android:background="@drawable/grey_800_bg"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:padding="10dp"
+                android:text="dd/mm/yyyy"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:layout_marginStart="10dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
 
             >
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -185,42 +185,41 @@
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tcvTo"
-                android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/grey_800_bg"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:padding="10dp"
                 android:text="dd/mm/yyyy"
                 android:textColor="@color/white"
-                android:padding="10dp"
-                android:background="@drawable/grey_800_bg"
-                android:textSize="15sp"
-                android:layout_marginTop="24dp"
-                />
+                android:textSize="15sp" />
 
         </LinearLayout>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 
         >
+
         <Button
+            android:id="@+id/btndetails"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="40dp"
             android:backgroundTint="#1E54B7"
             android:padding="10dp"
-            android:id="@+id/btndetails"
-            android:layout_marginBottom="40dp"
             android:text="Continue"
             android:textAllCaps="false"
             android:textSize="18sp" />
 
 
     </LinearLayout>
-
-
 
 
 </LinearLayout>
