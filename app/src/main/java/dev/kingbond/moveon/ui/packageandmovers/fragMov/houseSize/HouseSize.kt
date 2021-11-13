@@ -16,8 +16,15 @@ import android.widget.ArrayAdapter
 
 import android.widget.Spinner
 import androidx.core.view.get
+import androidx.lifecycle.ViewModelProviders
+import dev.kingbond.moveon.Repository.WareHouseRepo
 import dev.kingbond.moveon.ui.packageandmovers.fragMov.housecategory.HouseCategory
 import dev.kingbond.moveon.ui.packageandmovers.spref.SharedPref
+import dev.kingbond.moveon.ui.warehouses.models.WareHouseDao
+import dev.kingbond.moveon.ui.warehouses.models.WareHouseEntity
+import dev.kingbond.moveon.ui.warehouses.models.WareHouseRoomDatabse
+import dev.kingbond.moveon.viewmodels.WareHouseViewmodel
+import dev.kingbond.moveon.viewmodels.WareHouseViewmodelFactory
 
 
 import kotlinx.android.synthetic.main.fragment_house_size.*
@@ -27,6 +34,11 @@ import java.util.*
 
 
 class HouseSize : Fragment(), AdapterView.OnItemSelectedListener{
+
+
+//    private lateinit var roomDb : WareHouseRoomDatabse
+//    private lateinit var wareHouseDao: WareHouseDao
+//    private lateinit var viewmodel: WareHouseViewmodel
 
     val sharedPref=SharedPref()
 
@@ -77,6 +89,21 @@ class HouseSize : Fragment(), AdapterView.OnItemSelectedListener{
 //            senddata(view)
 //
 //        }
+
+        /// database addition
+//        roomDb = WareHouseRoomDatabse.getDatabaseObject(requireContext())
+//        wareHouseDao = roomDb.WareHouseDao()
+//        val repo = WareHouseRepo(wareHouseDao)
+//        val viewModelFactory = WareHouseViewmodelFactory(repo)
+//        //object of view model
+//        viewmodel = ViewModelProviders.of(this, viewModelFactory).get(WareHouseViewmodel::class.java)
+
+
+//        //ommit name , phoneno
+//        val ware = WareHouseEntity("Umanng","987q93279",
+//            "sainimintu34@gmail.com",date.text.toString(),"30/03/2021", MovingFrom.text.toString(), MovingTo.text.toString()
+//        )
+//        viewmodel.addWareHouse(ware)
 
         return view
     }

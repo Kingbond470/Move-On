@@ -63,6 +63,7 @@
 
         <Button
             android:layout_width="wrap_content"
+            android:id="@+id/confrm_btn"
             android:layout_height="wrap_content"
             android:layout_below="@id/greenheading"
             android:layout_alignParentStart="true"
@@ -71,8 +72,8 @@
             android:layout_marginTop="80dp"
             android:layout_marginEnd="18dp"
             android:backgroundTint="#1E54B7"
-            android:textColor="@color/white"
-            android:text="Done" />
+            android:text="Done"
+            android:textColor="@color/white" />
 
     </RelativeLayout>
 

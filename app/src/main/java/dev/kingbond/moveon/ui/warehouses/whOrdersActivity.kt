@@ -8,6 +8,7 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import dev.kingbond.moveon.Repository.WareHouseRepo
 import dev.kingbond.moveon.databinding.ActivityWhOrdersBinding
+import dev.kingbond.moveon.ui.packageandmovers.spref.SharedPref
 import dev.kingbond.moveon.ui.warehouses.SharedPref.MyPreference
 import dev.kingbond.moveon.ui.warehouses.adapter.WareHouseAdapter
 import dev.kingbond.moveon.ui.warehouses.models.WareHouseDao
@@ -22,6 +23,10 @@ class whOrdersActivity : AppCompatActivity(), ItemClickListener {
     private lateinit var binding : ActivityWhOrdersBinding
     //Mvvm
     private lateinit var roomDb : WareHouseRoomDatabse
+
+    //shared
+    val sharedPref= SharedPref()
+
     private lateinit var wareHouseDao: WareHouseDao
     private lateinit var viewmodel: WareHouseViewmodel
     private lateinit var wareuseAdapter: WareHouseAdapter
@@ -32,6 +37,12 @@ class whOrdersActivity : AppCompatActivity(), ItemClickListener {
         setContentView(binding.root)
 
 
+        val moving_from=sharedPref.retriveData(this,"origin")
+        val moving_to=sharedPref.retriveData(this,"destination")
+        val House_Date=sharedPref.retriveData(this,"date")
+        val House_Sum=sharedPref.retriveIntData(this,"sum")
+
+
         roomDb = WareHouseRoomDatabse.getDatabaseObject(this)
         wareHouseDao = roomDb.WareHouseDao()
         val repo = WareHouseRepo(wareHouseDao)
@@ -40,14 +51,18 @@ class whOrdersActivity : AppCompatActivity(), ItemClickListener {
         viewmodel = ViewModelProviders.of(this, viewModelFactory).get(WareHouseViewmodel::class.java)
         val myPreference = MyPreference(context = applicationContext)
         var name = myPreference.getName()!!
-        val ware = WareHouseEntity(name,"987q93279",
-            "sainimintu34@gmail.com","28/0/2021","30/03/2021", "jaipur", "Delhi"
+        val ware = WareHouseEntity("₹${House_Sum.toString()}","987493279",
+            "sainimintu34@gmail.com",House_Date.toString(),"30/03/2021", moving_from.toString(), moving_to.toString()
         )
         viewmodel.addWareHouse(ware)
 
         wareuseAdapter = WareHouseAdapter(warehouselist as ArrayList<WareHouseEntity>, this)
         binding.rvRecyclerView.layoutManager = LinearLayoutManager(this)
         binding.rvRecyclerView.adapter = wareuseAdapter
+
+
+
+
 
         viewmodel.getAllWareHouse().observe(this, Observer {
             warehouselist.clear()

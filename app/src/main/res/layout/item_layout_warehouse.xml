@@ -34,6 +34,7 @@
 
         <TextView
             android:layout_width="wrap_content"
+            android:id="@+id/WareHouseCost"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_marginTop="29dp"
@@ -109,15 +110,15 @@
             android:textSize="10sp" />
 
         <TextView
+            android:id="@+id/tvdropLocation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/roboto_medium"
-            android:text="Green Meadows Block No.1"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:id="@+id/tvdropLocation"
-            android:drawableStart="@drawable/ic_droplocation"
             android:layout_below="@id/tvServiceType"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_droplocation"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:text="Green Meadows Block No.1"
             android:textColor="@color/white"
             android:textSize="14sp" />
 

@@ -13,13 +13,13 @@ class WarehouseViewHolder(
     fun SetData(entity: WareHouseEntity) {
 
         binding.apply {
-            // tvName.text = entity.firstname
+             WareHouseCost.text = entity.firstname.toString()
             tvEmail.text = entity.email
             //  tvPhine.text = entity.phoneno
             tvdates.text = entity.dateFrom
 //    tvDateTo.text = entity.dateTo
-//    tvCityFrom.text = entity.cityfrom
-//    tvCityTo.text = entity.cityto
+            tvLocation.text = entity.cityfrom
+            tvdropLocation.text = entity.cityto
             tvViewMore.setOnClickListener {
                 itemClickListener.onItremClick(entity, adapterPosition)
 
