@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:backgroundTint="#1F1F1F"
+    android:layout_margin="22dp"
+    android:elevation="12dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/grey_800_bg"
+        android:layout_height="wrap_content"
+      >
+        <ImageView
+            android:id="@+id/ivTataace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/tataace" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="35dp"
+            android:layout_toRightOf="@id/ivTataace"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Tata Ace"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="19dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="5200.00"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvdates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivTataace"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/ivTataace"
+            android:fontFamily="@font/roboto_medium"
+            android:text="04:50 PM, 07 Nov 2021"
+            android:textColor="@color/white"
+            android:textSize="8sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:id="@+id/tvEmail"
+            android:layout_below="@id/ivTataace"
+            android:layout_toRightOf="@id/tvdates"
+            android:text="sainimintu34@gmail.com "
+            android:textColor="@color/white"
+            android:textSize="8sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Pickup Location"
+            android:id="@+id/tvPickuplocation"
+            android:layout_below="@id/tvdates"
+            android:layout_marginTop="11dp"
+            android:layout_marginStart="48dp"
+            android:textColor="#8A8383"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPickuplocation"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_strtlocation"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:text="Hanuman Nagar, Kandivali"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Drop Location"
+            android:id="@+id/tvServiceType"
+            android:layout_below="@id/tvLocation"
+            android:layout_marginTop="11dp"
+            android:layout_marginStart="48dp"
+            android:textColor="#8A8383"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Green Meadows Block No.1"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:id="@+id/tvdropLocation"
+            android:drawableStart="@drawable/ic_droplocation"
+            android:layout_below="@id/tvServiceType"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_below="@id/tvPickuplocation"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="40dp"
+            android:background="#C8C2C2"
+            android:backgroundTint="#C8C2C2"
+            android:layout_height="60dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="29dp"
+            android:id="@+id/tvViewMore"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="View More"
+            android:layout_below="@id/tvServiceType"
+android:layout_toRightOf="@id/tvdropLocation"
+            android:textColor="#2196F3"
+            android:textSize="14sp" />
+
+
+
+        <!--      -->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+
+<!--            >-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvName"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="21dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:text="Name"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvEmail"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="21dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:text="email"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvPhine"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="21dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:text="phone"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvDatefrom"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="21dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:text="datefrom"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvDateTo"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="21dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:text="Date To"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvCityFrom"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="21dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:text="from City"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvCityTo"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="21dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:text="To City"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="16sp" />-->
+
+
+<!--        </LinearLayout>-->
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

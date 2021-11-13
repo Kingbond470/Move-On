@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_app"
+    tools:context=".ui.login.SignUpFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/ivSignUpGoogleLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/ic_welcome" />
+
+        <TextView
+            android:id="@+id/tvSignupHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivSignUpGoogleLogo"
+            android:layout_marginHorizontal="18dp"
+            android:fontFamily="@font/roboto"
+            android:text="Welcome to MoveOn"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/etFullNameSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSignupHeading"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/ic_editext_background"
+            android:fontFamily="@font/roboto"
+            android:hint="Full Name"
+            android:maxLength="35"
+            android:paddingVertical="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+
+        <EditText
+            android:id="@+id/etEmailSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etFullNameSignUp"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/ic_editext_background"
+            android:fontFamily="@font/roboto"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLength="35"
+            android:paddingVertical="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:id="@+id/etPhoneNumberLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etEmailSignUp"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="14dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:background="@color/button_bg_color"
+                android:orientation="horizontal"
+                android:paddingHorizontal="15dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="17dp"
+                    android:paddingRight="17dp"
+                    android:src="@drawable/ic_signup_india" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="17dp"
+                    android:src="@drawable/ic_bottom_arrow" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etPhoneNumberSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="18dp"
+                android:layout_weight="1.9"
+                android:background="@drawable/ic_editext_background"
+                android:fontFamily="@font/roboto"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingVertical="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/etPasswordSignUpLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etPhoneNumberLinearLayout">
+
+            <EditText
+                android:id="@+id/etPasswordSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvLoginEmailHeading"
+                android:layout_marginHorizontal="18dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/ic_editext_background"
+                android:fontFamily="@font/roboto"
+                android:hint="Password"
+                android:maxLength="35"
+                android:paddingVertical="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <ImageButton
+                android:id="@+id/btnShowHideSignUpFirst"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/password_show"
+                android:paddingVertical="17dp"
+                android:scaleType="fitXY" />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/etConfirmPasswordSignUpLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etPasswordSignUpLayout">
+
+            <EditText
+                android:id="@+id/etConfirmPasswordSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvLoginEmailHeading"
+                android:layout_marginHorizontal="18dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/ic_editext_background"
+                android:fontFamily="@font/roboto"
+                android:hint="Confirm Password"
+                android:maxLength="35"
+                android:paddingVertical="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <ImageButton
+                android:id="@+id/btnShowHideSignUpSecond"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/password_show"
+                android:paddingVertical="17dp"
+                android:scaleType="fitXY" />
+
+        </FrameLayout>
+
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/etPasswordSignUp"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/etPhoneNumberLinearLayout"-->
+        <!--            android:layout_marginHorizontal="18dp"-->
+        <!--            android:layout_marginTop="28dp"-->
+        <!--            android:layout_marginBottom="14dp"-->
+        <!--            android:background="@drawable/ic_editext_background"-->
+        <!--            android:fontFamily="@font/roboto"-->
+        <!--            android:hint="Password"-->
+        <!--            android:maxLength="35"-->
+        <!--            android:paddingVertical="15dp"-->
+        <!--            android:paddingLeft="10dp"-->
+        <!--            android:paddingRight="20dp"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:textStyle="normal" />-->
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/etConfirmPasswordSignUp"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/etPasswordSignUp"-->
+        <!--            android:layout_marginHorizontal="18dp"-->
+        <!--            android:layout_marginTop="28dp"-->
+        <!--            android:layout_marginBottom="14dp"-->
+        <!--            android:background="@drawable/ic_editext_background"-->
+        <!--            android:fontFamily="@font/roboto"-->
+        <!--            android:hint="Confirm Password"-->
+        <!--            android:maxLength="35"-->
+        <!--            android:paddingVertical="15dp"-->
+        <!--            android:paddingLeft="10dp"-->
+        <!--            android:paddingRight="20dp"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:textStyle="normal" />-->
+
+
+        <!--    <com.google.android.material.textfield.TextInputLayout-->
+        <!--        android:id="@+id/etSignupFullNameLayout"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_below="@+id/tvSignupHeading"-->
+        <!--        android:layout_marginHorizontal="18dp"-->
+        <!--        android:layout_marginBottom="14dp"-->
+        <!--        android:layout_marginTop="28dp"-->
+        <!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+        <!--        app:boxStrokeColor="#69A7AF"-->
+        <!--        android:hint="Email"-->
+        <!--        app:hintTextColor="@color/white">-->
+
+        <!--        <com.google.android.material.textfield.TextInputEditText-->
+        <!--            android:id="@+id/etSignUpFullName"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:fontFamily="@font/roboto"-->
+        <!--            android:maxLength="35"-->
+        <!--            android:paddingHorizontal="20dp"-->
+        <!--            android:paddingVertical="17dp"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textSize="18sp"-->
+        <!--            android:textStyle="normal" />-->
+
+        <!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+        <!--    <LinearLayout-->
+        <!--        android:id="@+id/etPhoneNumberLinearLayout"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_below="@+id/etSignupFullNameLayout"-->
+        <!--        android:layout_marginHorizontal="18dp"-->
+        <!--        android:layout_marginTop="28dp"-->
+        <!--        android:layout_marginBottom="14dp"-->
+        <!--        android:orientation="horizontal"-->
+        <!--        android:weightSum="2">-->
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginRight="8dp"-->
+        <!--            android:background="@color/button_bg_color"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:paddingHorizontal="15dp">-->
+
+        <!--            <ImageView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:paddingVertical="17dp"-->
+        <!--                android:paddingRight="17dp"-->
+        <!--                android:src="@drawable/ic_signup_india" />-->
+
+        <!--            <ImageView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:paddingVertical="17dp"-->
+        <!--                android:src="@drawable/ic_bottom_arrow" />-->
+        <!--        </LinearLayout>-->
+
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            android:id="@+id/etSignupPhoneNumberLayout"-->
+        <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginRight="10dp"-->
+        <!--            android:layout_weight="1.9"-->
+        <!--            android:hint="Mobile Number"-->
+        <!--            app:boxStrokeColor="#69A7AF"-->
+        <!--            app:hintTextColor="@color/white">-->
+
+        <!--            <com.google.android.material.textfield.TextInputEditText-->
+        <!--                android:id="@+id/etSignUpPhoneNumber"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:fontFamily="@font/roboto"-->
+        <!--                android:paddingVertical="17dp"-->
+        <!--                android:textColor="@color/white"-->
+        <!--                android:textSize="18sp"-->
+        <!--                android:textStyle="normal" />-->
+
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+        <!--    </LinearLayout>-->
+
+
+        <!--    <com.google.android.material.textfield.TextInputLayout-->
+        <!--        android:id="@+id/etSignupPasswordLayout"-->
+        <!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_below="@+id/etPhoneNumberLinearLayout"-->
+        <!--        android:layout_marginHorizontal="18dp"-->
+        <!--        android:layout_marginTop="28dp"-->
+        <!--        android:layout_marginBottom="14dp"-->
+        <!--        android:hint="Password"-->
+        <!--        app:boxStrokeColor="#69A7AF"-->
+        <!--        app:hintTextColor="@color/white">-->
+
+        <!--        <com.google.android.material.textfield.TextInputEditText-->
+        <!--            android:id="@+id/etSignUpPassword"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:drawableRight="@drawable/ic_password_eye"-->
+        <!--            android:fontFamily="@font/roboto"-->
+        <!--            android:paddingVertical="17dp"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textSize="18sp"-->
+        <!--            android:textStyle="normal" />-->
+
+        <!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+        <!--    <com.google.android.material.textfield.TextInputLayout-->
+        <!--        android:id="@+id/etSignupConfirmPasswordLayout"-->
+        <!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_below="@+id/etSignupPasswordLayout"-->
+        <!--        android:layout_marginHorizontal="18dp"-->
+        <!--        android:layout_marginTop="28dp"-->
+        <!--        android:layout_marginBottom="14dp"-->
+        <!--        android:hint="Confirm Password"-->
+        <!--        app:boxStrokeColor="#69A7AF"-->
+        <!--        app:hintTextColor="@color/white">-->
+
+        <!--        <com.google.android.material.textfield.TextInputEditText-->
+        <!--            android:id="@+id/etSignUpConfirmPassword"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:drawableRight="@drawable/ic_password_eye_close"-->
+        <!--            android:fontFamily="@font/roboto"-->
+        <!--            android:paddingVertical="17dp"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textSize="18sp"-->
+        <!--            android:textStyle="normal" />-->
+
+        <!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+        <TextView
+            android:id="@+id/tvAgreeSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etConfirmPasswordSignUpLayout"
+            android:layout_marginVertical="14dp"
+            android:layout_marginLeft="18dp"
+            android:fontFamily="@font/roboto"
+            android:text="By continuing I agree to the "
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tvAgreeSignUpContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etConfirmPasswordSignUpLayout"
+            android:layout_marginVertical="14dp"
+            android:layout_marginRight="18dp"
+            android:layout_toRightOf="@+id/tvAgreeSignUp"
+            android:fontFamily="@font/roboto"
+            android:maxLines="2"
+            android:text="terms conditions and privacy policy"
+            android:textColor="@color/blue_light"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSignUpContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAgreeSignUp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginVertical="18dp"
+            android:background="@drawable/ic_button_bg"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/roboto"
+            android:maxLines="1"
+            android:paddingHorizontal="60dp"
+            android:paddingVertical="18dp"
+            android:text="Continue"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+</ScrollView>

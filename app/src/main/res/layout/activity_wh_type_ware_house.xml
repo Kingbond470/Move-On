@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#141414"
+    android:layout_height="match_parent"
+    tools:context=".ui.warehouses.whTypeWareHouse">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#141414">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_arrow_left"
+                android:padding="10dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="35dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text=" WareHouse Facility"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Select type of warehousing"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/menu3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        app:hintAnimationEnabled="false"
+        app:boxBackgroundMode="filled"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="35dp"
+        android:hint="Select type of warehousing"
+        >
+        <AutoCompleteTextView
+            android:id="@+id/drop_item3"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="35dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Select the items you have at your home"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <FrameLayout
+        android:id="@+id/llContainer"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="30dp"
+            android:backgroundTint="#1E54B7"
+            android:padding="10dp"
+            android:id="@+id/btndetails"
+            android:layout_marginBottom="40dp"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
