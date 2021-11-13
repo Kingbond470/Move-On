@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
             //  val tvProfileEmail:TextView=header.findViewById(R.id.tvEditProfileMail)
             //   tvProfileEmail.text = user.email
             header.tvEditProfileMail.text = user.email
-            header.tvUsernameProfileHeader.text = user.phoneNumber
+           // header.tvUsernameProfileHeader.text = user.phoneNumber
 
             //   Glide.with(ivImage).load(user.photoUrl).into(ivImage)
             //  tvSettingsProfileName.text = user.displayName

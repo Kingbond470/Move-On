@@ -28,7 +28,7 @@
         android:gravity="center_horizontal"
         android:padding="5dp"
         android:paddingTop="8dp"
-        android:text="Masai"
+        android:text="Masai Android"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -53,9 +53,9 @@
 
         <ImageButton
             android:id="@+id/ibEditProfile"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_marginLeft="5dp"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
             android:background="@drawable/ic_menu_edit"
             android:backgroundTint="@color/blue"
             android:padding="5dp" />
