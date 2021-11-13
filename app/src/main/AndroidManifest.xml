@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -19,8 +19,9 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/map_key" />
 
-        <activity android:name=".ui.about.AboutActivity"
-            android:exported="true"/>
+        <activity
+            android:name=".ui.about.AboutActivity"
+            android:exported="true" />
         <activity
             android:name=".ui.coupons.CouponsActivity"
             android:exported="true" />
@@ -34,32 +35,42 @@
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".ui.warehouses.whOrderDetails"
+            android:theme="@style/MaterialTheme"
             android:exported="false" />
 
-<!--        <meta-data-->
-<!--            android:name="com.google.android.geo.API_KEY"-->
-<!--            android:value="AIzaSyC1e0m1TWu-JpYPqyQWF_iwFrD8BcSophI" />-->
+        <!--        <meta-data-->
+        <!--            android:name="com.google.android.geo.API_KEY"-->
+        <!--            android:value="AIzaSyC1e0m1TWu-JpYPqyQWF_iwFrD8BcSophI" />-->
 
         <activity
             android:name=".ui.warehouses.MainJavaActivity"
+            android:theme="@style/MaterialTheme"
             android:exported="false" />
         <activity
             android:name=".ui.warehouses.whOrdersActivity"
+            android:theme="@style/MaterialTheme"
             android:exported="false" />
         <activity
             android:name=".ui.warehouses.RequestCallbackActivity"
+            android:theme="@style/MaterialTheme"
             android:exported="false" />
         <activity
             android:name=".ui.warehouses.whEstimatedCostActivity"
+            android:theme="@style/MaterialTheme"
             android:exported="false" />
         <activity
             android:name=".ui.warehouses.whTypeWareHouse"
+            android:theme="@style/MaterialTheme"
             android:exported="true" />
         <activity
             android:name=".ui.warehouses.whDetailsActivity"
+            android:theme="@style/MaterialTheme"
             android:exported="true" />
         <activity
             android:name=".ui.warehouses.whPersonalDetailsActivity"
+            android:theme="@style/MaterialTheme"
+            android:exported="true" />
+        <activity
             android:name=".ui.login.Login"
             android:exported="true" />
         <activity
@@ -74,10 +85,7 @@
         </activity>
         <activity
             android:name=".OnboadingActivity"
-            android:exported="true" >
-
-
-        </activity>
+            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"
@@ -87,9 +95,9 @@
             android:exported="true"
             android:theme="@style/Theme.MoveonHome" />
 
-<!--        <meta-data-->
-<!--            android:name="preloaded_fonts"-->
-<!--            android:resource="@array/preloaded_fonts" />-->
+        <!--        <meta-data-->
+        <!--            android:name="preloaded_fonts"-->
+        <!--            android:resource="@array/preloaded_fonts" />-->
     </application>
 
 </manifest>

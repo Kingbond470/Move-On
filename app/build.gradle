@@ -44,19 +44,7 @@ android {
 dependencies {
     // Gif
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.22'
-//   ViewModel and LiveData
-//    def arch_version = '2.4.0-beta01'
-    def arch_version = '2.2.0-alpha01'
-    implementation "androidx.lifecycle:lifecycle-extensions:$arch_version"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$arch_version"
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$arch_version"
-    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$arch_version"
-//Room
-    implementation 'androidx.room:room-ktx:2.3.0'
-    kapt 'androidx.room:room-compiler:2.3.0'
-    def anko_version = '0.10.0'
-    //Anko
-    implementation "org.jetbrains.anko:anko-commons:$anko_version"
+
     //maps
 
     implementation 'com.github.suchoX:PlacePicker:1.1.2'
@@ -100,6 +88,17 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
     implementation 'androidx.navigation:navigation-runtime-ktx:2.3.5'
+
+    //   ViewModel and LiveData
+    def arch_version = '2.2.0-alpha01'
+    implementation "androidx.lifecycle:lifecycle-extensions:$arch_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$arch_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$arch_version"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$arch_version"
+
+    //Room
+    implementation 'androidx.room:room-ktx:2.3.0'
+    kapt 'androidx.room:room-compiler:2.3.0'
 
     // circular imageview
     implementation 'de.hdodenhof:circleimageview:3.1.0'

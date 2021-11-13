@@ -85,6 +85,7 @@
                         android:weightSum="2">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/cvPackersAndMovers"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="10dp"
@@ -92,6 +93,7 @@
                             app:cardCornerRadius="10dp">
 
                             <TextView
+                                android:id="@+id/tvPackersAndMovers"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@color/black"
@@ -104,6 +106,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/cvWarehouses"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"

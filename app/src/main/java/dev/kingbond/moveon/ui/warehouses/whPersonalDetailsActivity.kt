@@ -8,7 +8,8 @@ import dev.kingbond.moveon.ui.warehouses.SharedPref.MyPreference
 
 class whPersonalDetailsActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityWhPersonalDetailsBinding
+   // private lateinit var binding: ActivityWhPersonalDetailsBinding
+    private lateinit var binding:ActivityWhPersonalDetailsBinding
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,11 +18,12 @@ class whPersonalDetailsActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnpersonaldetail.setOnClickListener {
-            val intent = Intent(applicationContext,whDetailsActivity::class.java )
-            startActivity(intent)
+            val intent = Intent(this@whPersonalDetailsActivity,whDetailsActivity::class.java )
+
             val  name = binding.tvName.text.toString()
            val myPrefernce = MyPreference(this.applicationContext)
             myPrefernce.setName(name)
+            startActivity(intent)
 
         }
 

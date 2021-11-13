@@ -42,6 +42,7 @@ import dev.kingbond.moveon.ui.home.recyclerview.Vehicles
 import dev.kingbond.moveon.ui.login.Login
 import dev.kingbond.moveon.ui.profile.EditProfileActivity
 import dev.kingbond.moveon.ui.settings.SettingsFragment
+import dev.kingbond.moveon.ui.warehouses.whPersonalDetailsActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.booking_confirmed_layout.*
 import kotlinx.android.synthetic.main.booking_vehicle_layout.*
@@ -95,6 +96,12 @@ class MainActivity : FragmentActivity(), OnMapReadyCallback, LocationListener,
         toggle.syncState()
 
 //        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        // for warehouses
+        cvWarehouses.setOnClickListener {
+            val intent = Intent(this, whPersonalDetailsActivity::class.java)
+            startActivity(intent)
+        }
 
 
         // to access the view from header in Navigation View
