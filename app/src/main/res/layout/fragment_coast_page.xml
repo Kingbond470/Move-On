@@ -41,7 +41,7 @@
             android:layout_marginTop="112dp"
             android:layout_marginStart="18dp"
             android:backgroundTint="#302E2E"
-            android:layout_marginEnd="18dp"
+            android:layout_marginEnd="18sp"
             >
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -68,12 +68,12 @@
                     android:gravity="center"
                     android:text="₹5200.00"
                     android:textColor="@color/white" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="1.4dp"
                     android:layout_marginTop="46dp"
-                    android:background="#7C7878"
-                    />
+                    android:background="#7C7878" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -158,11 +158,11 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_frame_231"
             android:layout_marginStart="18sp"
             android:layout_marginTop="287dp"
+            android:layout_marginEnd="18sp"
             android:background="#302E2E"
-           />
+            android:src="@drawable/ic_frame_231" />
 
         <ImageView
             android:layout_width="wrap_content"
