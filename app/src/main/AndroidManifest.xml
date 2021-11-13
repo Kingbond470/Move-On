@@ -22,7 +22,9 @@
         <activity
             android:name=".ui.about.AboutActivity"
             android:exported="true" />
-
+        <activity
+            android:name=".ui.home.DriverInfoActivity"
+            android:exported="true" />
         <activity
             android:name=".ui.coupons.CouponsActivity"
             android:exported="true" />

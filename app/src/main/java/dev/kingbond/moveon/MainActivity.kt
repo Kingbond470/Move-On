@@ -35,6 +35,7 @@ import com.google.firebase.auth.FirebaseAuth
 import dev.kingbond.moveon.ui.about.AboutActivity
 import dev.kingbond.moveon.ui.coupons.CouponsActivity
 import dev.kingbond.moveon.ui.help.HelpFragment
+import dev.kingbond.moveon.ui.home.DriverInfoActivity
 import dev.kingbond.moveon.ui.home.MapFragment
 import dev.kingbond.moveon.ui.home.recyclerview.VehicleAdapter
 import dev.kingbond.moveon.ui.home.recyclerview.VehicleClickListener
@@ -414,7 +415,17 @@ class MainActivity : FragmentActivity(), OnMapReadyCallback, LocationListener,
         Handler().postDelayed({
             bottomSheetDialogForBookedVehicle.driverDetailsLayout.visibility = View.VISIBLE
             bottomSheetDialogForBookedVehicle.searchingForVehicleLayout.visibility = View.GONE
-        }, 4000)
+        }, 2000)
+
+//        Handler().postDelayed({
+//            val intent = Intent(this, DriverInfoActivity::class.java)
+//            startActivity(intent)
+//        },4000)
+
+        bottomSheetDialogForBookedVehicle.llShowInfoDriver.setOnClickListener {
+            val intent = Intent(this, DriverInfoActivity::class.java)
+            startActivity(intent)
+        }
 
         bottomSheetDialogForBookedVehicle.ivCallDriver.setOnClickListener {
             Toast.makeText(this, "calling the driver", Toast.LENGTH_SHORT).show()

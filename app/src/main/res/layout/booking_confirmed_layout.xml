@@ -80,6 +80,7 @@
             android:visibility="gone">
 
             <LinearLayout
+                android:id="@+id/llShowInfoDriver"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="20dp"
@@ -102,6 +103,14 @@
                     android:text="12 min"
                     android:textColor="@color/white"
                     android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/ivShowInfo"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_right_arrow" />
 
 
             </LinearLayout>

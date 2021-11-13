@@ -25,14 +25,9 @@ import kotlinx.android.synthetic.main.fragment_house_category.*
 import kotlinx.android.synthetic.main.fragment_house_size.*
 
 
+class HouseCategory : Fragment(), View.OnClickListener {
 
-
-
-class HouseCategory : Fragment(),View.OnClickListener {
-
-    val sharedPref= SharedPref()
-
-
+    val sharedPref = SharedPref()
 
 
     override fun onCreateView(
@@ -56,12 +51,12 @@ class HouseCategory : Fragment(),View.OnClickListener {
         return view
     }
 
-    fun initi(view: View){
+    fun initi(view: View) {
 
-        val rk1=view.findViewById<Button>(R.id.rk1Select)
-        val bhk1=view.findViewById<Button>(R.id.bhk1Select)
-        val bhk2=view.findViewById<Button>(R.id.bhk2Select)
-        val bhk3=view.findViewById<Button>(R.id.bhk3Select)
+        val rk1 = view.findViewById<Button>(R.id.rk1Select)
+        val bhk1 = view.findViewById<Button>(R.id.bhk1Select)
+        val bhk2 = view.findViewById<Button>(R.id.bhk2Select)
+        val bhk3 = view.findViewById<Button>(R.id.bhk3Select)
 
 
         rk1.setOnClickListener(this)
@@ -74,24 +69,24 @@ class HouseCategory : Fragment(),View.OnClickListener {
     override fun onClick(v: View) {
 
 
-
         when (v.id) {
             R.id.rk1Select -> {
-                Toast.makeText(requireActivity(), "1rk selected", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireActivity(), "1RK Selected", Toast.LENGTH_SHORT).show()
 
-                sharedPref.insertData(requireContext(),"1rk","1rk selected")
+                sharedPref.insertData(requireContext(), "1rk", "1rk selected")
             }
 
-            R.id.bhk1Select ->{
-                Toast.makeText(requireActivity(), "1bhk selected", Toast.LENGTH_SHORT).show()
-                sharedPref.insertData(requireContext(),"1bhk","1bhk selected")
+            R.id.bhk1Select -> {
+                Toast.makeText(requireActivity(), "1BHK Selected", Toast.LENGTH_SHORT).show()
+                sharedPref.insertData(requireContext(), "1bhk", "1bhk selected")
             }
             R.id.bhk2Select -> {
-                Toast.makeText(requireActivity(), "2bhk selected", Toast.LENGTH_SHORT).show()
-                sharedPref.insertData(requireContext(),"2bhk","2bhk selected")
+                Toast.makeText(requireActivity(), "2BHK Selected", Toast.LENGTH_SHORT).show()
+                sharedPref.insertData(requireContext(), "2bhk", "2bhk selected")
             }
-            R.id.bhk3Select -> {Toast.makeText(requireActivity(), "3bhk selected", Toast.LENGTH_SHORT).show()
-                sharedPref.insertData(requireContext(),"3bhk","3bhk selected")
+            R.id.bhk3Select -> {
+                Toast.makeText(requireActivity(), "3BHK Selected", Toast.LENGTH_SHORT).show()
+                sharedPref.insertData(requireContext(), "3bhk", "3bhk selected")
             }
         }
 

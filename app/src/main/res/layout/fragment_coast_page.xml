@@ -11,62 +11,61 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/backArrow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="19.5dp"
-        android:layout_marginTop="22.5dp"
-        android:src="@drawable/ic_vector" />
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19.5dp"
+            android:layout_marginTop="22.5dp"
+            android:src="@drawable/ic_back_arrow" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="35dp"
-        android:fontFamily="sans-serif-medium"
-        android:gravity="center"
-        android:text="Your estimated cost of shifting"
-        android:textColor="@color/white"
-        android:textSize="18sp" />
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="35dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:text="Your estimated cost of shifting"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
 
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="135dp"
-            android:layout_marginTop="112dp"
             android:layout_marginStart="18dp"
-            android:backgroundTint="#302E2E"
+            android:layout_marginTop="112dp"
             android:layout_marginEnd="18sp"
-            >
+            android:backgroundTint="#302E2E">
+
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
+                android:layout_height="match_parent">
 
                 <TextView
+                    android:id="@+id/Cost"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/Cost"
-                    android:text="Estimated Cost"
-                    android:textColor="@color/white"
                     android:layout_marginStart="12dp"
                     android:layout_marginTop="16dp"
-                    android:textSize="18sp"
-                    />
+                    android:fontFamily="@font/roboto"
+                    android:text="Estimated Cost"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/EstCost"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="285dp"
+                    android:layout_alignParentEnd="true"
                     android:layout_marginTop="16dp"
+                    android:fontFamily="@font/roboto"
                     android:gravity="center"
-                    android:text="₹5200.00"
+                    android:text="₹ 5200.00"
                     android:textColor="@color/white" />
 
                 <TextView
@@ -76,15 +75,15 @@
                     android:background="#7C7878" />
 
                 <TextView
+                    android:id="@+id/houseType"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
                     android:layout_marginTop="56dp"
-                    android:id="@+id/houseType"
+                    android:fontFamily="@font/roboto_light"
                     android:text="House type"
                     android:textColor="@color/white"
-                    android:textSize="12sp"
-                    />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/Thouse_type"
@@ -94,6 +93,7 @@
                     android:layout_marginTop="56dp"
                     android:layout_marginEnd="2dp"
                     android:layout_toEndOf="@id/houseType"
+                    android:fontFamily="@font/roboto_thin"
                     android:gravity="center"
                     android:paddingStart="10dp"
                     android:text="Standard"
@@ -102,15 +102,15 @@
 
 
                 <TextView
+                    android:id="@+id/Date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
                     android:layout_marginTop="81dp"
-                    android:id="@+id/Date"
+                    android:fontFamily="@font/roboto_light"
                     android:text="Date of movement"
                     android:textColor="@color/white"
-                    android:textSize="12sp"
-                    />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/Tdate"
@@ -120,6 +120,7 @@
                     android:layout_marginTop="81dp"
                     android:layout_marginEnd="7dp"
                     android:layout_toEndOf="@id/Date"
+                    android:fontFamily="@font/roboto_thin"
                     android:text="25/10/2021"
                     android:textColor="@color/white"
                     android:textSize="10dp"
@@ -127,23 +128,24 @@
 
 
                 <TextView
+                    android:id="@+id/Service"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
                     android:layout_marginTop="105dp"
-                    android:id="@+id/Service"
+                    android:fontFamily="@font/roboto_light"
                     android:text="Service"
                     android:textColor="@color/white"
-                    android:textSize="12sp"
-                    />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="180dp"
+                    android:layout_alignParentEnd="true"
                     android:layout_marginTop="105dp"
                     android:layout_marginEnd="10dp"
                     android:layout_toEndOf="@id/Service"
+                    android:fontFamily="@font/roboto_thin"
                     android:gravity="right"
                     android:lineHeight="11.06dp"
                     android:text="Packers and Movers"
@@ -167,29 +169,21 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/costscreen"
             android:layout_marginStart="18sp"
-            android:layout_marginEnd="18dp"
             android:layout_marginTop="512dp"
+            android:layout_marginEnd="18dp"
             android:background="#302E2E"
-            />
+            android:src="@drawable/costscreen" />
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="58dp"
-            android:layout_marginStart="18sp"
-            android:layout_marginTop="650dp"
-            android:layout_marginEnd="18dp"
-            android:backgroundTint="#1E54B7"
-            android:text="Request Callback"
             android:id="@+id/coastBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="18dp"
+            android:background="@drawable/ic_button_bg_fill"
+            android:text="Request Callback"
             android:textColor="@color/white" />
 
-
-
-
     </RelativeLayout>
-
-
-
 </LinearLayout>
