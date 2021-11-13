@@ -13,6 +13,7 @@
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable-v24/card_right_bg4.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable-v24/memory_indicator_progress.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/about_icon_copy_right.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/arrow_down_icon.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/arrow_up_icon.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/blood_group_not_selected.xml" value="0.2203125" />
@@ -31,7 +32,9 @@
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_button_bg.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_editext_background.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_email.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_email_about.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_google_logo.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_linkedin_circle.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_lock_white.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_login_password_logo.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_menu_about.xml" value="0.1287037037037037" />
@@ -39,10 +42,12 @@
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_moveon.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_right_arrow.xml" value="0.14166666666666666" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_signup_india.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_tools.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/question_bg.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/rb_not_selected.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/rb_selected.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/rb_selector.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_about.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_coupons.xml" value="0.22" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_edit_profile.xml" value="0.22" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_email_login.xml" value="0.18" />

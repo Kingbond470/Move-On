@@ -54,4 +54,21 @@
     </style>
 
 
+
+    <style name="Widget.App.AboutPage" parent="about_About">
+        <item name="aboutBackground">#ffffff</item>
+        <item name="aboutElementIconTint">#333333</item>
+        <item name="aboutSeparatorColor">#999999</item>
+        <item name="aboutDescriptionTextAppearance">@style/TextAppearance.App.AboutPage.Description</item>
+
+        <!-- similarly, you can also apply the following text appearances -->
+        <item name="aboutElementTextAppearance">@style/about_elementTextAppearance.Dark</item>
+        <item name="aboutGroupTextAppearance">@style/about_groupTextAppearance</item>
+    </style>
+
+    <style name="TextAppearance.App.AboutPage.Description" parent="about_descriptionTextAppearance.Dark">
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+
 </resources>

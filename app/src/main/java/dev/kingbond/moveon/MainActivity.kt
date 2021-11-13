@@ -6,17 +6,12 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
 import android.widget.ImageButton
-import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
-import com.bumptech.glide.Glide
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
-import de.hdodenhof.circleimageview.CircleImageView
-import dev.kingbond.moveon.ui.about.AboutFragment
+import dev.kingbond.moveon.ui.about.AboutActivity
 import dev.kingbond.moveon.ui.coupons.CouponsActivity
 import dev.kingbond.moveon.ui.help.HelpFragment
 import dev.kingbond.moveon.ui.login.Login
@@ -84,8 +79,12 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_settings ->
                     replaceFragment(SettingsFragment(), it.title.toString())
 
-                R.id.nav_about ->
-                    replaceFragment(AboutFragment(), it.title.toString())
+                R.id.nav_about -> {
+
+                    //  replaceFragment(AboutFragment(), it.title.toString())
+                    val intent = Intent(this, AboutActivity::class.java)
+                    startActivity(intent)
+                }
 
                 R.id.nav_help ->
                     replaceFragment(HelpFragment(), it.title.toString())
