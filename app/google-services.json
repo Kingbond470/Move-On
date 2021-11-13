@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "921746871444",
+    "project_id": "move-on-33695",
+    "storage_bucket": "move-on-33695.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921746871444:android:2f32097d422b4e67e91081",
+        "android_client_info": {
+          "package_name": "dev.kingbond.moveon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "921746871444-mgaerboo7qjv3u32q9jdcuosncrp17kf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.kingbond.moveon",
+            "certificate_hash": "30e76b7405073fb09e47f6391b4c010bebb8e4db"
+          }
+        },
+        {
+          "client_id": "921746871444-2c2guevgj02k2bjmvih73biee4gbd418.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzDFGk4wlPnk0bflcKYKYUWC8K1_F3Sus"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "921746871444-2c2guevgj02k2bjmvih73biee4gbd418.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
