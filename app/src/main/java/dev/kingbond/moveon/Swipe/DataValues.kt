@@ -6,13 +6,13 @@ import dev.kingbond.moveon.R
 val backgroundColorArray: ArrayList<Int> = arrayListOf(
     Color.parseColor("#141414"),
     Color.parseColor("#141414"),
-    Color.parseColor("#1E54B7"),
-    Color.parseColor("#1E54B7")
+    Color.parseColor("#141414"),
+    Color.parseColor("#141414")
 )
 val resourceArray: ArrayList<Int> = arrayListOf(
-    R.raw.donee,
-    R.raw.email,
-    R.raw.login_signup,
+    R.raw.help_section,
+    R.raw.moverss,
+    R.raw.msg_section,
     R.raw.welcome
 )
 val titleArray: ArrayList<String> = arrayListOf(

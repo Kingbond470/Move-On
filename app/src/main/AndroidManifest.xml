@@ -22,9 +22,7 @@
         <activity
             android:name=".ui.about.AboutActivity"
             android:exported="true" />
-        <activity
-            android:name=".ui.home.DriverInfoActivity"
-            android:exported="true" />
+
         <activity
             android:name=".ui.coupons.CouponsActivity"
             android:exported="true" />
@@ -32,6 +30,9 @@
         <activity
             android:name=".ui.packageandmovers.BaseActivityPackersAndMovers"
             android:exported="true" />
+        <activity android:name=".ui.home.DriverInfoActivity"
+            android:exported="true"
+            />
 
         <activity
             android:name=".ui.profile.EditProfileActivity"
@@ -90,11 +91,7 @@
         <activity
             android:name=".ui.splash.SplashScreenActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>
 
@@ -108,7 +105,13 @@
 
         <activity
             android:name=".OnboadingActivity"
-            android:exported="true" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <activity
             android:name=".MainActivity"
