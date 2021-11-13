@@ -40,6 +40,7 @@ import dev.kingbond.moveon.ui.home.recyclerview.VehicleAdapter
 import dev.kingbond.moveon.ui.home.recyclerview.VehicleClickListener
 import dev.kingbond.moveon.ui.home.recyclerview.Vehicles
 import dev.kingbond.moveon.ui.login.Login
+import dev.kingbond.moveon.ui.packageandmovers.BaseActivityPackersAndMovers
 import dev.kingbond.moveon.ui.profile.EditProfileActivity
 import dev.kingbond.moveon.ui.settings.SettingsFragment
 import dev.kingbond.moveon.ui.warehouses.whPersonalDetailsActivity
@@ -100,6 +101,12 @@ class MainActivity : FragmentActivity(), OnMapReadyCallback, LocationListener,
         // for warehouses
         cvWarehouses.setOnClickListener {
             val intent = Intent(this, whPersonalDetailsActivity::class.java)
+            startActivity(intent)
+        }
+
+        // for packers and movers
+        cvPackersAndMovers.setOnClickListener {
+            val intent = Intent(this, BaseActivityPackersAndMovers::class.java)
             startActivity(intent)
         }
 

@@ -119,7 +119,7 @@
                                 android:background="@color/black"
                                 android:drawableLeft="@drawable/ic_packers_and_movers"
                                 android:padding="10dp"
-                                android:text="Packers &amp; Movers"
+                                android:text="Warehouses"
                                 android:textAlignment="center"
                                 android:textColor="@color/white" />
 
