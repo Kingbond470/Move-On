@@ -73,6 +73,13 @@ dependencies {
     //about
     implementation 'io.github.medyo:android-about-page:2.0.0'
 
+    // google map
+    implementation 'com.google.android.gms:play-services-maps:18.0.0'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+
+    //material ui
+    implementation 'com.google.android.material:material:1.4.0'
+
 
 
 }
