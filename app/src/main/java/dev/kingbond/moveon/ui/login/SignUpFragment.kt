@@ -135,8 +135,8 @@ class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
                         "https://firebasestorage.googleapis.com/v0/b/move-on-33695.appspot.com/o/man.png?alt=media&token=838b7304-249b-4985-be0b-b15751cc4f78"
                     userHashMap["status"] = "offline"
                     userHashMap["number"] = phone
-                    userHashMap["user_email"]=email
-                    userHashMap["user_password"]=password
+                    userHashMap["user_email"] = email
+                    userHashMap["user_password"] = password
 
                     refUsers.updateChildren(userHashMap)
                         .addOnCompleteListener { task ->
@@ -146,9 +146,15 @@ class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
                             //   startActivity(intent)
 //                            val intent = Intent(context, Login::class.java)
 //                            startActivity(intent)
-                            if(task.isSuccessful){
+                            if (task.isSuccessful) {
                                 val intent = Intent(context, Login::class.java)
                                 startActivity(intent)
+                                Toast.makeText(
+                                    context,
+                                    "User registered successfully",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+
                             }
                         }
 
