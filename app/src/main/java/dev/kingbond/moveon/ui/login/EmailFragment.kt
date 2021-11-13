@@ -1,5 +1,6 @@
 package dev.kingbond.moveon.ui.login
 
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
@@ -9,15 +10,22 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
+import android.widget.Toast
 import androidx.core.widget.doAfterTextChanged
 import androidx.core.widget.doOnTextChanged
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
+import dev.kingbond.moveon.MainActivity
 import dev.kingbond.moveon.R
 import kotlinx.android.synthetic.main.fragment_email.*
 import java.util.regex.Pattern
 
 class EmailFragment : Fragment(R.layout.fragment_email) {
+
+
+    private lateinit var mAuth: FirebaseAuth
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -35,6 +43,14 @@ class EmailFragment : Fragment(R.layout.fragment_email) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
+
+        // with email
+        mAuth= FirebaseAuth.getInstance()
+
+        btnLoginWithEmailContinue.setOnClickListener {
+            loginUser()
+        }
 
 
         tvLoginSignUp.setOnClickListener {
@@ -58,22 +74,47 @@ class EmailFragment : Fragment(R.layout.fragment_email) {
         }
 
         // if email is valid : continue to password
-        btnLoginWithEmailContinue.setOnClickListener {
-            var email = etLoginEmail.text.trim().toString()
+//        btnLoginWithEmailContinue.setOnClickListener {
+//            var email = etLoginEmail.text.trim().toString()
+//
+//            if (isValidEmail(email)) {
+//
+//
+//                Navigation.findNavController(view)
+//                    .navigate(R.id.action_emailFragment_to_passwordFragment)
+//
+//            } else {
+//                // Enter your valid email ID
+//                etLoginEmail.error = "Enter valid email"
+//            }
+//        }
 
-            if (isValidEmail(email)) {
 
+    }
 
-                Navigation.findNavController(view)
-                    .navigate(R.id.action_emailFragment_to_passwordFragment)
+    private fun loginUser() {
+        val  email:String=etLoginEmail.text.trim().toString()
+        val password:String=etLoginPasswordEmail.text.trim().toString()
 
-            } else {
-                // Enter your valid email ID
-                etLoginEmail.error = "Enter valid email"
-            }
+        if (! isValidEmail(email)){
+            Toast.makeText(context,"Invalid email",Toast.LENGTH_SHORT).show()
+
+        }else{
+            mAuth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener { task ->
+                    if (task.isSuccessful){
+                            val intent=Intent(context,MainActivity::class.java)
+                            startActivity(intent)
+                        // finish the curent acitivity
+                    }else{
+                        Toast.makeText(
+                            context,
+                            "Error Message: ${task.exception?.message.toString()}",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
+                }
         }
-
-
     }
 
 

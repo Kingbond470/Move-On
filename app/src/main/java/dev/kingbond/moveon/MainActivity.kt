@@ -6,22 +6,34 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
 import android.widget.ImageButton
+import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
+import com.bumptech.glide.Glide
 import com.google.android.material.navigation.NavigationView
+import com.google.firebase.auth.FirebaseAuth
+import de.hdodenhof.circleimageview.CircleImageView
 import dev.kingbond.moveon.ui.about.AboutFragment
 import dev.kingbond.moveon.ui.coupons.CouponsActivity
 import dev.kingbond.moveon.ui.help.HelpFragment
+import dev.kingbond.moveon.ui.login.Login
 import dev.kingbond.moveon.ui.profile.EditProfileActivity
 import dev.kingbond.moveon.ui.settings.SettingsFragment
+import kotlinx.android.synthetic.main.fragment_settings.*
+import kotlinx.android.synthetic.main.fragment_settings.view.*
 import kotlinx.android.synthetic.main.nav_header.*
+import kotlinx.android.synthetic.main.nav_header.view.*
 
 class MainActivity : AppCompatActivity() {
 
     lateinit var toggle: ActionBarDrawerToggle
     lateinit var drawerLayout: DrawerLayout
+
+    //profile
+    private lateinit var mAuth: FirebaseAuth
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,9 +54,26 @@ class MainActivity : AppCompatActivity() {
         // to access the view from header in Navigation View
         val header: View = navView.getHeaderView(0)
         val ibEdit: ImageButton = header.findViewById(R.id.ibEditProfile)
+        //val ivImage:CircleImageView=header.findViewById(R.id.ivProfileImageHeaderLayout)
         ibEdit.setOnClickListener {
             val intent = Intent(this, EditProfileActivity::class.java)
             startActivity(intent)
+        }
+
+
+        mAuth = FirebaseAuth.getInstance()
+        val user = mAuth.currentUser
+        if (user != null) {
+
+            //  Glide.with(header.ivProfileImageHeaderLayout).load(user.).into(header.ivProfileImageHeaderLayout)
+            //  val tvProfileEmail:TextView=header.findViewById(R.id.tvEditProfileMail)
+            //   tvProfileEmail.text = user.email
+            header.tvEditProfileMail.text = user.email
+            header.tvUsernameProfileHeader.text = user.phoneNumber
+
+            //   Glide.with(ivImage).load(user.photoUrl).into(ivImage)
+            //  tvSettingsProfileName.text = user.displayName
+
         }
 
         navView.setNavigationItemSelectedListener {
@@ -64,6 +93,13 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_coupons -> {
                     val intent = Intent(this, CouponsActivity::class.java)
                     startActivity(intent)
+                }
+
+                R.id.nav_logout -> {
+                    FirebaseAuth.getInstance().signOut()
+                    val intent = Intent(this, Login::class.java)
+                    startActivity(intent)
+                    finish()
                 }
 
             }

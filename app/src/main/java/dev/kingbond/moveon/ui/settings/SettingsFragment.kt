@@ -50,6 +50,9 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
             tvSettingsProfileName.text = user.displayName
             ivEmail.text = user.email
             tvLogOutName.text = "You are logged in as ${user.displayName}"
+        }else{
+            Glide.with(ivSettingProfileImage).load(R.drawable.man).into(ivSettingProfileImage)
+            tvSettingsProfileName.text="Masai Android"
         }
 
 
