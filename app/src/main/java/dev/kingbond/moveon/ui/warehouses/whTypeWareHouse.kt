@@ -42,7 +42,7 @@ class whTypeWareHouse : AppCompatActivity(), AdapterView.OnItemSelectedListener 
                 //    Toast.makeText(applicationContext, "item", Toast.LENGTH_SHORT).show()
                     launchFragment()
                 }
-                "Vehiles" ->{
+                "Vehicles" ->{
                     launchFragment()
                 }
 
@@ -54,7 +54,7 @@ class whTypeWareHouse : AppCompatActivity(), AdapterView.OnItemSelectedListener 
                 }
             }
             when (item) {
-                "Vehiles" -> Toast.makeText(this, item + "Selected", Toast.LENGTH_SHORT).show()
+                "Vehicles" -> Toast.makeText(this, item + "Selected", Toast.LENGTH_SHORT).show()
             }
 
     }

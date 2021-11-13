@@ -4,6 +4,7 @@
     android:textSize="16sp"
     android:textColor="@color/black"
     android:text="Sample"
+    android:fontFamily="@font/roboto_light"
     android:padding="10dp"
     android:layout_marginStart="12dp"
     android:layout_margin="10dp"

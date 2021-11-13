@@ -34,6 +34,7 @@
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_back_arrow.xml" value="0.20555555555555555" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_bottom_arrow.xml" value="0.1287037037037037" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_button_bg.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_button_bg_fill.xml" value="0.19814814814814816" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_editext_background.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_email.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_email_about.xml" value="0.2203125" />
@@ -78,13 +79,13 @@
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_main_java.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_map.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_payment.xml" value="0.20416666666666666" />
-        <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_request_callback.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_request_callback.xml" value="0.22" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_splash_screen.xml" value="0.22" />
-        <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_wh_details.xml" value="0.20416666666666666" />
-        <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_wh_estimated_cost.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_wh_details.xml" value="0.25" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_wh_estimated_cost.xml" value="0.2" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_wh_order_details.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_wh_orders.xml" value="0.20416666666666666" />
-        <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_wh_personal_details.xml" value="0.15925925925925927" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_wh_personal_details.xml" value="0.22" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_wh_type_ware_house.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/booking_confirmed_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/booking_vehicle_layout.xml" value="0.25" />
@@ -103,6 +104,7 @@
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_sign_up.xml" value="0.33" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/item_layout_vehicles.xml" value="0.22" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/item_layout_warehouse.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/items_list.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/nav_header.xml" value="0.25" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/vehivle_info_layout.xml" value="0.16" />
         <entry key="..\:/Android/Move-On/app/src/main/res/menu/nav_menu.xml" value="0.22" />
