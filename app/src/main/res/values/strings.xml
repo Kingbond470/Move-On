@@ -1,8 +1,36 @@
 <resources>
     <string name="app_name">Move On</string>
+
+    <string name="answer1">You can use Move On coins to avail discounts while booking services on the Move On app. Which will then credited to your Move On wallet on the completion of the service.The amount of Move On coins to be earned will be displayed during the checkout on the cart page.\n</string>
+    <string name="answer2">With refer and earn, you can purchase and gain Move On coins\n</string>
+    <string name="answer3">Go to Super Coin Redeem zone in Flipkart .Select above offer.\n1). Redeem it with 150 Super coins.\n2). You will get a Voucher.\n3). Now, Download Move On app: bit.ly/2DcJLtF and sign up\n</string>
+    <string name="answer5">NTHS shall refund any unexpended advance fees paid by you at the time of cancellation of the service. In case you wish to seek a refund of the advance paid by you. Because you do not agree with a modification to the agreement, please write to grievances@moveon.co. We will process refund of the unexpended amount</string>
+    <string name="answer6">You can terminate your relationship with NTHS at any time by providing ninety (90) days\' prior written notice at legal@moveon.co. We need this period to inactivate user account, only after verifying if there are any ongoing or pending Services.\n</string>
+
     <string name="open">Open</string>
     <string name="close">Close</string>
-    <string name="hello_blank_fragment">Hello Fragment</string>
+    <string name="hello_blank_fragment">Hello fragment</string>
     <string name="check_box_string">I hereby declare that I am lawfully authorised to\nprovide the above information on behalf of the owner\nof the information</string>
+    <string name="copy_right" translatable="false">Copyrights © %1$d</string>
+
+    <string-array name="carMode">
+        <item>Only in a car</item>
+        <item>Never</item>
+    </string-array>
+
+    <string-array name="wifiAndCellularStreaming">
+        <item>Automatic</item>
+        <item>Low</item>
+        <item>Normal</item>
+        <item>High</item>
+        <item>Very High</item>
+    </string-array>
+
+    <string-array name="downloadQuality">
+        <item>Low</item>
+        <item>Normal</item>
+        <item>High</item>
+        <item>Very High</item>
+    </string-array>
 
 </resources>

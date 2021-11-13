@@ -19,6 +19,12 @@
     <color name="very_light_blue">#f2f9ff</color>
     <color name="light_blue">#d9eeff</color>
     <color name="orange">#ff654d</color>
-
+    <color name="yellow">#FDD835</color>
+    <color name="blue_light_color">#87E4EF</color>
+    <color name="storageUsed">#2b78d0</color>
+    <color name="storageFree">#616161</color>
+    <color name="storageCache">#A7A7A7</color>
+    <color name="green">#48B36E</color>
+    <color name="grey1">#595A5B</color>
     <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#fff</color>
 </resources>
