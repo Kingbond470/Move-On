@@ -13,12 +13,6 @@
             android:name=".ui.payment.googlepay"
             android:exported="false" />
         <activity
-            android:name=".ui.payment.AbstratLayr"
-            android:exported="false" />
-        <activity
-            android:name=".ui.payment.Googlepy"
-            android:exported="false" />
-        <activity
             android:name=".ui.payment.PaymentA"
             android:exported="false" />
         <activity
@@ -30,7 +24,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <meta-data
             android:name="com.google.android.gms.wallet.api.enabled"
             android:value="true" />
