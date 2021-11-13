@@ -84,7 +84,7 @@ class ItemList : Fragment(), View.OnClickListener {
         when (v.id) {
             R.id.Matress -> {
                 if (Matress.isChecked) {
-                    Toast.makeText(requireActivity(), "Maitress", Toast.LENGTH_SHORT).show()
+                    // Toast.makeText(requireActivity(), "Maitress", Toast.LENGTH_SHORT).show()
 
 //                    sharedPref.insertIntData(requireContext(), "Maitress", sum+100)
                     sum += 100
@@ -92,42 +92,42 @@ class ItemList : Fragment(), View.OnClickListener {
             }
             R.id.Almirah -> {
                 if (Almirah.isChecked) {
-                    Toast.makeText(requireActivity(), "Almirah", Toast.LENGTH_SHORT).show()
+                    //  Toast.makeText(requireActivity(), "Almirah", Toast.LENGTH_SHORT).show()
 //                    sharedPref.insertIntData(requireContext(), "Almirah", sum+200)
                     sum += 200
                 }
             }
             R.id.Chair -> {
                 if (Chair.isChecked) {
-                    Toast.makeText(requireActivity(), "Chair", Toast.LENGTH_SHORT).show()
+                    //  Toast.makeText(requireActivity(), "Chair", Toast.LENGTH_SHORT).show()
 //                    sharedPref.insertIntData(requireContext(), "Chair", sum + 300)
                     sum += 300
                 }
             }
             R.id.Sofa -> {
                 if (Sofa.isChecked) {
-                    Toast.makeText(requireActivity(), "Sofa", Toast.LENGTH_SHORT).show()
+                    // Toast.makeText(requireActivity(), "Sofa", Toast.LENGTH_SHORT).show()
 //                    sharedPref.insertIntData(requireContext(), "Sofa", sum+400)
                     sum += 400
                 }
             }
             R.id.Table -> {
                 if (Table.isChecked) {
-                    Toast.makeText(requireActivity(), "Table", Toast.LENGTH_SHORT).show()
+                    //  Toast.makeText(requireActivity(), "Table", Toast.LENGTH_SHORT).show()
 //                    sharedPref.insertIntData(requireContext(), "Table", sum+500)
                     sum += 500
                 }
             }
             R.id.Purifier -> {
                 if (Purifier.isChecked) {
-                    Toast.makeText(requireActivity(), "Table", Toast.LENGTH_SHORT).show()
+                    //  Toast.makeText(requireActivity(), "Table", Toast.LENGTH_SHORT).show()
 //                    sharedPref.insertIntData(requireContext(), "Table", sum+600)
                     sum += 600
                 }
             }
             R.id.Shoe -> {
                 if (Shoe.isChecked) {
-                    Toast.makeText(requireActivity(), "Shoe", Toast.LENGTH_SHORT).show()
+                    //  Toast.makeText(requireActivity(), "Shoe", Toast.LENGTH_SHORT).show()
 //                    sharedPref.insertIntData(requireContext(), "Shoe", sum+700)
                     sum += 700
                 }
@@ -135,7 +135,7 @@ class ItemList : Fragment(), View.OnClickListener {
 
             R.id.Fridge -> {
                 if (Fridge.isChecked) {
-                    Toast.makeText(requireActivity(), "Fridge", Toast.LENGTH_SHORT).show()
+                    // Toast.makeText(requireActivity(), "Fridge", Toast.LENGTH_SHORT).show()
 //                    sharedPref.insertIntData(requireContext(), "Fridge", sum+800)
                     sum += 800
                 }
@@ -143,7 +143,7 @@ class ItemList : Fragment(), View.OnClickListener {
 
             R.id.WashingMachine -> {
                 if (WashingMachine.isChecked) {
-                    Toast.makeText(requireActivity(), "TV", Toast.LENGTH_SHORT).show()
+                    // Toast.makeText(requireActivity(), "TV", Toast.LENGTH_SHORT).show()
 //                    sharedPref.insertIntData(requireContext(), "washingMachine", sum+900)
                     sum += 900
                 }
@@ -151,7 +151,7 @@ class ItemList : Fragment(), View.OnClickListener {
 
             R.id.GasStove -> {
                 if (GasStove.isChecked) {
-                    Toast.makeText(requireActivity(), "GasStove", Toast.LENGTH_SHORT).show()
+                    //  Toast.makeText(requireActivity(), "GasStove", Toast.LENGTH_SHORT).show()
 //                    sharedPref.insertIntData(requireContext(), "GasStove", sum+500)
                     sum += 500
                 }
@@ -159,7 +159,7 @@ class ItemList : Fragment(), View.OnClickListener {
 
             R.id.Cyclinder -> {
                 if (Cyclinder.isChecked) {
-                    Toast.makeText(requireActivity(), "Cyclinder", Toast.LENGTH_SHORT).show()
+                    // Toast.makeText(requireActivity(), "Cyclinder", Toast.LENGTH_SHORT).show()
 //                    sharedPref.insertIntData(requireContext(), "Cyclinder", sum+500)
                     sum += 500
                 }
@@ -167,7 +167,7 @@ class ItemList : Fragment(), View.OnClickListener {
 
             R.id.bed -> {
                 if (bed.isChecked) {
-                    Toast.makeText(requireActivity(), "Bed", Toast.LENGTH_SHORT).show()
+                    // Toast.makeText(requireActivity(), "Bed", Toast.LENGTH_SHORT).show()
 //                    sharedPref.insertIntData(requireContext(), "Bed", sum+500)
                     sum += 300
                 }
@@ -175,7 +175,7 @@ class ItemList : Fragment(), View.OnClickListener {
 
             R.id.specific -> {
                 if (specific.isChecked) {
-                    Toast.makeText(requireActivity(), "specific", Toast.LENGTH_SHORT).show()
+                    // Toast.makeText(requireActivity(), "specific", Toast.LENGTH_SHORT).show()
 //                    sharedPref.insertIntData(requireContext(), "specific", sum+1000)
                     sum += 1000
                 }

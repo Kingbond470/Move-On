@@ -12,6 +12,7 @@
         android:layout_marginStart="26dp"
         android:layout_marginTop="40dp"
         android:text="Select Payment Mode"
+        android:fontFamily="@font/roboto"
         android:textColor="@color/white"
         android:textSize="18dp" />
 
@@ -21,6 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
         android:layout_marginTop="85dp"
+        android:fontFamily="@font/roboto_light"
         android:text="Moveon Wallet"
         android:textColor="@color/white"
         android:textSize="18dp" />
@@ -53,6 +55,7 @@
         android:layout_marginTop="24dp"
         android:layout_toEndOf="@id/Icon_wallet"
         android:text="Moveon Wallet"
+        android:fontFamily="@font/roboto_light"
         android:textColor="@color/white"
         android:textSize="16dp" />
 
@@ -65,6 +68,7 @@
         android:layout_marginTop="24dp"
         android:layout_toEndOf="@id/Icon_wallet"
         android:text="₹00"
+        android:fontFamily="@font/roboto_light"
         android:textColor="@color/white" />
 
     <TextView

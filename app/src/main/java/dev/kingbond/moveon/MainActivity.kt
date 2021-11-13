@@ -35,6 +35,7 @@ import com.google.firebase.auth.FirebaseAuth
 import dev.kingbond.moveon.ui.about.AboutActivity
 import dev.kingbond.moveon.ui.coupons.CouponsActivity
 import dev.kingbond.moveon.ui.help.HelpFragment
+import dev.kingbond.moveon.ui.home.DriverInfoActivity
 import dev.kingbond.moveon.ui.home.MapFragment
 import dev.kingbond.moveon.ui.home.recyclerview.VehicleAdapter
 import dev.kingbond.moveon.ui.home.recyclerview.VehicleClickListener
@@ -290,7 +291,7 @@ class MainActivity : FragmentActivity(), OnMapReadyCallback, LocationListener,
         bottomSheetDialogForDirections.etSearchTo.setText(to)
 
         //vehicle recycler view
-        for (i in 1..10) {
+        for (i in 1..2) {
             listOfVehicles.add(
                 Vehicles(
                     R.drawable.vehicle_tata_ace,
@@ -298,11 +299,69 @@ class MainActivity : FragmentActivity(), OnMapReadyCallback, LocationListener,
                     "MH-48-AY-4977",
                     701,
                     "7ft X 4ft X 5ft",
-                    "811.76",
+                    "750 ₹",
                     "12 min",
-                    R.drawable.dwayne_johnson,
-                    "Dwayne Johnson",
+                    R.drawable.man,
+                    "Mausam Singh",
                     "7218558435"
+                )
+            )
+            listOfVehicles.add(
+                Vehicles(
+                    R.drawable.vehicle_8fit_pickup,
+                    "8ft Pickup",
+                    "MH-48-AY-4976",
+                    801,
+                    "8ft X 4ft X 6ft",
+                    "800 ₹",
+                    "12 min",
+                    R.drawable.woman,
+                    "Kylie Dsouza",
+                    "7218558434"
+                )
+            )
+            listOfVehicles.add(
+                Vehicles(
+                    R.drawable.vehicle_pickup,
+                    "Pickup",
+                    "MH-48-AY-4975",
+                    850,
+                    "7ft X 5ft X 6ft",
+                    "900 ₹",
+                    "12 min",
+                    R.drawable.man,
+                    "Intezar Khan",
+                    "7218558433"
+                )
+            )
+
+            listOfVehicles.add(
+                Vehicles(
+                    R.drawable.vehicle_tata407,
+                    "Tata407",
+                    "MH-48-AY-4975",
+                    1001,
+                    "10ft X 5ft X 6ft",
+                    "920 ₹",
+                    "12 min",
+                    R.drawable.woman,
+                    "Professer",
+                    "7218558456"
+                )
+            )
+
+            listOfVehicles.add(
+                Vehicles(
+                    R.drawable.vehicle_trukm,
+                    "Truck M",
+                    "MH-48-AY-4974",
+                    1200,
+                    "8ft X 7ft X 6ft",
+                    "950 ₹",
+                    "12 min",
+                    R.drawable.man,
+                    "Vedant Kumar",
+                    "7218558433"
                 )
             )
         }
@@ -358,6 +417,16 @@ class MainActivity : FragmentActivity(), OnMapReadyCallback, LocationListener,
             bottomSheetDialogForBookedVehicle.searchingForVehicleLayout.visibility = View.GONE
         }, 2000)
 
+//        Handler().postDelayed({
+//            val intent = Intent(this, DriverInfoActivity::class.java)
+//            startActivity(intent)
+//        },4000)
+
+        bottomSheetDialogForBookedVehicle.llShowInfoDriver.setOnClickListener {
+            val intent = Intent(this, DriverInfoActivity::class.java)
+            startActivity(intent)
+        }
+
         bottomSheetDialogForBookedVehicle.ivCallDriver.setOnClickListener {
             Toast.makeText(this, "calling the driver", Toast.LENGTH_SHORT).show()
             val intent = Intent(Intent.ACTION_DIAL)
@@ -374,20 +443,20 @@ class MainActivity : FragmentActivity(), OnMapReadyCallback, LocationListener,
     }
 
     override fun onVehicleClick(vehicle: Vehicles, position: Int) {
-        Toast.makeText(this, "View Clicked", Toast.LENGTH_SHORT).show()
+        // Toast.makeText(this, "View Clicked", Toast.LENGTH_SHORT).show()
     }
 
     override fun onVehicleInfoClick(vehicle: Vehicles, position: Int) {
-        Toast.makeText(this, "Vehicle Info Clicked", Toast.LENGTH_SHORT).show()
+        //   Toast.makeText(this, "Vehicle Info Clicked", Toast.LENGTH_SHORT).show()
         bottomSheetForVehicleInfo(vehicle, position)
     }
 
     override fun onAddLabourClick(vehicle: Vehicles, position: Int, labourCount: Int) {
-        Toast.makeText(this, "Add Labour Clicked", Toast.LENGTH_SHORT).show()
+        // Toast.makeText(this, "Add Labour Clicked", Toast.LENGTH_SHORT).show()
     }
 
     override fun onBookVehicleClick(vehicle: Vehicles, position: Int) {
-        Toast.makeText(this, "Book Vehicle Clicked", Toast.LENGTH_SHORT).show()
+        //   Toast.makeText(this, "Book Vehicle Clicked", Toast.LENGTH_SHORT).show()
         bottomSheetForBookedVehicle(vehicle, position)
     }
 

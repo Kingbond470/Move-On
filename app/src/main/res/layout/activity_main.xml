@@ -12,7 +12,6 @@
         android:layout_height="match_parent">
 
 
-
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -69,6 +68,7 @@
                             android:drawableLeft="@drawable/ic_search"
                             android:drawablePadding="20dp"
                             android:elevation="5dp"
+                            android:fontFamily="@font/roboto"
                             android:hint="Where is your drop?"
                             android:padding="20dp"
                             android:textColorHint="@color/white"
@@ -98,10 +98,13 @@
                                 android:layout_height="wrap_content"
                                 android:background="@color/black"
                                 android:drawableLeft="@drawable/ic_packers_and_movers"
+                                android:fontFamily="@font/roboto"
+                                android:gravity="center"
                                 android:padding="10dp"
                                 android:text="Packers &amp; Movers"
                                 android:textAlignment="center"
-                                android:textColor="@color/white" />
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
 
                         </androidx.cardview.widget.CardView>
 
@@ -117,11 +120,14 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@color/black"
-                                android:drawableLeft="@drawable/ic_packers_and_movers"
+                                android:drawableLeft="@drawable/ic_rental_package"
+                                android:fontFamily="@font/roboto"
                                 android:padding="10dp"
                                 android:text="Warehouses"
+                                android:gravity="center"
                                 android:textAlignment="center"
-                                android:textColor="@color/white" />
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
 
                         </androidx.cardview.widget.CardView>
 
@@ -142,7 +148,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/grey"
+                android:background="@color/black_app"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -225,12 +231,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|center_horizontal"
-                android:layout_margin="20dp"
+                android:layout_margin="30dp"
+                android:background="@drawable/ic_button_bg"
+                android:fontFamily="@font/roboto"
+                android:paddingVertical="10dp"
                 android:text="Get Directions"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                android:textStyle="bold" />
 
         </FrameLayout>
-
 
 
     </FrameLayout>
@@ -252,10 +261,10 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:background="@color/black"
-        app:itemIconTint="@color/white"
-        app:itemTextColor="@color/white"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
         app:menu="@menu/nav_menu" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

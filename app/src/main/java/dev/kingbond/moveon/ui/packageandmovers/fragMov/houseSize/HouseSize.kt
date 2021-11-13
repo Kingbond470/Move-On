@@ -130,7 +130,7 @@ class HouseSize : Fragment(), AdapterView.OnItemSelectedListener{
         isFocusableInTouchMode = false
         isClickable = true
         isFocusable = false
-        setTextColor(resources.getColor(R.color.white))
+        setTextColor(resources.getColor(R.color.black))
 
         val myCalendar = Calendar.getInstance()
         val datePickerOnDataSetListener =

@@ -18,7 +18,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="19.5dp"
             android:layout_marginTop="22.5dp"
-            android:src="@drawable/ic_vector" />
+            android:fontFamily="@font/roboto_light"
+            android:src="@drawable/ic_back_arrow" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -28,7 +29,7 @@
             android:layout_marginStart="56dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="55dp"
-            android:fontFamily="sans-serif-medium"
+            android:fontFamily="@font/roboto_medium"
             android:gravity="center"
             android:text="Select House Size"
             android:textColor="@color/white"
@@ -44,7 +45,7 @@
             android:layout_marginStart="18dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="112dp"
-            android:fontFamily="sans-serif-medium"
+            android:fontFamily="@font/roboto"
             android:gravity="start"
             android:text="Select the items you have at your home"
             android:textColor="@color/white"
@@ -69,16 +70,17 @@
                     android:layout_marginStart="21dp"
                     android:layout_marginTop="27dp"
                     android:background="@drawable/blue_box" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_toEndOf="@id/Matress"
+                    android:fontFamily="@font/roboto_light"
                     android:text="Cot with mattress"
                     android:textColor="@color/white"
-                    android:layout_toEndOf="@id/Matress"
-                    android:layout_marginTop="27dp"
-                    android:textSize="16dp"
-                    android:layout_marginStart="12dp"
-                    />
+                    android:textSize="16dp" />
 
                 <CheckBox
                     android:id="@+id/Shoe"
@@ -97,6 +99,7 @@
                     android:layout_toEndOf="@id/Shoe"
                     android:lineHeight="1dp"
                     android:text="Rack"
+                    android:fontFamily="@font/roboto_light"
                     android:textColor="@color/white"
                     android:textSize="14dp" />
 
@@ -108,17 +111,18 @@
                     android:layout_marginStart="21dp"
                     android:layout_marginTop="27dp"
                     android:background="@drawable/blue_box" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Almirah"
-                    android:textColor="@color/white"
                     android:layout_below="@id/Matress"
-                    android:layout_toEndOf="@id/Almirah"
-                    android:layout_marginTop="27dp"
-                    android:textSize="16dp"
                     android:layout_marginStart="12dp"
-                    />
+                    android:layout_marginTop="27dp"
+                    android:layout_toEndOf="@id/Almirah"
+                    android:text="Almirah"
+                    android:fontFamily="@font/roboto_light"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
 
                 <CheckBox
                     android:id="@+id/Fridge"
@@ -138,6 +142,7 @@
                     android:layout_marginEnd="64dp"
                     android:layout_toEndOf="@id/Shoe"
                     android:lineHeight="1dp"
+                    android:fontFamily="@font/roboto_light"
                     android:text="Fridge"
                     android:textColor="@color/white"
                     android:textSize="16dp" />
@@ -171,6 +176,7 @@
                     android:layout_marginTop="27dp"
                     android:layout_toEndOf="@id/Chair"
                     android:text="Chairs"
+                    android:fontFamily="@font/roboto_light"
                     android:textColor="@color/white"
                     android:textSize="16dp" />
 
@@ -190,6 +196,7 @@
                     android:layout_marginEnd="64dp"
                     android:layout_toEndOf="@id/WashingMachine"
                     android:text="TV"
+                    android:fontFamily="@font/roboto_light"
                     android:textColor="@color/white"
                     android:textSize="16dp" />
 
@@ -201,17 +208,18 @@
                     android:layout_marginStart="21dp"
                     android:layout_marginTop="27dp"
                     android:background="@drawable/blue_box" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/Chair"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_toEndOf="@id/Sofa"
                     android:text="Sofa"
                     android:textColor="@color/white"
-                    android:layout_below="@id/Chair"
-                    android:layout_toEndOf="@id/Sofa"
-                    android:layout_marginTop="27dp"
-                    android:textSize="16dp"
-                    android:layout_marginStart="12dp"
-                    />
+                    android:fontFamily="@font/roboto_light"
+                    android:textSize="16dp" />
 
                 <CheckBox
                     android:id="@+id/GasStove"
@@ -232,6 +240,7 @@
                     android:layout_toEndOf="@id/GasStove"
                     android:lineHeight="1dp"
                     android:text="Stove"
+                    android:fontFamily="@font/roboto_light"
                     android:textColor="@color/white"
                     android:textSize="16dp" />
 
@@ -265,6 +274,7 @@
                     android:layout_toEndOf="@id/Table"
                     android:text="Table"
                     android:textColor="@color/white"
+                    android:fontFamily="@font/roboto_light"
                     android:textSize="16dp" />
 
                 <CheckBox
@@ -283,6 +293,7 @@
                     android:layout_marginEnd="64dp"
                     android:layout_toEndOf="@id/Cyclinder"
                     android:text="Cyclinder"
+                    android:fontFamily="@font/roboto_light"
                     android:textColor="@color/white"
                     android:textSize="15dp" />
 
@@ -302,6 +313,7 @@
                     android:layout_marginStart="12dp"
                     android:layout_marginTop="27dp"
                     android:layout_toEndOf="@id/Purifier"
+                    android:fontFamily="@font/roboto_light"
                     android:text="Purifier"
                     android:textColor="@color/white"
                     android:textSize="16dp" />
@@ -324,6 +336,7 @@
                     android:layout_marginEnd="64dp"
                     android:layout_toEndOf="@id/bed"
                     android:lineHeight="1dp"
+                    android:fontFamily="@font/roboto_light"
                     android:text="Bed"
                     android:textColor="@color/white"
                     android:textSize="16dp" />
@@ -348,22 +361,19 @@
             android:layout_marginTop="27dp"
             android:layout_toEndOf="@id/specific"
             android:text="No Specific"
+            android:fontFamily="@font/roboto_light"
             android:textColor="@color/white"
             android:textSize="16dp" />
 
         <Button
             android:id="@+id/itemBtn"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/specific"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="135dp"
-            android:layout_marginEnd="18dp"
-            android:backgroundTint="#1E54B7"
-            android:textColor="@color/white"
-            android:text="Continue" />
+            android:layout_margin="18dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ic_button_bg_fill"
+            android:text="Continue"
+            android:textColor="@color/white" />
 
     </RelativeLayout>
 </LinearLayout>
