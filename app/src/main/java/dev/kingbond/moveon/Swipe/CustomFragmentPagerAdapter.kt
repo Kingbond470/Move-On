@@ -3,6 +3,7 @@ package com.example.liquidswipedemo
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
+import dev.kingbond.moveon.HeadingArray
 import dev.kingbond.moveon.Swipe.Swipe
 import dev.kingbond.moveon.backgroundColorArray
 import dev.kingbond.moveon.resourceArray
@@ -15,7 +16,8 @@ class CustomFragmentPagerAdapter(fm: FragmentManager) :
         return Swipe.newInstance(
             backgroundColorArray[(position % titleArray.count())],
             resourceArray[(position % titleArray.count())],
-            titleArray[(position % titleArray.count())]
+            titleArray[(position % titleArray.count())],
+            HeadingArray[(position % titleArray.count())],
         )
     }
 

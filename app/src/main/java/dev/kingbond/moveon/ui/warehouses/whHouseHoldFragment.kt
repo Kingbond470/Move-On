@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import dev.kingbond.moveon.R
-import dev.kingbond.moveon.databinding.ActivityMainBinding.inflate
 
 class whHouseHoldFragment : Fragment() {
 //private  lateinit var binding: whHouseHold

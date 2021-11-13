@@ -5,7 +5,7 @@ import android.os.Bundle
 import com.example.liquidswipedemo.CustomFragmentPagerAdapter
 import com.example.liquidswipedemo.CustomPagerAdapter
 import com.jem.liquidswipe.clippathprovider.LiquidSwipeClipPathProvider
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_onboarding.*
 
 class OnboadingActivity : AppCompatActivity() {
 

@@ -10,9 +10,7 @@ import com.airbnb.lottie.LottieAnimationView
 import com.airbnb.lottie.LottieDrawable
 import com.jem.liquidswipe.clippathprovider.LiquidSwipeClipPathProvider
 import com.jem.liquidswipe.base.LiquidSwipeLayout
-import dev.kingbond.moveon.R
-import dev.kingbond.moveon.backgroundColorArray
-import dev.kingbond.moveon.resourceArray
+import dev.kingbond.moveon.*
 import dev.kingbond.moveon.titleArray
 
 class CustomPagerAdapter(
@@ -34,8 +32,10 @@ class CustomPagerAdapter(
             LottieDrawable.REVERSE
         layout.findViewById<LottieAnimationView>(R.id.lottieAnimationView).playAnimation()
 
-        layout.findViewById<TextView>(R.id.fragment_textview).text =
+        layout.findViewById<TextView>(R.id.tvDescription).text =
             titleArray[(position % titleArray.count())]
+        layout.findViewById<TextView>(R.id.tvHeading).text =
+            HeadingArray[(position % titleArray.count())]
 
         (layout as? LiquidSwipeLayout)?.clipPathProvider =
             liquidSwipeClipPathProviders[(position % titleArray.count())]

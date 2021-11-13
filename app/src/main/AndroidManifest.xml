@@ -42,16 +42,17 @@
         <activity
             android:name=".ui.warehouses.whPersonalDetailsActivity"
             android:exported="true">
-
-        </activity>
-        <activity
-            android:name=".OnboadingActivity"
-            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".OnboadingActivity"
+            android:exported="true" >
+
 
         </activity>
 
