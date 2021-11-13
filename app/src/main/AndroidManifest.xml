@@ -10,20 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Moveon">
         <activity
-            android:name=".ui.payment.googlepay"
-            android:exported="false" />
-        <activity
-            android:name=".ui.payment.PaymentA"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".ui.packageandmovers.BaseActivityPackersAndMovers"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.payment.googlepay"
+            android:exported="true" />
+        <activity
+            android:name=".ui.payment.PaymentA"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+        </activity>
+
         <meta-data
             android:name="com.google.android.gms.wallet.api.enabled"
             android:value="true" />
