@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_g"
+    app:startDestination="@id/houseSize">
+
+    <fragment
+        android:id="@+id/houseSize"
+        android:name="dev.kingbond.moveon.ui.packageandmovers.fragMov.houseSize.HouseSize"
+        android:label="fragment_house_size"
+        tools:layout="@layout/fragment_house_size" >
+        <action
+            android:id="@+id/action_houseSize_to_houseCategory"
+
+            app:destination="@id/houseCategory" />
+    </fragment>
+    <fragment
+        android:id="@+id/houseCategory"
+        android:name="dev.kingbond.moveon.ui.packageandmovers.fragMov.housecategory.HouseCategory"
+        android:label="fragment_house_category"
+        tools:layout="@layout/fragment_house_category" >
+        <argument
+            android:name=""
+            />
+        <action
+            android:id="@+id/action_houseCategory_to_itemList"
+            app:destination="@id/itemList" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemList"
+        android:name="dev.kingbond.moveon.ui.packageandmovers.fragMov.itemList.ItemList"
+        android:label="fragment_item_list"
+        tools:layout="@layout/fragment_item_list" >
+        <action
+            android:id="@+id/action_itemList_to_coastPage"
+            app:destination="@id/coastPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/coastPage"
+        android:name="dev.kingbond.moveon.ui.packageandmovers.fragMov.cost.CoastPage"
+        android:label="fragment_coast_page"
+        tools:layout="@layout/fragment_coast_page" >
+        <action
+            android:id="@+id/action_coastPage_to_confirmPage"
+            app:destination="@id/confirmPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmPage"
+        android:name="dev.kingbond.moveon.ui.packageandmovers.fragMov.confirm.confirmPage"
+        android:label="fragment_confirm_page"
+        tools:layout="@layout/fragment_confirm_page" />
+</navigation>

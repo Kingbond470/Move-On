@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141414"
+    tools:context=".ui.warehouses.whEstimatedCostActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#141414">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_back_arrow"
+                    android:padding="10dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="35dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text=" Estimated cost of warehousing"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+            </androidx.appcompat.widget.Toolbar>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/grey_800_bg"
+            android:layout_marginHorizontal="18dp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Estimated Cost"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:id="@+id/tvCost"
+                android:fontFamily="@font/roboto_medium"
+                android:text="₹5200.00"
+                android:layout_marginTop="13dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="14dp"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/vView"
+                android:background="@drawable/grey_800_bg"
+                android:backgroundTint="#333333"
+                android:layout_below="@id/tvCost"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Service type"
+                android:id="@+id/tvServiceType"
+                android:layout_below="@id/vView"
+                android:layout_marginTop="11dp"
+                android:layout_marginStart="12dp"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvTimePeriod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvServiceType"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Time period"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Type of warehouse"
+                android:id="@+id/tvTypeOfWarehouse"
+                android:layout_below="@id/tvTimePeriod"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="12dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:id="@+id/tvWarehousing"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Warehousing "
+                android:layout_below="@id/vView"
+                android:layout_marginTop="11dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:id="@+id/tvTimePeriodDate"
+                android:fontFamily="@font/roboto_medium"
+                android:text="28/11/2021 to 02/12/2021"
+                android:layout_below="@id/tvWarehousing"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="16dp"
+                android:id="@+id/tvHouseHold"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Household"
+                android:layout_below="@id/tvTimePeriodDate"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/grey_800_bg"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="28dp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="13dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="35dp"
+                android:drawableEnd="@drawable/ic_downarrow"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Your Contact  information"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/grey_800_bg"
+            android:layout_marginHorizontal="18dp"
+            android:orientation="vertical"
+            android:layout_marginTop="28dp"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="35dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Features"
+                android:id="@+id/tvFeatures"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="11dp"
+                android:layout_marginStart="12dp"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/grey_800_bg"
+                android:id="@+id/vView2"
+                android:backgroundTint="#333333"
+                android:layout_below="@id/tvFeatures"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:drawableStart="@drawable/ic_greentick"
+                android:text="Packing, pickup and deliver back to your home"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/vView2"
+                android:drawablePadding="8.6dp"
+                android:layout_marginStart="12.6dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:drawableStart="@drawable/ic_greentick"
+                android:text="Heated, climate management storage units"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/vView2"
+                android:drawablePadding="8.6dp"
+                android:layout_marginStart="12.6dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:drawableStart="@drawable/ic_greentick"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/vView2"
+              android:text="Quality packing of fragile items"
+                android:drawablePadding="8.6dp"
+                android:layout_marginStart="12.6dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:drawableStart="@drawable/ic_greentick"
+                android:text="CCTV video security 24*7"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/vView2"
+                android:drawablePadding="8.6dp"
+                android:layout_marginStart="12.6dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:drawableStart="@drawable/ic_greentick"
+                android:text="Specially designed carriers for transportation of goods"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/vView2"
+                android:drawablePadding="8.6dp"
+                android:layout_marginStart="12.6dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:drawableStart="@drawable/ic_greentick"
+                android:text="Insurance coverage for all goods"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/vView2"
+                android:drawablePadding="8.6dp"
+                android:layout_marginStart="12.6dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:drawableStart="@drawable/ic_greentick"
+                android:text="Controlled entry. Only our employees are permitted"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/vView2"
+                android:drawablePadding="8.6dp"
+                android:layout_marginStart="12.6dp"
+                android:layout_marginBottom="17dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/grey_800_bg"
+            android:layout_marginHorizontal="18dp"
+            android:backgroundTint="#10462D"
+            android:orientation="vertical"
+            android:layout_marginTop="28dp"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="35dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Need more details?"
+                android:id="@+id/tvFeatures1"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="11dp"
+                android:layout_marginStart="12dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Request Callback. We will get back to you within 4 hours to get more details."
+                android:layout_marginTop="4dp"
+                android:layout_below="@id/vView2"
+                android:drawablePadding="8.6dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="16dp"
+
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:layout_marginHorizontal="18dp"-->
+<!--            android:backgroundTint="#1E54B7"-->
+<!--            android:padding="10dp"-->
+<!--            android:id="@+id/btnRequestCallback"-->
+<!--            android:layout_marginBottom="40dp"-->
+<!--            android:layout_marginTop="25dp"-->
+<!--            android:text="Request Callback"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textSize="18sp" />-->
+
+        <Button
+            android:id="@+id/btnRequestCallback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginVertical="18dp"
+            android:background="@drawable/ic_button_bg_fill"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/roboto"
+            android:maxLines="1"
+            android:paddingHorizontal="60dp"
+            android:paddingVertical="18dp"
+            android:text="Request Callback"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

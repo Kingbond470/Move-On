@@ -26,5 +26,8 @@
     <color name="storageCache">#A7A7A7</color>
     <color name="green">#48B36E</color>
     <color name="grey1">#595A5B</color>
+
+    <color name="grey">#1F1F1F</color>
+    <color name="dark_grey">#141414</color>
     <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#fff</color>
 </resources>

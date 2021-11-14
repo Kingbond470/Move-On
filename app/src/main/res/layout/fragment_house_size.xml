@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sizehouse"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141414"
+    android:orientation="vertical"
+    tools:context=".ui.packageandmovers.fragMov.houseSize.HouseSize">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19.5dp"
+            android:layout_marginTop="22.5dp"
+            android:src="@drawable/ic_back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="55dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:text="Select House Size"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Location"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_below="@+id/backArrow"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/roboto"
+            android:gravity="start"
+            android:text="Enter location details"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/City"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_below="@+id/Location"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="18dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Select city"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/SelectCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/City"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/roundbox"
+            android:hint="Select city"
+            android:paddingVertical="19sp"
+            android:paddingStart="16sp"
+            android:textColor="@color/white"
+            android:textColorHint="#BFBBBB" />
+
+        <TextView
+            android:id="@+id/Moving"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_below="@id/SelectCity"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="18dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Moving from"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/MovingFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_below="@+id/Moving"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/roundbox"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Moving from..."
+            android:paddingVertical="19sp"
+            android:paddingStart="16sp"
+            android:textColor="@color/black"
+            android:textColorHint="#BFBBBB" />
+
+        <TextView
+            android:id="@+id/Too"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_below="@id/MovingFrom"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="18dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Moving to"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/MovingTo"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_below="@+id/Too"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/roundbox"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Moving to..."
+            android:paddingVertical="19sp"
+            android:paddingStart="16sp"
+            android:textColor="@color/black"
+            android:textColorHint="#BFBBBB" />
+
+        <TextView
+            android:id="@+id/planing"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_below="@id/MovingTo"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="161dp"
+            android:fontFamily="@font/roboto"
+            android:text="When are you planning to move?"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/Shiftingdate"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_below="@+id/planing"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="302dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Shifting Date"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_below="@+id/Shiftingdate"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/roundbox"
+            android:gravity="center_vertical"
+            android:hint="DD/MM/YYYY"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:textColor="@color/black"
+            android:textColorHint="#BFBBBB"
+            app:drawableRightCompat="@drawable/ic_vector__1_" />
+
+
+        <Button
+            android:id="@+id/houseBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="135dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/ic_button_bg_fill"
+            android:text="Continue"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+</LinearLayout>

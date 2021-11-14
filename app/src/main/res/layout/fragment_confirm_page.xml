@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141414"
+    android:orientation="vertical"
+    tools:context=".ui.packageandmovers.fragMov.confirm.confirmPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rlWarehouses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/black_app">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/ic_back_arrow"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="35dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text=" WareHouse Facility"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+            </androidx.appcompat.widget.Toolbar>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvConfirmWarehouseCallback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlWarehouses"
+            android:layout_marginHorizontal="42dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="We received callback request "
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/ivWarehouseGirl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvConfirmWarehouseCallback"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="53dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/ic_callbacksvg"
+            android:padding="10dp"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/llwarehouseConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivWarehouseGirl"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="79dp"
+            android:background="@drawable/grey_800_bg"
+            android:backgroundTint="#10462D"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="26dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="We will call you back within 4 hours to give you an exact quote regarding cost of shifting."
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvFeatures1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="Thank you for choosing us."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <!--    <Button-->
+        <!--        android:id="@+id/btnDone"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_gravity="bottom"-->
+        <!--        android:layout_marginHorizontal="18dp"-->
+        <!--        android:layout_marginTop="40dp"-->
+        <!--        android:layout_marginBottom="40dp"-->
+        <!--        android:backgroundTint="#1E54B7"-->
+        <!--        android:padding="10dp"-->
+        <!--        android:text="Done"-->
+        <!--        android:textAllCaps="false"-->
+        <!--        android:textSize="18sp" />-->
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginVertical="18dp"
+            android:background="@drawable/ic_button_bg_fill"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/roboto"
+            android:maxLines="1"
+            android:paddingHorizontal="60dp"
+            android:paddingVertical="18dp"
+            android:text="Done"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+</LinearLayout>

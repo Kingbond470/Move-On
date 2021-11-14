@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141414"
+    tools:context=".ui.payment.PaymentA">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="40dp"
+        android:text="Select Payment Mode"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/Mwallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="85dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="Moveon Wallet"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:id="@+id/BWallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Mwallet"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/ic_ellipse_158" />
+
+    <ImageView
+        android:id="@+id/Icon_wallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Mwallet"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="26dp"
+        android:layout_toEndOf="@id/BWallet"
+        android:background="@color/white"
+        android:src="@drawable/ic_vector__6_" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Mwallet"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="24dp"
+        android:layout_toEndOf="@id/Icon_wallet"
+        android:text="Moveon Wallet"
+        android:fontFamily="@font/roboto_light"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/MwCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Mwallet"
+        android:layout_marginStart="259dp"
+        android:layout_marginTop="24dp"
+        android:layout_toEndOf="@id/Icon_wallet"
+        android:text="₹00"
+        android:fontFamily="@font/roboto_light"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MwCost"
+        android:layout_marginStart="312dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="33dp"
+        android:text="Wallet balance"
+        android:textColor="@color/white"
+        android:textSize="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BWallet"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="48dp"
+        android:text="Other payment methods"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:id="@+id/BCash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BWallet"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/ic_ellipse_158" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Icon_wallet"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="103dp"
+        android:layout_toEndOf="@id/BCash"
+        android:src="@drawable/ic_cash" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Icon_wallet"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="103dp"
+        android:layout_toEndOf="@id/BCash"
+        android:text="Cash"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:id="@+id/Bpaytm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BCash"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_ellipse_158" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Icon_wallet"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="165dp"
+        android:layout_toEndOf="@id/BCash"
+        android:src="@drawable/ic_paytm" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Icon_wallet"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="165dp"
+        android:layout_toEndOf="@id/BCash"
+        android:text="Paytm"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:id="@+id/Bgoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Bpaytm"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/ic_ellipse_158" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Icon_wallet"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="229dp"
+        android:layout_toEndOf="@id/BCash"
+        android:src="@drawable/ic_googlepay" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Icon_wallet"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="229dp"
+        android:layout_toEndOf="@id/BCash"
+        android:text="Google Pay"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Bgoogle"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="28dp"
+        android:text="Add a payment method"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Upi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Bgoogle"
+        android:backgroundTint="#141414"
+        android:layout_marginTop="68dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/icon_upi"
+                android:layout_marginStart="26dp"
+                android:src="@drawable/ic_upi" />
+
+            <TextView
+                android:id="@+id/AddUpi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/icon_upi"
+                android:drawableRight="@drawable/ic_vector__7_"
+                android:drawablePadding="178dp"
+                android:paddingStart="14dp"
+                android:text="Add a new UPI ID"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/debit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Upi"
+        android:backgroundTint="#141414"
+        android:layout_marginTop="27dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/icon_debit"
+                android:layout_marginStart="26dp"
+                android:src="@drawable/ic_payment" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add a new debit/credit card"
+                android:id="@+id/AddDebit"
+                android:layout_toEndOf="@id/icon_debit"
+                android:paddingStart="14dp"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:drawableRight="@drawable/ic_vector__7_"
+                android:drawablePadding="105dp"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/coupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/debit"
+        android:backgroundTint="#141414"
+        android:layout_marginTop="27dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/icon_coupon"
+                android:layout_marginStart="26dp"
+                android:src="@drawable/ic_vector__8_" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add a voucher/coupon"
+                android:id="@+id/AddCoupon"
+                android:layout_toEndOf="@id/icon_coupon"
+                android:paddingStart="14dp"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:drawableRight="@drawable/ic_vector__7_"
+                android:drawablePadding="146dp"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnPayment"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_below="@id/coupon"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="18dp"
+        android:backgroundTint="#1E54B7"
+        android:text="Continue"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

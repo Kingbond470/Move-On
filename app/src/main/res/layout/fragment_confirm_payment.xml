@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141414"
+    tools:context=".ui.payment.ConfirmPayment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Payment"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:drawablePadding="135dp"
+        android:drawableLeft="@drawable/ic_vector"
+        android:layout_marginStart="19dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Moveon Wallet"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:id="@+id/heading_Wallet"
+        android:layout_marginTop="77dp"
+        android:layout_marginStart="18dp"
+        />
+
+    <ImageView
+        android:id="@+id/Icon_wallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading_Wallet"
+        android:background="@color/white"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_vector__6_" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading_Wallet"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@id/Icon_wallet"
+        android:text="₹00.00"
+        android:id="@+id/wallet_cost"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Icon_wallet"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="7dp"
+        android:text="Wallet balance"
+        android:textColor="@color/white"
+        android:textSize="10dp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/wallet_cost"
+        android:layout_below="@id/heading_Wallet"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="#1E54B7"
+        android:text="Add Money"
+        android:textColor="@color/white"
+        android:layout_marginEnd="18dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Icon_wallet"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="67dp"
+        android:id="@+id/OtherPayOption"
+        android:text="Other payment methods"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Conf_Google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/OtherPayOption"
+        android:backgroundTint="#141414"
+        android:layout_marginTop="28dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Conf_icon_Google"
+                android:layout_marginStart="17dp"
+                android:src="@drawable/ic_googlepay" />
+
+            <TextView
+                android:id="@+id/Conf_AddGoogle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/Conf_icon_Google"
+                android:drawableRight="@drawable/ic_vector__7_"
+                android:drawablePadding="178dp"
+                android:paddingStart="14dp"
+                android:text="Google Pay"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Conf_Paytm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Conf_Google"
+        android:backgroundTint="#141414"
+        android:layout_marginTop="37dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Conf_icon_paytm"
+                android:layout_marginStart="17dp"
+                android:src="@drawable/ic_paytm" />
+
+            <TextView
+                android:id="@+id/Conf_AddPaytm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/Conf_icon_paytm"
+                android:drawableRight="@drawable/ic_vector__7_"
+                android:drawablePadding="212dp"
+                android:paddingStart="14dp"
+                android:text="Paytm"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/Add_payment_method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Conf_Paytm"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="63dp"
+        android:text="Add a payment method"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Conf_Upi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Add_payment_method"
+        android:backgroundTint="#141414"
+        android:layout_marginTop="26dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Conf_icon_upi"
+                android:layout_marginStart="26dp"
+                android:src="@drawable/ic_upi" />
+
+            <TextView
+                android:id="@+id/AddUpi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/Conf_icon_upi"
+                android:drawableRight="@drawable/ic_vector__7_"
+                android:drawablePadding="120dp"
+                android:paddingStart="14dp"
+                android:text="Add a new UPI ID"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Conf_debit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Conf_Upi"
+        android:backgroundTint="#141414"
+        android:layout_marginTop="27dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Conf_icon_debit"
+                android:layout_marginStart="26dp"
+                android:src="@drawable/ic_payment" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add a new debit/credit card"
+                android:id="@+id/AddDebit"
+                android:layout_toEndOf="@id/Conf_icon_debit"
+                android:paddingStart="14dp"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:drawableRight="@drawable/ic_vector__7_"
+                android:drawablePadding="45dp"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

@@ -2,29 +2,90 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="dev.kingbond.moveon">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/download_warehouse_pic1"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/ic_packers_home"
         android:supportsRtl="true"
         android:theme="@style/NoActionBarTheme">
-        <activity android:name=".ui.about.AboutActivity"
-            android:exported="true"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity
+            android:name=".ui.about.AboutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.home.DriverInfoActivity"
+            android:exported="true" />
         <activity
             android:name=".ui.coupons.CouponsActivity"
             android:exported="true" />
+
+        <activity
+            android:name=".ui.packageandmovers.BaseActivityPackersAndMovers"
+            android:exported="true" />
+
         <activity
             android:name=".ui.profile.EditProfileActivity"
             android:exported="true" />
+
         <activity
             android:name=".ui.login.EmailLoginActivity"
             android:exported="true"
-            android:theme="@style/MaterialTheme"
-            android:windowSoftInputMode="adjustResize" />
+            android:theme="@style/MaterialTheme" />
+
+        <activity
+            android:name=".ui.warehouses.whOrderDetails"
+            android:exported="false"
+            android:theme="@style/MaterialTheme" />
+
+        <activity
+            android:name=".ui.warehouses.MainJavaActivity"
+            android:exported="false"
+            android:theme="@style/MaterialTheme" />
+
+        <activity
+            android:name=".ui.warehouses.whOrdersActivity"
+            android:exported="false"
+            android:theme="@style/MaterialTheme" />
+
+        <activity
+            android:name=".ui.warehouses.RequestCallbackActivity"
+            android:exported="false"
+            android:theme="@style/MaterialTheme" />
+
+        <activity
+            android:name=".ui.warehouses.whEstimatedCostActivity"
+            android:exported="false"
+            android:theme="@style/MaterialTheme" />
+
+        <activity
+            android:name=".ui.warehouses.whTypeWareHouse"
+            android:exported="true"
+            android:theme="@style/MaterialTheme" />
+
+        <activity
+            android:name=".ui.warehouses.whDetailsActivity"
+            android:exported="true"
+            android:theme="@style/MaterialTheme" />
+
+        <activity
+            android:name=".ui.warehouses.whPersonalDetailsActivity"
+            android:exported="true"
+            android:theme="@style/MaterialTheme" />
+
         <activity
             android:name=".ui.login.Login"
             android:exported="true" />
+
         <activity
             android:name=".ui.splash.SplashScreenActivity"
             android:exported="true">
@@ -33,15 +94,34 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
+        <activity
+            android:name=".ui.payment.googlepay"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.payment.PaymentA"
+            android:exported="true" />
+
+        <activity
+            android:name=".OnboadingActivity"
+            android:exported="true" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.MoveonHome" />
+            android:theme="@style/Theme.MoveonHome"></activity>
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
     </application>
 
 </manifest>

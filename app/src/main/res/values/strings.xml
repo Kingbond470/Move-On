@@ -1,5 +1,121 @@
 <resources>
-    <string name="app_name">Move On</string>
+    <string name="app_name">moveon</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="type">
+        <item>Household</item>
+        <item>Vehiles</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="state_list">
+        <item>Andaman and Nicobar</item>
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chandigarh</item>
+        <item>Chhattisgarh</item>
+        <item>Dadra and Nagar Haveli</item>
+        <item>Daman and Diu</item>
+        <item>Delhi</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Lakshadweep</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Orissa</item>
+        <item>Pondicherry</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Tripura</item>
+        <item>Uttar Pradesh</item>
+        <item>Uttaranchal</item>
+        <item>West Bengal</item>
+
+    </string-array>
+
+    <string-array name="city_list">
+
+
+        <item>Ajmer</item>
+        <item>Alwar</item>
+        <item>Banswara</item>
+        <item>Barmer</item>
+        <item>Bharatpur</item>
+        <item>Bhilwara</item>
+        <item>Bikaner</item>
+        <item>Bundi</item>
+        <item>Chittorgarh</item>
+        <item>Churu</item>
+        <item>Dausa</item>
+        <item>Dholpur</item>
+        <item>Dungarpur</item>
+        <item>Jaipur</item>
+        <item>Jaisalmer</item>
+        <item>Jalore</item>
+        <item>Jhalawar</item>
+        <item>Jodhpur</item>
+        <item>Karauli</item>
+        <item>Kota</item>
+        <item>Nagaur</item>
+        <item>Jhunjhunu</item>
+        <item>Rajsamand</item>
+        <item>Sikar</item>
+        <item>Sirohi</item>
+        <item>Sri Ganganagar</item>
+        <item>Tonk</item>
+        <item>Udaipur</item>
+        <item>Ahmedabad</item>
+        <item>Ahmednagar</item>
+        <item>Ajitgarh(Mohali)</item>
+        <item>Ajmer</item>
+        <item>Akola</item>
+        <item>Aligarh</item>
+        <item>Allahabad</item>
+        <item>Alwar</item>
+        <item>Ambala</item>
+        <item>Ambedkar Nagar</item>
+        <item>Amravati</item>
+        <item>Amreli district</item>
+        <item>Amritsar</item>
+        <item>Anantapur</item>
+        <item>Angul</item>
+        <item>Arwal</item>
+        <item>Ashok Nagar</item>
+        <item>Auraiya</item>
+        <item>Bihar</item>
+        <item>Guntur</item>
+        <item>Itanagar</item>
+        <item>Buxar</item>
+        <item>Chapra</item>
+        <item>Gaya</item>
+        <item>Madhubani</item>
+        <item>Chandigarh</item>
+        <item>Bhilai</item>
+        <item>Bilaspur</item>
+        <item>Durg</item>
+        <item>Raipur</item>
+        <item>Daman</item>
+        <item>Diu</item>
+        <item>Delhi</item>
+        <item>Goa</item>
+        <item>Delhi</item>
+        <item>Delhi</item>
+        <item>New Delhi</item>
+
+    </string-array>
+
 
     <string name="answer1">You can use Move On coins to avail discounts while booking services on the Move On app. Which will then credited to your Move On wallet on the completion of the service.The amount of Move On coins to be earned will be displayed during the checkout on the cart page.\n</string>
     <string name="answer2">With refer and earn, you can purchase and gain Move On coins\n</string>
@@ -9,7 +125,6 @@
 
     <string name="open">Open</string>
     <string name="close">Close</string>
-    <string name="hello_blank_fragment">Hello fragment</string>
     <string name="check_box_string">I hereby declare that I am lawfully authorised to\nprovide the above information on behalf of the owner\nof the information</string>
     <string name="copy_right" translatable="false">Copyrights © %1$d</string>
 
@@ -34,3 +149,5 @@
     </string-array>
 
 </resources>
+
+
