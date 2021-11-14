@@ -4,6 +4,8 @@ import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
+import android.text.method.HideReturnsTransformationMethod
+import android.text.method.PasswordTransformationMethod
 import android.util.Patterns
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -20,6 +22,8 @@ import com.google.firebase.database.DatabaseReference
 import dev.kingbond.moveon.MainActivity
 import dev.kingbond.moveon.R
 import kotlinx.android.synthetic.main.fragment_email.*
+import kotlinx.android.synthetic.main.fragment_email.tvLoginSignUp
+import kotlinx.android.synthetic.main.fragment_password.*
 import java.util.regex.Pattern
 
 class EmailFragment : Fragment(R.layout.fragment_email) {
@@ -88,6 +92,26 @@ class EmailFragment : Fragment(R.layout.fragment_email) {
 //                etLoginEmail.error = "Enter valid email"
 //            }
 //        }
+
+        // to show and hide the password
+        etLoginPasswordEmail.transformationMethod = PasswordTransformationMethod.getInstance()
+        btnShowHideLoginEmail.setOnClickListener {
+            if (etLoginPasswordEmail.transformationMethod == PasswordTransformationMethod.getInstance()) {
+                etLoginPasswordEmail.transformationMethod = HideReturnsTransformationMethod.getInstance()
+                btnShowHideLoginEmail.setBackgroundResource(R.drawable.password_show)
+
+                //placing cursor at the end of the text
+                etLoginPasswordEmail.setSelection(etLoginPasswordEmail.text.toString().length)
+            } else {
+                etLoginPasswordEmail.transformationMethod = PasswordTransformationMethod.getInstance()
+                btnShowHideLoginEmail.setBackgroundResource(R.drawable.password_hide)
+
+                //placing cursor at the end of the text
+                etLoginPasswordEmail.setSelection(etLoginPasswordEmail.text.toString().length)
+            }
+
+        }
+
 
 
     }

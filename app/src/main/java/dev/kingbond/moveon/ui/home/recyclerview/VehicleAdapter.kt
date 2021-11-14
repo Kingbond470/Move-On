@@ -70,6 +70,12 @@ class VehicleAdapter(
                     clickListener.onBookVehicleClick(vehicle, adapterPosition)
                 }
 
+                rlPaymentMethods.setOnClickListener {
+                    clickListener.onPaymentMethodsClick(vehicle,adapterPosition)
+                }
+
+
+
                 rlMainLayout.setOnClickListener {
                     if (bool[adapterPosition]) {
                         labourLayout.visibility = View.GONE
@@ -103,4 +109,6 @@ interface VehicleClickListener {
     fun onVehicleInfoClick(vehicle: Vehicles, position: Int)
     fun onAddLabourClick(vehicle: Vehicles, position: Int, labourCount: Int)
     fun onBookVehicleClick(vehicle: Vehicles, position: Int)
+    fun onPaymentMethodsClick(vehicle: Vehicles, position: Int)
+
 }

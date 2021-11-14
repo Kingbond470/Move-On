@@ -137,7 +137,6 @@
                 android:id="@+id/etPasswordSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/tvLoginEmailHeading"
                 android:layout_marginHorizontal="18dp"
                 android:layout_marginTop="28dp"
                 android:layout_marginBottom="14dp"
@@ -411,7 +410,7 @@
             android:textSize="14sp"
             android:textStyle="normal" />
 
-        <com.google.android.material.button.MaterialButton
+        <Button
             android:id="@+id/btnSignUpContinue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -431,6 +430,7 @@
             android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="normal" />
+
 
     </RelativeLayout>
 

@@ -15,6 +15,7 @@ import android.os.Handler
 import android.view.MenuItem
 import android.view.View
 import android.widget.ImageButton
+import android.widget.RadioButton
 import android.widget.SearchView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -47,11 +48,16 @@ import dev.kingbond.moveon.ui.settings.SettingsFragment
 import dev.kingbond.moveon.ui.warehouses.whPersonalDetailsActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.booking_confirmed_layout.*
+import kotlinx.android.synthetic.main.booking_confirmed_layout.cancelBooking
+import kotlinx.android.synthetic.main.booking_confirmed_layout.driverDetailsLayout
 import kotlinx.android.synthetic.main.booking_vehicle_layout.*
 import kotlinx.android.synthetic.main.fragment_settings.*
 import kotlinx.android.synthetic.main.fragment_settings.view.*
 import kotlinx.android.synthetic.main.nav_header.*
 import kotlinx.android.synthetic.main.nav_header.view.*
+import kotlinx.android.synthetic.main.payment_layout.*
+import kotlinx.android.synthetic.main.payment_methods_layout.*
+import kotlinx.android.synthetic.main.payment_successful_layout.*
 import kotlinx.android.synthetic.main.vehivle_info_layout.*
 import java.io.IOException
 
@@ -66,6 +72,9 @@ class MainActivity : FragmentActivity(), OnMapReadyCallback, LocationListener,
     private lateinit var bottomSheetDialogForDirections: BottomSheetDialog
     private lateinit var bottomSheetDialogForBookedVehicle: BottomSheetDialog
     private lateinit var bottomSheetDialogForVehicleInfo: BottomSheetDialog
+    private lateinit var bottomSheetDialogForPayment: BottomSheetDialog
+    private lateinit var bottomSheetDialogForPaymentMethods: BottomSheetDialog
+    private lateinit var bottomSheetDialogForPaymentSuccessful: BottomSheetDialog
 
     var map: GoogleMap? = null
     private var currentLongitude: Double = 0.0
@@ -442,6 +451,73 @@ class MainActivity : FragmentActivity(), OnMapReadyCallback, LocationListener,
         }
     }
 
+    private fun bottomSheetForPayment(vehicle: Vehicles, position: Int) {
+        bottomSheetDialogForPayment = BottomSheetDialog(this@MainActivity)
+        val viewPayment = layoutInflater.inflate(R.layout.payment_layout, null)
+        bottomSheetDialogForPayment.setContentView(viewPayment)
+
+        bottomSheetDialogForDirections.cancel()
+        bottomSheetDialogForPayment.show()
+
+        bottomSheetDialogForPayment.paymentCancelBooking.setOnClickListener {
+            bottomSheetForPaymentMethods(vehicle, position)
+        }
+
+        bottomSheetDialogForPayment.btnConfirmPayment.setOnClickListener {
+            bottomSheetDialogForPayment.cancel()
+            bottomSheetForPaymentSuccessful(vehicle, position)
+        }
+
+    }
+
+    private fun bottomSheetForPaymentSuccessful(vehicle: Vehicles, position: Int) {
+        bottomSheetDialogForPaymentSuccessful = BottomSheetDialog(this@MainActivity)
+        val viewPaymentSuccessful = layoutInflater.inflate(R.layout.payment_successful_layout, null)
+        bottomSheetDialogForPaymentSuccessful.setContentView(viewPaymentSuccessful)
+        bottomSheetDialogForPaymentSuccessful.show()
+
+
+        bottomSheetDialogForPaymentSuccessful.btnConfirmPaymentSuccessful.setOnClickListener {
+            bottomSheetDialogForPaymentSuccessful.cancel()
+            bottomSheetForBookedVehicle(vehicle, position)
+        }
+    }
+
+    fun onRadioButtonClicked(view: View) {
+        var checked = view as RadioButton
+        if(rb_wallet == checked) {
+            message(rb_wallet.text.toString() + if (rb_wallet.isChecked) " Checked " else " UnChecked ")
+        }
+        if (rb_cash == checked) {
+            message(rb_cash.text.toString() + if (rb_cash.isChecked) " Checked " else " UnChecked ")
+        }
+        if (rb_paytm == checked) {
+            message(rb_paytm.text.toString() + if (rb_paytm.isChecked) " Checked " else " UnChecked ")
+        }
+
+        if (rb_google_pay == checked) {
+            message(rb_google_pay.text.toString() + if (rb_google_pay.isChecked) " Checked " else " UnChecked ")
+        }
+    }
+
+    fun message(str: String) {
+        Toast.makeText(this, str, Toast.LENGTH_LONG).show()
+    }
+
+    private fun bottomSheetForPaymentMethods(vehicle: Vehicles, position: Int) {
+        bottomSheetDialogForPaymentMethods = BottomSheetDialog(this@MainActivity)
+        val viewPaymentMethods = layoutInflater.inflate(R.layout.payment_methods_layout, null)
+        bottomSheetDialogForPaymentMethods.setContentView(viewPaymentMethods)
+        bottomSheetDialogForPaymentMethods.rb_cash.isChecked = true
+        bottomSheetDialogForPaymentMethods.show()
+
+        bottomSheetDialogForPaymentMethods.btnConfirmPaymentMethods.setOnClickListener {
+            bottomSheetDialogForPaymentMethods.cancel()
+        }
+
+    }
+
+
     override fun onVehicleClick(vehicle: Vehicles, position: Int) {
         // Toast.makeText(this, "View Clicked", Toast.LENGTH_SHORT).show()
     }
@@ -457,7 +533,12 @@ class MainActivity : FragmentActivity(), OnMapReadyCallback, LocationListener,
 
     override fun onBookVehicleClick(vehicle: Vehicles, position: Int) {
         //   Toast.makeText(this, "Book Vehicle Clicked", Toast.LENGTH_SHORT).show()
-        bottomSheetForBookedVehicle(vehicle, position)
+        bottomSheetForPayment(vehicle, position)
+    }
+
+    override fun onPaymentMethodsClick(vehicle: Vehicles, position: Int) {
+       // Toast.makeText(this, "Payment Methods Clicked", Toast.LENGTH_SHORT).show()
+        bottomSheetForPaymentMethods(vehicle, position)
     }
 
     private fun bitmapFromVector(context: Context, vectorResId: Int): BitmapDescriptor? {
