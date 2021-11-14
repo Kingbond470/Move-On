@@ -112,8 +112,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.MoveonHome" >
-        </activity>
+            android:theme="@style/Theme.MoveonHome"></activity>
 
         <meta-data
             android:name="com.google.android.gms.wallet.api.enabled"
