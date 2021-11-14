@@ -50,6 +50,7 @@
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_packers_and_movers.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_rental_package.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_right_arrow.xml" value="0.14166666666666666" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_security.xml" value="0.14722222222222223" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_signup_india.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_strtlocation.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_tools.xml" value="0.2203125" />
@@ -73,7 +74,7 @@
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_base_packers_and_movers.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_coupons.xml" value="0.22" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_driver_info.xml" value="0.25" />
-        <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_edit_profile.xml" value="0.22" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_edit_profile.xml" value="0.33" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_email_login.xml" value="0.18" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_google_maps.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_googlepay2.xml" value="0.18" />
@@ -101,7 +102,7 @@
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_confirm_payment.xml" value="0.33" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_coupon.xml" value="0.22" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_email.xml" value="0.22" />
-        <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_help.xml" value="0.25" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_help.xml" value="0.22156862745098038" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_house_category.xml" value="0.4083333333333333" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_house_size.xml" value="0.25" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_item_list.xml" value="0.2" />
@@ -111,45 +112,14 @@
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_password.xml" value="0.1" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_settings.xml" value="0.22" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_settings_profile.xml" value="0.22" />
-        <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_sign_up.xml" value="0.33" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_sign_up.xml" value="0.22" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/item_layout_vehicles.xml" value="0.22" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/item_layout_warehouse.xml" value="0.33" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/items_list.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/nav_header.xml" value="0.25" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/payment_layout.xml" value="0.17552083333333332" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/vehivle_info_layout.xml" value="0.16" />
         <entry key="..\:/Android/Move-On/app/src/main/res/menu/nav_menu.xml" value="0.22" />
-        <entry key="..\:/Users/hp/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_spinner_dropdown_item.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/hp/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_spinner_item.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/drawable/blue_box.xml" value="0.1" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/drawable/ic_button_bg_fill.xml" value="0.2703125" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/drawable/ic_component_44.xml" value="0.2601851851851852" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/drawable/roundbox.xml" value="0.13425925925925927" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout-v28/fragment_house_category.xml" value="0.23324275362318841" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/activity_abstrat_layr.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/activity_base_packers_and_movers.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/activity_edit_profile.xml" value="0.1358695652173913" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/activity_email_login.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/activity_googlepay.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/activity_googlepay2.xml" value="0.24010416666666667" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/activity_googlepy.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/activity_main.xml" value="0.12183383991894631" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/activity_onboarding.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/activity_payment.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/activity_splash_screen.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/activity_wh_order_details.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/activity_wh_orders.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/activity_wh_personal_details.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/activity_wh_type_ware_house.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/fragment_coast_page.xml" value="0.3294270833333333" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/fragment_confirm_page.xml" value="0.1875" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/fragment_confirm_payment.xml" value="0.264" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/fragment_email.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/fragment_house_category.xml" value="0.2" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/fragment_house_size.xml" value="0.264" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/fragment_item_list.xml" value="0.264" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/fragment_payment.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/fragment_swipe.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/hp/Desktop/Move-On/app/src/main/res/layout/item_layout_warehouse.xml" value="0.4" />
       </map>
     </option>
   </component>
