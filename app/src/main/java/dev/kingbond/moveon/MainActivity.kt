@@ -62,7 +62,7 @@ import kotlinx.android.synthetic.main.payment_successful_layout.*
 import kotlinx.android.synthetic.main.vehivle_info_layout.*
 import java.io.IOException
 
-class MainActivity : FragmentActivity(), OnMapReadyCallback, LocationListener,
+class MainActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener,
     VehicleClickListener {
 
     private var listOfVehicles = ArrayList<Vehicles>()
@@ -107,7 +107,7 @@ class MainActivity : FragmentActivity(), OnMapReadyCallback, LocationListener,
 
         toggle.syncState()
 
-//        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         // for warehouses
         cvWarehouses.setOnClickListener {
@@ -215,9 +215,9 @@ class MainActivity : FragmentActivity(), OnMapReadyCallback, LocationListener,
 
         //current location
         getCurrentLocation()
-        Handler().postDelayed({
-            getCurrentLocation()
-        }, 1500)
+//        Handler().postDelayed({
+//            getCurrentLocation()
+//        }, 0)
 
 
         idSearchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener,

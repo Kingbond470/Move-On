@@ -36,8 +36,8 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_marginBottom="20dp"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
 
                 <RadioButton
                     android:id="@+id/rb_wallet"
@@ -57,8 +57,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:orientation="vertical"
-                    android:gravity="end">
+                    android:gravity="end"
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -69,16 +69,16 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="₹"
-                            android:textSize="15sp"
-                            android:textColor="@color/white"/>
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
 
                         <TextView
                             android:id="@+id/moveOnWalletBalance"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="00.00"
-                            android:textSize="15sp"
-                            android:textColor="@color/white"/>
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
 
                     </LinearLayout>
 
@@ -86,8 +86,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Wallet balance"
-                        android:textSize="12sp"
-                        android:textColor="#9F9F9F"/>
+                        android:textColor="#9F9F9F"
+                        android:textSize="12sp" />
 
                 </LinearLayout>
 

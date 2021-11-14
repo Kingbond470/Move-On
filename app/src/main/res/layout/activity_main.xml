@@ -122,9 +122,9 @@
                                 android:background="@color/black"
                                 android:drawableLeft="@drawable/ic_rental_package"
                                 android:fontFamily="@font/roboto"
+                                android:gravity="center"
                                 android:padding="10dp"
                                 android:text="Warehouses"
-                                android:gravity="center"
                                 android:textAlignment="center"
                                 android:textColor="@color/white"
                                 android:textStyle="bold" />
@@ -181,7 +181,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_toEndOf="@+id/icBack"
-                            android:background="@drawable/search_view_bg"
                             android:elevation="5dp"
                             app:iconifiedByDefault="false"
                             app:queryHint="Where is your drop?"
@@ -232,12 +231,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|center_horizontal"
                 android:layout_margin="30dp"
-                android:background="@drawable/ic_button_bg"
+                android:background="@drawable/ic_button_bg_fill"
                 android:fontFamily="@font/roboto"
                 android:paddingVertical="10dp"
                 android:text="Get Directions"
-                android:textAllCaps="false"
-                android:textStyle="bold" />
+                android:textAllCaps="false" />
 
         </FrameLayout>
 

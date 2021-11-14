@@ -6,11 +6,15 @@ import android.os.Bundle
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import dev.kingbond.moveon.MainActivity
+import dev.kingbond.moveon.R
 import dev.kingbond.moveon.Repository.WareHouseRepo
 import dev.kingbond.moveon.databinding.ActivityWhOrdersBinding
+import dev.kingbond.moveon.ui.home.recyclerview.Vehicles
 import dev.kingbond.moveon.ui.packageandmovers.spref.SharedPref
 import dev.kingbond.moveon.ui.payment.PaymentA
+import dev.kingbond.moveon.ui.payment.googlepay
 import dev.kingbond.moveon.ui.warehouses.SharedPref.MyPreference
 import dev.kingbond.moveon.ui.warehouses.adapter.WareHouseAdapter
 import dev.kingbond.moveon.ui.warehouses.models.WareHouseDao
@@ -19,8 +23,11 @@ import dev.kingbond.moveon.ui.warehouses.models.WareHouseRoomDatabse
 import dev.kingbond.moveon.viewmodels.WareHouseViewmodel
 import dev.kingbond.moveon.viewmodels.WareHouseViewmodelFactory
 import kotlinx.android.synthetic.main.activity_wh_orders.*
+import kotlinx.android.synthetic.main.payment_methods_layout.*
 
 class whOrdersActivity : AppCompatActivity(), ItemClickListener {
+
+    private lateinit var bottomSheetDialogForPaymentMethods: BottomSheetDialog
 
     //Binding
     private lateinit var binding : ActivityWhOrdersBinding
@@ -84,7 +91,25 @@ class whOrdersActivity : AppCompatActivity(), ItemClickListener {
     }
 
     override fun onItremClick(entity: WareHouseEntity, position: Int) {
-        val intent = Intent(applicationContext,PaymentA::class.java)
-        startActivity(intent)
+//        val intent = Intent(applicationContext,PaymentA::class.java)
+//        startActivity(intent)
+        bottomSheetForPaymentMethods()
+
+    }
+
+    private fun bottomSheetForPaymentMethods() {
+        bottomSheetDialogForPaymentMethods = BottomSheetDialog(this@whOrdersActivity)
+        val viewPaymentMethods = layoutInflater.inflate(R.layout.payment_methods_layout, null)
+        bottomSheetDialogForPaymentMethods.setContentView(viewPaymentMethods)
+        bottomSheetDialogForPaymentMethods.rb_google_pay.isChecked = true
+        bottomSheetDialogForPaymentMethods.show()
+
+        bottomSheetDialogForPaymentMethods.btnConfirmPaymentMethods.setOnClickListener {
+            bottomSheetDialogForPaymentMethods.cancel()
+            val i=Intent(this,googlepay::class.java)
+            startActivity(i)
+
+        }
+
     }
 }

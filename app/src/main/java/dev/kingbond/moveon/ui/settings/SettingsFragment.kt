@@ -56,10 +56,10 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
         }
 
         // back to mainactivity
-        cdSettingsProfile.setOnClickListener {
-            val intent = Intent(context, MainActivity::class.java)
-            startActivity(intent)
-        }
+//        cdSettingsProfile.setOnClickListener {
+//            val intent = Intent(context, MainActivity::class.java)
+//            startActivity(intent)
+//        }
 
         //logout
         tvLogOut.setOnClickListener {
