@@ -1,6 +1,8 @@
 package dev.kingbond.moveon.ui.login
 
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
 import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod
@@ -9,13 +11,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.widget.doAfterTextChanged
 import androidx.navigation.Navigation
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import dev.kingbond.moveon.R
+import kotlinx.android.synthetic.main.fragment_email.*
 import kotlinx.android.synthetic.main.fragment_password.*
 import kotlinx.android.synthetic.main.fragment_sign_up.*
+import kotlinx.android.synthetic.main.fragment_sign_up.btnShowHideSignUpFirst
 import java.util.regex.Pattern
 
 class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
@@ -56,6 +61,22 @@ class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
 //            }
         //      }
 
+        // to change the background color of button
+        etConfirmPasswordSignUp.doAfterTextChanged {
+            if (etPasswordSignUp.text.trim().toString().equals(etConfirmPasswordSignUp.text.trim().toString()) && etPasswordSignUp.text.trim().toString().length>=8) {
+                // btnLoginWithEmailContinue.setBackgroundColor(Color.parseColor("#1E54B7"))
+                val gradientDrawable = GradientDrawable()
+                gradientDrawable.setColor(Color.parseColor("#1E54B7"))
+                gradientDrawable.cornerRadius = 12F
+                btnSignUpContinue.setBackgroundDrawable(gradientDrawable)
+           } else {
+                val gradientDrawable = GradientDrawable()
+                gradientDrawable.setStroke(5, Color.parseColor("#1E54B7"))
+                gradientDrawable.cornerRadius = 12F
+                btnSignUpContinue.setBackgroundDrawable(gradientDrawable)
+            }
+        }
+
         // to show and hide the password
         etPasswordSignUp.transformationMethod = PasswordTransformationMethod.getInstance()
         btnShowHideSignUpFirst.setOnClickListener {
@@ -65,13 +86,13 @@ class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
                 btnShowHideSignUpFirst.setBackgroundResource(R.drawable.password_show)
 
                 //placing cursor at the end of the text
-                etPasswordSignUp.setSelection(etLoginPassword.text.toString().length)
+                etPasswordSignUp.setSelection(etPasswordSignUp.text.toString().length)
             } else {
                 etPasswordSignUp.transformationMethod = PasswordTransformationMethod.getInstance()
                 btnShowHideSignUpFirst.setBackgroundResource(R.drawable.password_hide)
 
                 //placing cursor at the end of the text
-                etPasswordSignUp.setSelection(etLoginPassword.text.toString().length)
+                etPasswordSignUp.setSelection(etPasswordSignUp.text.toString().length)
             }
         }
 
@@ -85,14 +106,14 @@ class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
                 btnShowHideSignUpSecond.setBackgroundResource(R.drawable.password_show)
 
                 //placing cursor at the end of the text
-                etConfirmPasswordSignUp.setSelection(etLoginPassword.text.toString().length)
+                etConfirmPasswordSignUp.setSelection(etConfirmPasswordSignUp.text.toString().length)
             } else {
                 etConfirmPasswordSignUp.transformationMethod =
                     PasswordTransformationMethod.getInstance()
                 btnShowHideSignUpSecond.setBackgroundResource(R.drawable.password_hide)
 
                 //placing cursor at the end of the text
-                etConfirmPasswordSignUp.setSelection(etLoginPassword.text.toString().length)
+                etConfirmPasswordSignUp.setSelection(etConfirmPasswordSignUp.text.toString().length)
             }
         }
     }

@@ -40,8 +40,7 @@
         <activity
             android:name=".ui.login.EmailLoginActivity"
             android:exported="true"
-            android:theme="@style/MaterialTheme"
-            android:windowSoftInputMode="adjustResize" />
+            android:theme="@style/MaterialTheme" />
 
         <activity
             android:name=".ui.warehouses.whOrderDetails"
