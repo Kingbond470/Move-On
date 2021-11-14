@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import dev.kingbond.moveon.MainActivity;
 import dev.kingbond.moveon.R;
 
 import android.content.Context;
@@ -37,9 +38,12 @@ public class googlepay extends AppCompatActivity {
         name = (EditText) findViewById(R.id.name);
         upivirtualid =(EditText) findViewById(R.id.upi_id);
         send.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
                 //Getting the values from the EditTexts
+                Intent i1=new Intent(googlepay.this,MainActivity.class);
+                startActivity(i1);
                 if (TextUtils.isEmpty(name.getText().toString().trim())){
                     Toast.makeText(googlepay.this," Name is invalid", Toast.LENGTH_SHORT).show();
                 }else if (TextUtils.isEmpty(upivirtualid.getText().toString().trim())){
@@ -52,7 +56,9 @@ public class googlepay extends AppCompatActivity {
                     payUsingUpi(name.getText().toString(), upivirtualid.getText().toString(),
                             note.getText().toString(), amount.getText().toString());
                 }
+
             }
+
         });
     }
     void payUsingUpi(  String name,String upiId, String note, String amount) {
@@ -78,6 +84,8 @@ public class googlepay extends AppCompatActivity {
         } else {
             Toast.makeText(googlepay.this,"No UPI app found, please install one to continue",Toast.LENGTH_SHORT).show();
         }
+
+
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -166,5 +174,12 @@ public class googlepay extends AppCompatActivity {
             }
         }
         return false;
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(this, MainActivity.class));
+
     }
 }

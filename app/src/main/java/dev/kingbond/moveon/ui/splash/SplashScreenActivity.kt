@@ -10,6 +10,7 @@ import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import com.google.firebase.auth.FirebaseAuth
 import dev.kingbond.moveon.MainActivity
+import dev.kingbond.moveon.OnboadingActivity
 import dev.kingbond.moveon.R
 import dev.kingbond.moveon.ui.login.Login
 import dev.kingbond.moveon.ui.login.SignUpFragment
@@ -46,7 +47,7 @@ class SplashScreenActivity : AppCompatActivity() {
                 startActivity(i)
             } else {
                 // User is signed out
-                val i = Intent(this, Login::class.java)
+                val i = Intent(this, OnboadingActivity::class.java)
                 startActivity(i)
                 Log.d("SignOut", "onAuthStateChanged:signed_out")
             }

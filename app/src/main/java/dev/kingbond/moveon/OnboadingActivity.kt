@@ -1,10 +1,12 @@
 package dev.kingbond.moveon
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.liquidswipedemo.CustomFragmentPagerAdapter
 import com.example.liquidswipedemo.CustomPagerAdapter
 import com.jem.liquidswipe.clippathprovider.LiquidSwipeClipPathProvider
+import dev.kingbond.moveon.ui.login.Login
 import kotlinx.android.synthetic.main.activity_onboarding.*
 
 class OnboadingActivity : AppCompatActivity() {
@@ -27,6 +29,11 @@ class OnboadingActivity : AppCompatActivity() {
                 it.waveCenterY = waveCenterY
             }
             false
+        }
+
+        ImgGif.setOnClickListener {
+            val i =Intent(this,Login::class.java)
+            startActivity(i)
         }
 
 

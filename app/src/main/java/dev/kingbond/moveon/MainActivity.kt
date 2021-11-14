@@ -45,6 +45,7 @@ import dev.kingbond.moveon.ui.login.Login
 import dev.kingbond.moveon.ui.packageandmovers.BaseActivityPackersAndMovers
 import dev.kingbond.moveon.ui.profile.EditProfileActivity
 import dev.kingbond.moveon.ui.settings.SettingsFragment
+import dev.kingbond.moveon.ui.warehouses.whOrdersActivity
 import dev.kingbond.moveon.ui.warehouses.whPersonalDetailsActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.booking_confirmed_layout.*
@@ -174,6 +175,10 @@ class MainActivity : FragmentActivity(), OnMapReadyCallback, LocationListener,
                     val intent = Intent(this, Login::class.java)
                     startActivity(intent)
                     finish()
+                }
+                R.id.nav_your_bookings ->{
+                    val i =Intent(this,whOrdersActivity::class.java)
+                    startActivity(i)
                 }
 
             }

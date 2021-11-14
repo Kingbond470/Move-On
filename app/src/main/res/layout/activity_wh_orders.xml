@@ -20,6 +20,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/Iv_back_booking_details"
                 android:background="@drawable/ic_back_arrow"
                 android:padding="10dp"
 
