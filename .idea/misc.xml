@@ -41,11 +41,16 @@
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_email_about.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_google_logo.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_group.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_instagram.xml" value="0.2169230769230769" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_linkedin_circle.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_lock_white.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_login_password_logo.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_menu_about.xml" value="0.1287037037037037" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_menu_coupons.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_menu_edit.xml" value="0.20555555555555555" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_menu_help.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_menu_logout.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_menu_settings.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_moveon.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_packers_and_movers.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_rental_package.xml" value="0.2203125" />
@@ -63,6 +68,7 @@
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_vector__8_.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_vector__hallmark_.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_vector__sofa_.xml" value="0.2203125" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/drawable/ic_welcome.xml" value="0.2169230769230769" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/question_bg.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/rb_not_selected.xml" value="0.2203125" />
         <entry key="..\:/Android/Move-On/app/src/main/res/drawable/rb_selected.xml" value="0.2203125" />
@@ -74,7 +80,7 @@
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_base_packers_and_movers.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_coupons.xml" value="0.22" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_driver_info.xml" value="0.25" />
-        <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_edit_profile.xml" value="0.22" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_edit_profile.xml" value="0.16" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_email_login.xml" value="0.18" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_google_maps.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/activity_googlepay2.xml" value="0.2" />
@@ -110,7 +116,7 @@
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_map.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_map_activity.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_password.xml" value="0.1" />
-        <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_settings.xml" value="0.25" />
+        <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_settings.xml" value="0.15047984644913628" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_settings_profile.xml" value="0.22" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/fragment_sign_up.xml" value="0.22" />
         <entry key="..\:/Android/Move-On/app/src/main/res/layout/item_layout_vehicles.xml" value="0.22" />

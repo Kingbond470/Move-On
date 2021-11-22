@@ -38,6 +38,10 @@ class Login : AppCompatActivity() {
             //finish()
         }
 
+        btnLoginWithFree.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+        }
+
 
         // setCurrentFragment(LoginFragment())
         // sign in with email

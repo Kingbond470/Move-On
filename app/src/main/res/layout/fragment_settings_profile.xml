@@ -214,12 +214,11 @@
 
 
                 <ImageView
+                    android:id="@+id/ivSettingsProfile"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:layout_below="@+id/llProfileFollowers"
-                    android:src="@drawable/ic_edit_email"
-                    android:id="@+id/ivSettingsProfile"
-                    />
+                    android:src="@drawable/ic_edit_email" />
 
                 <TextView
                     android:id="@+id/tvRecentActivityEditProfile"
